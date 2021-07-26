@@ -33,7 +33,7 @@
     "defFile": null,
     "definitionOrModel": "USAP Definition File",
     "definitionOrModelJobVar": "USAP Definition File",
-    "dispAbapName": "RBDAPP01",
+    "dispAbapName": "RBDAPP011",
     "dispSapEventId": null,
     "dispSapEventParm": null,
     "dispVariant": "STATUS",
@@ -159,7 +159,7 @@
             "description": null,
             "name": "ABAP_NAME",
             "sysId": "5b6009d9c0384d8c9d9e22fe288a9691",
-            "value": "ZBKPF_EXT"
+            "value": "ZBKPF_EXT1"
         },
         {
             "description": null,
