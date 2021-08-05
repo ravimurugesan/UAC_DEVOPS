@@ -137,7 +137,7 @@
     "startHeld": false,
     "startHeldReason": null,
     "stepNum": null,
-    "summary": "DEMO JOB",
+    "summary": "DEMO JOB - Modified variant",
     "sysId": "f40416125f8f462882dc5b7f0e4640e2",
     "targetJobName": null,
     "targetServer": null,
@@ -165,7 +165,7 @@
             "description": null,
             "name": "ABAP_VARIANT",
             "sysId": "883611f7deea4739830e0f7f1ff27abf",
-            "value": "temp5"
+            "value": "temp6"
         }
     ],
     "version": 2,
