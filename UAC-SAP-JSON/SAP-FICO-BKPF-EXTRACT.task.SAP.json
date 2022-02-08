@@ -165,11 +165,7 @@
             "description": null,
             "name": "ABAP_VARIANT",
             "sysId": "883611f7deea4739830e0f7f1ff27abf",
-<<<<<<< HEAD
-            "value": "temp38"
-=======
-            "value": "VariantX"
->>>>>>> 3a82f2f978859c7677467816dbd79789b929602e
+            "value": "VariantX1"
         }
     ],
     "version": 2,
