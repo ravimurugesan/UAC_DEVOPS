@@ -1,0 +1,9 @@
+{
+    "description": "T24 Customer 01 elements",
+    "exportReleaseLevel": "7.7.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "T24-Cust-01",
+    "retainSysIds": true,
+    "sysId": "f77a07721ca346daaa3dd9d37b57b44c",
+    "version": 1
+}

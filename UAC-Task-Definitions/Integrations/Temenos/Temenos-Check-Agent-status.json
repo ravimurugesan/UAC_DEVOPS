@@ -1,0 +1,219 @@
+{
+    "type": "taskUniversal",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "agent": null,
+    "agentCluster": null,
+    "agentClusterVar": null,
+    "agentVar": "${temenos}",
+    "autoCleanup": false,
+    "booleanField1": {
+        "label": "Only Running Agents",
+        "name": "get_running_agents",
+        "value": true
+    },
+    "broadcastCluster": null,
+    "broadcastClusterVar": null,
+    "choiceField1": {
+        "label": "Select a T24 Function",
+        "name": "function_select",
+        "value": "check_agent_status"
+    },
+    "choiceField2": {
+        "label": "Status to Check",
+        "name": "status_to_check",
+        "value": null
+    },
+    "choiceField3": {
+        "label": "Log Level",
+        "name": "log_level",
+        "value": "info"
+    },
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "createConsole": false,
+    "credentialField1": {
+        "label": "Temenos Credentials",
+        "name": "t24_credentials",
+        "value": "temenos"
+    },
+    "credentialField2": {
+        "label": "Transact User Credentials",
+        "name": "transact_user_name",
+        "value": null
+    },
+    "credentialField4": {
+        "label": "UAC Credentials",
+        "name": "uac_cred",
+        "value": null
+    },
+    "credentials": null,
+    "credentialsVar": null,
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "desktopInteract": false,
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "elevateUser": false,
+    "enforceVariables": false,
+    "environment": [],
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exitCodeOutput": null,
+    "exitCodeProcessing": "Success Exitcode Range",
+    "exitCodeText": null,
+    "exitCodes": "0",
+    "exportReleaseLevel": "7.7.0.0",
+    "exportTable": "ops_task_universal",
+    "firstRun": "",
+    "holdResources": false,
+    "largeTextField1": {
+        "label": "Enter a TAFJEE DBTOOLS Command",
+        "name": "osf_command",
+        "value": null
+    },
+    "lastRun": "",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "name": "Temenos-Check-Agent-status",
+    "notes": [],
+    "opswiseGroups": [
+        "T24-Cust-01"
+    ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
+    "outputFailureOnly": false,
+    "outputPathExpression": null,
+    "outputReturnFile": null,
+    "outputReturnNline": "100",
+    "outputReturnSline": "1",
+    "outputReturnText": null,
+    "outputReturnType": "OUTERR",
+    "outputType": "STDOUT",
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "retryExitCodes": null,
+    "retryIndefinitely": false,
+    "retryInterval": 60,
+    "retryMaximum": 0,
+    "retrySuppressFailure": false,
+    "runCount": 0,
+    "runTime": 0,
+    "runtimeDir": null,
+    "simulation": false,
+    "startHeld": false,
+    "startHeldReason": null,
+    "summary": "Check agent status",
+    "sysId": "690f003a792a42c2af76f23a92a0e8f1",
+    "template": "Temenos",
+    "textField1": {
+        "label": "Poll Interval(Seconds)",
+        "name": "poll_interval",
+        "value": null
+    },
+    "textField2": {
+        "label": "Max number of times to check",
+        "name": "max_time_to_check",
+        "value": null
+    },
+    "textField4": {
+        "label": "Transaction ID",
+        "name": "transaction_id",
+        "value": null
+    },
+    "textField5": {
+        "label": "COB ID",
+        "name": "cob_id",
+        "value": "COB"
+    },
+    "textField6": {
+        "label": "UAC Base URL",
+        "name": "uac_base_url",
+        "value": null
+    },
+    "textField7": {
+        "label": "TSM Phantom Mode (File Name)",
+        "name": "tsm_phantom_mode",
+        "value": "StartTSMwithJMS.bat"
+    },
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "cntrl_credentials",
+            "options": [],
+            "sysId": "770c2ed6ead94ac1b7c063be7f55a1f5",
+            "value": "UC-Frankfurt-CRED-RAVI"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "cntrl_url",
+            "options": [],
+            "sysId": "c6f16aafa66145edb9c78e1afac0f142",
+            "value": "http://frankfurt.stonebranchdev.cloud:8080/uc/"
+        }
+    ],
+    "version": 1,
+    "virtualResources": [],
+    "waitForOutput": false
+}

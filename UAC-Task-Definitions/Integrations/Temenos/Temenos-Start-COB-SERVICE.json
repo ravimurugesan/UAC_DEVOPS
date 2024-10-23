@@ -1,0 +1,323 @@
+{
+    "type": "taskUniversal",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [
+            {
+                "attachFile": false,
+                "attachStdError": true,
+                "attachStdOut": true,
+                "bcc": null,
+                "body": null,
+                "cc": null,
+                "description": null,
+                "emailConnection": null,
+                "emailTemplate": "UAC - Alert Template for Task Actions",
+                "emailTemplateVar": null,
+                "exitCodes": null,
+                "fileName": "",
+                "fileNumLines": 100,
+                "fileScanText": "",
+                "fileStartLine": 1,
+                "listReportFormat": "PDF",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "replyTo": null,
+                "report": null,
+                "reportVar": null,
+                "status": "Failed,\nSuccess",
+                "stderrNumLines": 1000,
+                "stderrScanText": "",
+                "stderrStartLine": 1,
+                "stdoutNumLines": 1000,
+                "stdoutScanText": "",
+                "stdoutStartLine": 1,
+                "subject": null,
+                "sysId": "bb95284c4d3b4922a49fb8242c0fefb3",
+                "to": "ravi.murugesan@stonebranch.com"
+            }
+        ],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": [
+            {
+                "agent": null,
+                "agentCluster": null,
+                "agentClusterVar": null,
+                "agentVar": null,
+                "description": null,
+                "execCommand": "Cancel",
+                "execCriteria": "Oldest Active Instance",
+                "execId": null,
+                "execLookupOption": "Instance Name",
+                "execName": null,
+                "execWorkflowName": null,
+                "execWorkflowNameCond": "Equals",
+                "exitCodes": null,
+                "limit": null,
+                "notificationOption": "Operation Success/Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "operation": "Launch Task",
+                "overrideTriggerDateOffset": null,
+                "overrideTriggerDateTime": false,
+                "overrideTriggerTime": "00:00",
+                "status": "Failed,\nSuccess",
+                "sysId": "e8d187a6d8ef4432a49b0c07e272e600",
+                "task": "FAIL-NOTIF-SLACK",
+                "taskLimitType": "Unlimited",
+                "taskVar": null,
+                "trigger": null,
+                "triggerVar": null,
+                "variables": [
+                    {
+                        "name": "task_name",
+                        "value": "${ops_task_name}"
+                    },
+                    {
+                        "name": "task_status",
+                        "value": "${ops_status}"
+                    },
+                    {
+                        "name": "job_type",
+                        "value": "${ops_task_type}"
+                    },
+                    {
+                        "name": "invoked_by",
+                        "value": "${ops_workflow_name}"
+                    },
+                    {
+                        "name": "desc",
+                        "value": "${ops_description}"
+                    },
+                    {
+                        "name": "msg",
+                        "value": "${_outputLines('STDOUT', 1, 100, '',' ')}"
+                    },
+                    {
+                        "name": "exec_user",
+                        "value": "${ops_execution_user}"
+                    }
+                ],
+                "variablesUnresolved": false,
+                "vertexSelection": false,
+                "vertices": [],
+                "virtualResource": null,
+                "virtualResourceVar": null
+            }
+        ]
+    },
+    "agent": null,
+    "agentCluster": null,
+    "agentClusterVar": null,
+    "agentVar": "${temenos}",
+    "autoCleanup": false,
+    "booleanField1": {
+        "label": "Only Running Agents",
+        "name": "get_running_agents",
+        "value": true
+    },
+    "broadcastCluster": null,
+    "broadcastClusterVar": null,
+    "choiceField1": {
+        "label": "Select a T24 Function",
+        "name": "function_select",
+        "value": "start_cob_service"
+    },
+    "choiceField2": {
+        "label": "Status to Check",
+        "name": "status_to_check",
+        "value": null
+    },
+    "choiceField3": {
+        "label": "Log Level",
+        "name": "log_level",
+        "value": "info"
+    },
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "createConsole": false,
+    "credentialField1": {
+        "label": "Temenos Credentials",
+        "name": "t24_credentials",
+        "value": "temenos"
+    },
+    "credentialField2": {
+        "label": "Transact User Credentials",
+        "name": "transact_user_name",
+        "value": null
+    },
+    "credentialField4": {
+        "label": "UAC Credentials",
+        "name": "uac_cred",
+        "value": null
+    },
+    "credentials": null,
+    "credentialsVar": null,
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "desktopInteract": false,
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "elevateUser": false,
+    "enforceVariables": false,
+    "environment": [],
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exitCodeOutput": null,
+    "exitCodeProcessing": "Success Exitcode Range",
+    "exitCodeText": null,
+    "exitCodes": "0",
+    "exportReleaseLevel": "7.7.0.0",
+    "exportTable": "ops_task_universal",
+    "firstRun": "",
+    "holdResources": false,
+    "largeTextField1": {
+        "label": "Enter a TAFJEE DBTOOLS Command",
+        "name": "osf_command",
+        "value": null
+    },
+    "lastRun": "",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "name": "Temenos-Start-COB-SERVICE",
+    "notes": [],
+    "opswiseGroups": [
+        "T24-Cust-01"
+    ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
+    "outputFailureOnly": false,
+    "outputPathExpression": null,
+    "outputReturnFile": null,
+    "outputReturnNline": "10000",
+    "outputReturnSline": "1",
+    "outputReturnText": null,
+    "outputReturnType": "OUTERR",
+    "outputType": "STDOUT",
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "retryExitCodes": null,
+    "retryIndefinitely": false,
+    "retryInterval": 60,
+    "retryMaximum": 0,
+    "retrySuppressFailure": false,
+    "runCount": 0,
+    "runTime": 0,
+    "runtimeDir": null,
+    "simulation": false,
+    "startHeld": false,
+    "startHeldReason": null,
+    "summary": "Start COB",
+    "sysId": "62de580aa07f433ba1ebd609795424fb",
+    "template": "Temenos",
+    "textField1": {
+        "label": "Poll Interval(Seconds)",
+        "name": "poll_interval",
+        "value": null
+    },
+    "textField2": {
+        "label": "Max number of times to check",
+        "name": "max_time_to_check",
+        "value": null
+    },
+    "textField4": {
+        "label": "Transaction ID",
+        "name": "transaction_id",
+        "value": null
+    },
+    "textField5": {
+        "label": "COB ID",
+        "name": "cob_id",
+        "value": "COB"
+    },
+    "textField6": {
+        "label": "UAC Base URL",
+        "name": "uac_base_url",
+        "value": null
+    },
+    "textField7": {
+        "label": "TSM Phantom Mode (File Name)",
+        "name": "tsm_phantom_mode",
+        "value": "StartTSMwithJMS.bat"
+    },
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "cntrl_credentials",
+            "options": [],
+            "sysId": "bc51cfb187c6471687e69cb240e94061",
+            "value": "UC-Frankfurt-CRED-RAVI"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "cntrl_url",
+            "options": [],
+            "sysId": "8e411e33d7d24aa7beb2f4581039a1c0",
+            "value": "http://frankfurt.stonebranchdev.cloud:8080/uc/"
+        }
+    ],
+    "version": 1,
+    "virtualResources": [],
+    "waitForOutput": true
+}
