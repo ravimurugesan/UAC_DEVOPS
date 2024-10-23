@@ -1,0 +1,473 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [
+            {
+                "bcc": null,
+                "body": null,
+                "cc": null,
+                "description": null,
+                "emailConnection": null,
+                "emailTemplate": "UAC - Alert Template for Task Actions",
+                "emailTemplateVar": null,
+                "exitCodes": null,
+                "inheritance": "Children",
+                "listReportFormat": "PDF",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "replyTo": null,
+                "report": null,
+                "reportVar": null,
+                "status": "Failed",
+                "subject": null,
+                "sysId": "68652a79ad8e47d497750a88851a12a7",
+                "to": null
+            }
+        ],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "avgRunTime": 4,
+    "avgRunTimeDisplay": "4 Seconds",
+    "calculateCp": false,
+    "calendar": null,
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "criticalEndpoints": [],
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:05:00",
+    "efEnabled": true,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Duration",
+    "enforceVariables": false,
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.7.0.0",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "2024-07-03 22:49:26 +0200",
+    "holdResources": false,
+    "instanceWait": "-- None --",
+    "lastRun": "2024-07-29 18:06:29 +0200",
+    "lastRunTime": 1,
+    "lastRunTimeDisplay": "1 Seconds",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": true,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "14:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": true,
+    "lsNthAmount": 5,
+    "lsTime": "12:00",
+    "lsType": "Time",
+    "maxRunTime": 26,
+    "maxRunTimeDisplay": "26 Seconds",
+    "minRunTime": 1,
+    "minRunTimeDisplay": "1 Seconds",
+    "name": "APP1-WORKFLOW-FLOW-PROCESS-1",
+    "notes": [],
+    "numberOfTasks": 5,
+    "opswiseGroups": [
+        "App1"
+    ],
+    "overrideCalendar": false,
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 9,
+    "runCriteria": [
+        {
+            "businessDay": false,
+            "complex": true,
+            "complexAdjective": "Last",
+            "complexAdjustment": "None",
+            "complexAdjustmentAmount": 1,
+            "complexAdjustmentType": "Day",
+            "complexNoun": {
+                "value": "Business Day"
+            },
+            "complexNouns": [
+                {
+                    "value": "Business Day"
+                }
+            ],
+            "complexNthAmount": 5,
+            "complexQualifier": {
+                "value": "Month"
+            },
+            "complexQualifiers": [
+                {
+                    "value": "Month"
+                }
+            ],
+            "customDay": false,
+            "customDayChoice": null,
+            "description": null,
+            "evaluateAt": "Trigger Time",
+            "holiday": false,
+            "holidayAdjustment": "None",
+            "holidayAdjustmentAmount": 1,
+            "holidayAdjustmentType": "Day",
+            "specificDay": false,
+            "specificDayFri": false,
+            "specificDayMon": false,
+            "specificDaySat": false,
+            "specificDaySun": false,
+            "specificDayThu": false,
+            "specificDayTue": false,
+            "specificDayWed": false,
+            "sysId": "06d3798135ce40d38eb2b0216948926d",
+            "task": "AAAA01 ${ops_agent_name}",
+            "type": "Run Criteria",
+            "variable": false,
+            "variableName": null,
+            "variableOp": "=",
+            "variableValue": null,
+            "vertexId": "2"
+        },
+        {
+            "businessDay": false,
+            "complex": true,
+            "complexAdjective": "Nth",
+            "complexAdjustment": "None",
+            "complexAdjustmentAmount": 1,
+            "complexAdjustmentType": "Day",
+            "complexNoun": {
+                "value": "Day"
+            },
+            "complexNouns": [
+                {
+                    "value": "Day"
+                }
+            ],
+            "complexNthAmount": 5,
+            "complexQualifier": {
+                "value": "Month"
+            },
+            "complexQualifiers": [
+                {
+                    "value": "Month"
+                }
+            ],
+            "customDay": false,
+            "customDayChoice": null,
+            "description": null,
+            "evaluateAt": "Trigger Time",
+            "holiday": false,
+            "holidayAdjustment": "None",
+            "holidayAdjustmentAmount": 1,
+            "holidayAdjustmentType": "Day",
+            "specificDay": false,
+            "specificDayFri": false,
+            "specificDayMon": false,
+            "specificDaySat": false,
+            "specificDaySun": false,
+            "specificDayThu": false,
+            "specificDayTue": false,
+            "specificDayWed": false,
+            "sysId": "3e8a0cbbbb5847e096f20e374eb2a3c0",
+            "task": "AAAA04",
+            "type": "Run Criteria",
+            "variable": false,
+            "variableName": null,
+            "variableOp": "=",
+            "variableValue": null,
+            "vertexId": "5"
+        },
+        {
+            "businessDay": false,
+            "complex": true,
+            "complexAdjective": "1st",
+            "complexAdjustment": "None",
+            "complexAdjustmentAmount": 1,
+            "complexAdjustmentType": "Day",
+            "complexNoun": {
+                "value": "Business Day"
+            },
+            "complexNouns": [
+                {
+                    "value": "Business Day"
+                }
+            ],
+            "complexNthAmount": 5,
+            "complexQualifier": {
+                "value": "Year"
+            },
+            "complexQualifiers": [
+                {
+                    "value": "Year"
+                }
+            ],
+            "customDay": false,
+            "customDayChoice": null,
+            "description": null,
+            "evaluateAt": "Trigger Time",
+            "holiday": false,
+            "holidayAdjustment": "None",
+            "holidayAdjustmentAmount": 1,
+            "holidayAdjustmentType": "Day",
+            "specificDay": false,
+            "specificDayFri": false,
+            "specificDayMon": false,
+            "specificDaySat": false,
+            "specificDaySun": false,
+            "specificDayThu": false,
+            "specificDayTue": false,
+            "specificDayWed": false,
+            "sysId": "4797d9d28f1347209ad52b36739535fb",
+            "task": "PARSE-CSV-VARIABLES-FROMSNOW",
+            "type": "Run Criteria",
+            "variable": false,
+            "variableName": null,
+            "variableOp": "=",
+            "variableValue": null,
+            "vertexId": "3"
+        },
+        {
+            "businessDay": false,
+            "complex": false,
+            "complexAdjective": "Every",
+            "complexAdjustment": "None",
+            "complexAdjustmentAmount": 1,
+            "complexAdjustmentType": "Day",
+            "complexNoun": {
+                "value": "Day"
+            },
+            "complexNouns": [
+                {
+                    "value": "Day"
+                }
+            ],
+            "complexNthAmount": 5,
+            "complexQualifier": {
+                "value": "Year"
+            },
+            "complexQualifiers": [
+                {
+                    "value": "Year"
+                }
+            ],
+            "customDay": false,
+            "customDayChoice": null,
+            "description": null,
+            "evaluateAt": "Trigger Time",
+            "holiday": false,
+            "holidayAdjustment": "None",
+            "holidayAdjustmentAmount": 1,
+            "holidayAdjustmentType": "Day",
+            "specificDay": true,
+            "specificDayFri": true,
+            "specificDayMon": true,
+            "specificDaySat": true,
+            "specificDaySun": true,
+            "specificDayThu": true,
+            "specificDayTue": true,
+            "specificDayWed": true,
+            "sysId": "c4a0185f959e4046bd9e231b750bcffb",
+            "task": "AAAA03",
+            "type": "Skip Criteria",
+            "variable": false,
+            "variableName": null,
+            "variableOp": "=",
+            "variableValue": null,
+            "vertexId": "4"
+        }
+    ],
+    "runTime": 35,
+    "simulation": false,
+    "skippedOption": "Show Skipped",
+    "startHeld": false,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": "Self-Service-Workflow- Process to get files",
+    "sysId": "b14fc8de739747139bd9e2b70b1cf0ce",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "Parameter_1",
+            "options": [
+                "Exec_1",
+                "Exec_2"
+            ],
+            "sysId": "a460ccd87fd2463f90225350540d6ec6",
+            "value": ""
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "Parameter_2",
+            "options": [],
+            "sysId": "e377e638618144cfb0d837644ac8d51e",
+            "value": "USER_AUTH_CODE"
+        }
+    ],
+    "version": 14,
+    "virtualResources": [
+        {
+            "amount": 1,
+            "resource": "ALL_JOBS",
+            "resourceVar": null,
+            "sysId": "0e48d746b1e443d483ea78fcc3310f79"
+        }
+    ],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "AAAA01 ${ops_agent_name}",
+                "value": "2"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "PARSE-CSV-VARIABLES-FROMSNOW",
+                "value": "3"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "PARSE-CSV-VARIABLES-FROMSNOW",
+                "value": "3"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "AAAA03",
+                "value": "4"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "PARSE-CSV-VARIABLES-FROMSNOW",
+                "value": "3"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "AAAA04",
+                "value": "5"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "PARSE-CSV-VARIABLES-FROMSNOW",
+                "value": "3"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskAlias": "APP1-WORKFLOW-JOB-EXEC001",
+                "taskName": "AAAA06",
+                "value": "38"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "conditionExpression": null,
+            "task": {
+                "value": "AAAA01 ${ops_agent_name}"
+            },
+            "vertexId": "2",
+            "vertexX": "83.5",
+            "vertexY": "182"
+        },
+        {
+            "alias": null,
+            "conditionExpression": null,
+            "task": {
+                "value": "PARSE-CSV-VARIABLES-FROMSNOW"
+            },
+            "vertexId": "3",
+            "vertexX": "330",
+            "vertexY": "182"
+        },
+        {
+            "alias": null,
+            "conditionExpression": null,
+            "task": {
+                "value": "AAAA03"
+            },
+            "vertexId": "4",
+            "vertexX": "523",
+            "vertexY": "25"
+        },
+        {
+            "alias": null,
+            "conditionExpression": null,
+            "task": {
+                "value": "AAAA04"
+            },
+            "vertexId": "5",
+            "vertexX": "523",
+            "vertexY": "182"
+        },
+        {
+            "alias": "APP1-WORKFLOW-JOB-EXEC001",
+            "conditionExpression": null,
+            "task": {
+                "value": "AAAA06"
+            },
+            "vertexId": "38",
+            "vertexX": "523",
+            "vertexY": "339"
+        }
+    ]
+}
