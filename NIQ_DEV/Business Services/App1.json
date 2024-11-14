@@ -1,0 +1,9 @@
+{
+    "description": "Elements for Application1",
+    "exportReleaseLevel": "7.7.1.0",
+    "exportTable": "ops_generic_group",
+    "name": "App1",
+    "retainSysIds": true,
+    "sysId": "4efa3ec48403486d888e3a0ccdb92ca7",
+    "version": 1
+}

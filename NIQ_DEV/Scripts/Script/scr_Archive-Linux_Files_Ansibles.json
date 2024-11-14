@@ -1,0 +1,14 @@
+{
+    "content": "#!/bin/sh\nmv input_file/${processed_file} input_file/archive/",
+    "description": "From Input_file to archive folder",
+    "exportReleaseLevel": "7.7.1.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "scr_Archive-Linux_Files_Ansibles",
+    "scriptType": "Script",
+    "sysId": "c818dd4ed9cb4616b5fad5753ec4d0c8",
+    "version": 3
+}
