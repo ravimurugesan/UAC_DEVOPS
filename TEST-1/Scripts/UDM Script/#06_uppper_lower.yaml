@@ -1,0 +1,17 @@
+content: "#\necho \t###\necho\t\"### change the content of a variable to upper or\
+  \ lower cases\" \necho \t###\n#  \nset var1=Universal_DATA_mOVer\n#\necho  \"$(var1)\"\
+  \ \necho \t###                                \nlower    var1                  \
+  \                 \necho  \"$(var1)\" \necho \t###                             \
+  \   \nupper    var1                                   \necho  \"$(var1)\"   \necho\
+  \ \t###"
+description: null
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: true
+retainSysIds: true
+scriptName: '#06_uppper_lower'
+scriptType: UDM Script
+sysId: ea7793226bc7457bbf6fab88bbd28e86
+version: 1

@@ -1,0 +1,18 @@
+content: "#\necho \t###\necho\t\"### find a string in a given string or variable\"\
+  \ \necho \t###\n#  \nset var1=universal_data_mover\n#\nfind \"$(var1)\" seq=data\
+  \                            \necho \"result of find data was: $(_lastrc.message)\"\
+  \   \nfind \"$(var1)\" seq=data                            \necho \"position of\
+  \ data is $(_lastrc.result)\"         \nfind \"$(var1)\" seq=datx              \
+  \              \necho \"result of find datx was: $(_lastrc.message)\"   \nfind \"\
+  $(var1)\" seq=datx                            \necho \"position of datx is $(_lastrc.result)\""
+description: null
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: true
+retainSysIds: true
+scriptName: '#03_find'
+scriptType: UDM Script
+sysId: 9134d8024c1c4516afa990bd8d151c7d
+version: 1

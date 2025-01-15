@@ -1,0 +1,16 @@
+content: "#\necho \t###\necho\t\"### insert a string into a existing variable\" \n\
+  echo \t###\n#  \nset var1=universal_data_mover\n#\necho \t###\necho \"### $(var1)\"\
+  \  \necho \t###                         \n#                                    \
+  \      \ninsertstring var1 \"_best_in_class\" pos=10             \necho \"### $(var1)\"\
+  \  \necho \t###\n#"
+description: null
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: true
+retainSysIds: true
+scriptName: '#05_insertstring'
+scriptType: UDM Script
+sysId: d31cc8a343a94ae0ae2afd6852da00a3
+version: 1
