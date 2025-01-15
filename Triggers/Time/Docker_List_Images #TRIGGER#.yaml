@@ -1,0 +1,94 @@
+action: Do Not Trigger
+adjustInterval: false
+adjustmentAmount: 1
+adjustmentType: Day
+calendar: System Default
+customField1:
+  label: null
+  value: null
+customField2:
+  label: null
+  value: null
+dateAdjective: Every
+dateAdjustment: None
+dateNoun:
+  value: Day
+dateNouns:
+- value: Day
+dateQualifier:
+  value: Year
+dateQualifiers:
+- value: Year
+dayInterval: 2
+dayStyle: Simple
+description: null
+disabledTime: ''
+enabled: false
+enabledEnd: 00:00
+enabledStart: 00:00
+enabledTime: ''
+enforceVariables: false
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_trigger_time
+forecast: false
+fri: false
+intervalStartingDate: '2024-07-19'
+lockVariables: false
+mon: false
+name: 'Docker_List_Images #TRIGGER#'
+nextScheduledTime: ''
+notes: []
+nthAmount: 5
+opswiseGroups:
+- App1
+rdExcludeBackup: false
+restrictedTimes: false
+restriction: false
+restrictionAdjective: Every
+restrictionComplex: false
+restrictionMode: Or
+restrictionNoun:
+  value: Day
+restrictionNouns:
+- value: Day
+restrictionNthAmount: 5
+restrictionQualifier:
+  value: Year
+restrictionQualifiers:
+- value: Year
+restrictionSimple: false
+retainSysIds: true
+retentionDuration: 1
+retentionDurationPurge: false
+retentionDurationUnit: Days
+sat: false
+simpleDateType: Daily
+simulateTasks: false
+simulationOption: -- System Default --
+situation: Holiday
+skipActive: false
+skipAfterDate: null
+skipAfterTime: null
+skipBeforeDate: null
+skipBeforeTime: null
+skipCondition: None
+skipCount: 0
+skipDateList: []
+skipRestriction: None
+startTimeEnable: false
+startingAt: '*:00'
+sun: false
+sysId: f75a45f42db541a7995b76dd53ca9c33
+tasks:
+- Docker_List_Images
+thu: false
+time: 02:00
+timeInterval: null
+timeIntervalUnits: Hours
+timeStyle: Absolute
+timeZone: null
+tue: false
+type: triggerTime
+variables: []
+version: 1
+wed: false

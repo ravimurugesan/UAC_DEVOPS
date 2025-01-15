@@ -1,0 +1,205 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Ansible
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 13
+avgRunTimeDisplay: 13 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Action
+  name: action
+  value: Create Incident
+choiceField10:
+  label: Output Type
+  name: output_type
+  value: All
+choiceField2:
+  label: Caller
+  name: caller
+  value: null
+choiceField3:
+  label: Category
+  name: category
+  value: Software
+choiceField4:
+  label: Subcategory
+  name: subcategory
+  value: Operating System
+choiceField5:
+  label: Impact
+  name: impact
+  value: 2 - Medium
+choiceField6:
+  label: Urgency
+  name: urgency
+  value: 1 - High
+choiceField7:
+  label: Assigned To
+  name: assigned_to
+  value: Holger Justkowiak
+choiceField8:
+  label: Assignment Group
+  name: assignment_group
+  value: null
+choiceField9:
+  label: Attach Output Source
+  name: attach_output_source
+  value: Any Task Instance
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: ServiceNow Credentials
+  name: servicenow_credentials
+  value: Hju_ServiceNow
+credentialField2:
+  label: UC Credentials
+  name: uc_credentials
+  value: UC-Frankfurt-CRED-RKM
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2024-10-21 16:30:51 +0200
+holdResources: false
+intField1:
+  label: Number of lines
+  name: number_of_lines
+  value: 100
+largeTextField1:
+  label: Description
+  name: description
+  value: null
+lastRun: 2024-10-21 16:30:51 +0200
+lastRunTime: 13
+lastRunTimeDisplay: 13 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Info
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 13
+maxRunTimeDisplay: 13 Seconds
+minRunTime: 13
+minRunTimeDisplay: 13 Seconds
+name: 'Hju_Create ServiceNow incident '
+notes: []
+opswiseGroups:
+- App1
+- App2
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 1
+runTime: 13
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: 15d27202608a4baebc67030e1d6c93df
+template: ServiceNow Incident
+textField1:
+  label: ServiceNow Instance URL
+  name: servicenow_instance_url
+  value: https://ven07075.service-now.com/
+textField2:
+  label: Short Description
+  name: short_description
+  value: 'Stonebranch Job Failed : ${sib_failed_task_name}'
+textField4:
+  label: Task Instance ID
+  name: task_instance_id
+  value: ${task_id}
+textField5:
+  label: UC URL
+  name: uc_url
+  value: https://eufrankfurt.stonebranchdev.cloud
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 3
+virtualResources: []
+waitForOutput: false

@@ -1,0 +1,131 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Airflow
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 0
+avgRunTimeDisplay: 0 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+command: env
+commandOrScript: Command
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_unix
+firstRun: 2023-10-31 17:22:04 +0100
+holdResources: false
+lastRun: 2024-07-29 18:06:29 +0200
+lastRunTime: 0
+lastRunTimeDisplay: 0 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 0
+maxRunTimeDisplay: 0 Seconds
+minRunTime: 0
+minRunTimeDisplay: 0 Seconds
+name: AAAA06
+notes: []
+opswiseGroups:
+- App1
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+parameters: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runAsSudo: false
+runCount: 10
+runTime: 0
+runtimeDir: null
+script: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: 5b1b12633b6c4879bfd3cb8a6b176247
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUnix
+userEstimatedDuration: null
+variables: []
+version: 4
+virtualResources:
+- amount: 1
+  resource: ALL_JOBS
+  resourceVar: null
+  sysId: c5ba179520c54831ab408921fcc8318e
+waitForOutput: false

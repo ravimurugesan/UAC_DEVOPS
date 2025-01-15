@@ -1,0 +1,127 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: null
+agentCluster: null
+agentClusterVar: null
+agentVar: ${APP1_AGENT}
+avgRunTime: 0
+avgRunTimeDisplay: 0 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+command: perl /home/ulm_linux_user/scripts/ex_perl.pl
+commandOrScript: Command
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: null
+credentialsVar: ${APP1_GEN_CRED}
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_unix
+firstRun: 2024-09-03 21:48:23 +0200
+holdResources: false
+lastRun: 2024-09-04 09:44:39 +0200
+lastRunTime: 0
+lastRunTimeDisplay: 0 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:10
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 0
+maxRunTimeDisplay: 0 Seconds
+minRunTime: 0
+minRunTimeDisplay: 0 Seconds
+name: APP1-${ENV}-LIN-REM_SCRIPT-5
+notes: []
+opswiseGroups:
+- App1
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+parameters: Demo_Job
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runAsSudo: false
+runCount: 7
+runTime: 0
+runtimeDir: null
+script: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Demo Job for Workflow use case - perl Script residing in Agent
+sysId: 35a142f856474e49adf06b52d52b7b23
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUnix
+userEstimatedDuration: null
+variables: []
+version: 3
+virtualResources: []
+waitForOutput: false

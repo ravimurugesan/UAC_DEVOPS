@@ -1,0 +1,226 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Ansible
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+arrayField1:
+  fields: []
+  label: Refresh Storage Credentials
+  name: refresh_storage_credentials
+  nameTitle: Configuration File Field
+  valueTitle: Storage Credential Field
+autoCleanup: false
+avgRunTime: 7
+avgRunTimeDisplay: 7 Seconds
+booleanField1:
+  label: Dry-Run
+  name: dry_run
+  value: false
+booleanField2:
+  label: Update Credentials
+  name: update_credentials
+  value: false
+booleanField3:
+  label: Error On No File Transfer
+  name: error_on_no_file_transfer
+  value: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Action
+  name: action
+  value: Copy Objects
+choiceField2:
+  label: Log Format
+  name: log_format
+  value: Text
+choiceField3:
+  label: Storage System
+  name: storage_system
+  value: null
+choiceField4:
+  label: Use Filter
+  name: use_filter
+  value: Include
+choiceField5:
+  label: Overwrite Options
+  name: overwrite_options
+  value: Overwrite
+choiceField6:
+  label: Source Storage
+  name: source_storage
+  value: linux_source
+choiceField7:
+  label: Target Storage
+  name: target_storage
+  value: ue_aws_s3_target
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Source Credentials
+  name: source_credentials
+  value: Ansible-ravi
+credentialField2:
+  label: Target Credentials
+  name: target_credentials
+  value: AWS_ACCOUNT_D050320
+credentialField3:
+  label: Storage Credentials
+  name: storage_credentials
+  value: null
+credentialField4:
+  label: Controller Credentials
+  name: controller_credentials
+  value: null
+credentials: Ansible-ravi
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-11-02 11:28:59 +0100
+holdResources: false
+intField1:
+  label: Recursion Depth
+  name: recursion_depth
+  value: 1
+lastRun: 2024-01-31 21:25:53 +0100
+lastRunTime: 1
+lastRunTimeDisplay: 1 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 16
+maxRunTimeDisplay: 16 Seconds
+minRunTime: 1
+minRunTimeDisplay: 1 Seconds
+name: Upload-data-to-AWS-S3
+notes: []
+opswiseGroups:
+- SBOL 2023
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 10
+runTime: 72
+runtimeDir: null
+scriptField1:
+  label: Configuration File
+  name: configuration_file
+  value: 'Cloud_Data_transferv1.conf '
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Upload on-Prem Linux to AWS S3
+sysId: a0885a0d7cf44b02a83549cae4bc701d
+template: Cloud Data Transfer
+textField1:
+  label: Filepath
+  name: filepath
+  value: null
+textField2:
+  label: Source Filepath
+  name: source_filepath
+  value: /home/ravi/sap_extracts/
+textField3:
+  label: Target Filepath
+  name: target_filepath
+  value: app-so-extracts
+textField4:
+  label: Filter
+  name: filter
+  value: T*
+textField5:
+  label: Additional Options
+  name: additional_options
+  value: null
+textField6:
+  label: Controller URL
+  name: controller_url
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 6
+virtualResources: []
+waitForOutput: false

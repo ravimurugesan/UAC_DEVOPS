@@ -1,0 +1,135 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Airflow
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 20
+avgRunTimeDisplay: 20 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+command: sleep 20
+commandOrScript: Command
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: true
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_unix
+firstRun: 2024-10-11 09:25:22 +0200
+holdResources: false
+lastRun: 2024-10-11 09:26:04 +0200
+lastRunTime: 20
+lastRunTimeDisplay: 20 Seconds
+lfDayConstraint: None
+lfDuration: 00:02:00:00
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 20
+maxRunTimeDisplay: 20 Seconds
+minRunTime: 20
+minRunTimeDisplay: 20 Seconds
+name: lnx_test_audioptic_${MU}-${PDATE}
+notes: []
+opswiseGroups:
+- App1
+- App2
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+parameters: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: '10'
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 5
+retrySuppressFailure: false
+runAsSudo: false
+runCount: 3
+runTime: 60
+runtimeDir: null
+script: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: 5568313d696041b789d0a4f54353bd7d
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUnix
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: PDATE
+  options: []
+  sysId: 3eb05c313cb34647abbe61e2ea809c38
+  value: '20241011'
+version: 7
+virtualResources: []
+waitForOutput: true

@@ -1,0 +1,213 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Ansible
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 9
+avgRunTimeDisplay: 9 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Useproxy
+  name: useproxy
+  value: '0'
+choiceField2:
+  label: Proxy Type
+  name: proxy_type
+  value: http
+choiceField3:
+  label: Action
+  name: action
+  value: upload-file
+choiceField4:
+  label: Operation
+  name: operation
+  value: copy
+choiceField5:
+  label: Download Write Options
+  name: writeoptions_download
+  value: 'False'
+choiceField6:
+  label: Upload Write Options
+  name: writeoptions_upload
+  value: Timestamp
+choiceField7:
+  label: Loglevel
+  name: loglevel
+  value: INFO
+choiceField8:
+  label: Intervall
+  name: interval
+  value: '60'
+choiceField9:
+  label: Connection Type
+  name: connection_type
+  value: access_key
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Proxycred
+  name: proxycred
+  value: null
+credentialField2:
+  label: Azure Account
+  name: azure_account
+  value: Azure-SE-STORAGE-ACCOUNT
+credentialField3:
+  label: SAS token
+  name: sas_token
+  value: null
+credentials: Ansible-ravi
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-05-31 10:55:45 +0200
+holdResources: false
+lastRun: 2025-01-07 10:26:14 +0100
+lastRunTime: 13
+lastRunTimeDisplay: 13 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 17
+maxRunTimeDisplay: 17 Seconds
+minRunTime: 1
+minRunTimeDisplay: 1 Seconds
+name: Upload-SAP-FICO-AZ-Container
+notes: []
+opswiseGroups:
+- DUC
+- SBOL 2023
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 186
+runTime: 1759
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: 91b8f6e4b91949edbaf196621b0297c8
+template: Azure-Blob-Storage
+textField1:
+  label: Proxy
+  name: proxy
+  value: null
+textField2:
+  label: Port
+  name: port
+  value: null
+textField3:
+  label: Container
+  name: object_store
+  value: azureupload
+textField4:
+  label: Blob
+  name: object
+  value: null
+textField5:
+  label: Prefix
+  name: prefix
+  value: null
+textField6:
+  label: Sourcefile
+  name: sourcefile
+  value: /home/ravi/sap_extracts/T*
+textField8:
+  label: Target Container
+  name: target_object_store
+  value: null
+textField9:
+  label: Target Directory
+  name: targetdir
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 6
+virtualResources: []
+waitForOutput: false

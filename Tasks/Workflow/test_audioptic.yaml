@@ -1,0 +1,256 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 66
+avgRunTimeDisplay: 1 Minute 6 Seconds
+calculateCp: false
+calendar: null
+cpDuration: null
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_workflow
+firstRun: 2024-10-02 16:36:53 +0200
+holdResources: false
+instanceWait: -- None --
+lastRun: 2024-10-02 16:36:53 +0200
+lastRunTime: 66
+lastRunTimeDisplay: 1 Minute 6 Seconds
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 66
+maxRunTimeDisplay: 1 Minute 6 Seconds
+minRunTime: 66
+minRunTimeDisplay: 1 Minute 6 Seconds
+name: test_audioptic
+notes: []
+numberOfTasks: 6
+opswiseGroups:
+- App1
+overrideCalendar: false
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 1
+runCriteria:
+- businessDay: false
+  complex: false
+  complexAdjective: Every
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Day
+  complexNouns:
+  - value: Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Year
+  complexQualifiers:
+  - value: Year
+  customDay: false
+  customDayChoice: null
+  description: null
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: true
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: false
+  specificDayWed: true
+  sysId: 02cf52b67054402c9931435c40499282
+  task: Demo-SAP-DISPLAY-1
+  type: Skip Criteria
+  variable: false
+  variableName: null
+  variableOp: '='
+  variableValue: null
+  vertexId: Any
+runTime: 66
+simulation: true
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason: null
+stepActions: []
+stepConditions: []
+summary: null
+sysId: 4cdc7ddd29c947bbae939487ad5585fa
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskWorkflow
+userEstimatedDuration: null
+variables: []
+version: 11
+virtualResources: []
+workflowEdges:
+- condition:
+    value: Success
+  sourceId:
+    taskName: AAAA03
+    value: '2'
+  straightEdge: false
+  targetId:
+    taskName: Demo-SAP-DISPLAY-1
+    value: '3'
+- condition:
+    value: Success
+  sourceId:
+    taskName: Demo-SAP-DISPLAY-1
+    value: '3'
+  straightEdge: false
+  targetId:
+    taskName: agcredit_Task2
+    value: '4'
+- condition:
+    type: Exit Code
+    value: '10'
+  sourceId:
+    taskName: Demo-SAP-DISPLAY-1
+    value: '3'
+  straightEdge: false
+  targetId:
+    taskName: aDD_mAINFRAME
+    value: '13'
+- condition:
+    value: Success
+  sourceId:
+    taskName: Sleep 10
+    value: '15'
+  straightEdge: false
+  targetId:
+    taskName: AAAA03
+    value: '2'
+- condition:
+    value: Success
+  sourceId:
+    taskName: agcredit_Task2
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: lnx_test_audioptic_${MU}-${PDATE}
+    value: '20'
+- condition:
+    value: Success
+  sourceId:
+    taskName: aDD_mAINFRAME
+    value: '13'
+  straightEdge: false
+  targetId:
+    taskName: lnx_test_audioptic_${MU}-${PDATE}
+    value: '20'
+- condition:
+    value: Failure
+  points:
+  - x: '450'
+    y: '390'
+  sourceId:
+    taskName: AAAA03
+    value: '2'
+  straightEdge: false
+  targetId:
+    taskName: lnx_test_audioptic_${MU}-${PDATE}
+    value: '20'
+workflowVertices:
+- alias: null
+  conditionExpression: null
+  task:
+    value: AAAA03
+  vertexId: '2'
+  vertexX: '143'
+  vertexY: '103.5'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Demo-SAP-DISPLAY-1
+  vertexId: '3'
+  vertexX: '290.5'
+  vertexY: '103.5'
+- alias: null
+  conditionExpression: null
+  task:
+    value: agcredit_Task2
+  vertexId: '4'
+  vertexX: '452.5'
+  vertexY: '25'
+- alias: null
+  conditionExpression: null
+  task:
+    value: aDD_mAINFRAME
+  vertexId: '13'
+  vertexX: '461.5'
+  vertexY: '182'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Sleep 10
+  vertexId: '15'
+  vertexX: '30'
+  vertexY: '103.5'
+- alias: null
+  conditionExpression: null
+  task:
+    value: lnx_test_audioptic_${MU}-${PDATE}
+  vertexId: '20'
+  vertexX: '603.5'
+  vertexY: '25'

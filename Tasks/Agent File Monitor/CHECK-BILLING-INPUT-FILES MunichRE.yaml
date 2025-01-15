@@ -1,0 +1,151 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations:
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: null
+    execCommand: Force Finish/Cancel
+    execCriteria: Newest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: CHECK-BILLING-INPUT-FILES MunichRE
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: true
+    operation: Run Task Instance Command
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Running
+    sysId: d732156ae1eb4e68b15fe85a5578efa3
+    task: null
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables: []
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+agent: Hoffenheim
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+broadcastCluster: null
+broadcastClusterVar: null
+byPercentage: null
+byScale: 1024
+bySize: null
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: Hoffenheim RKM
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_file_monitor
+fileGroup: null
+fileName: C:\Users\ravi\Desktop\demo_bill_data\INP_Bill_Data3.dat
+fileOwner: null
+firstRun: ''
+fmtype: Changed
+holdResources: false
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:30
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 07:00
+lsType: Time
+maxFiles: null
+minFileScale: KB
+minFileSize: null
+name: CHECK-BILLING-INPUT-FILES MunichRE
+notes: []
+opswiseGroups:
+- App1
+- DUC
+overrideInstanceWait: 'No'
+recursive: false
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 0
+runTime: 0
+scanForward: false
+scanText: null
+simulation: false
+stableSeconds: null
+startHeld: false
+startHeldReason: null
+summary: Check for billing input files in the Amsterdam Machine
+sysId: 68620c337f094b5eb42cf0547f3cbdd5
+timeZonePref: -- System Default --
+toScale: 1024
+toSize: null
+triggerOnCreate: false
+triggerOnExist: false
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskFileMonitor
+useRegex: false
+userEstimatedDuration: null
+variables: []
+version: 8
+virtualResources: []

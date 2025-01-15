@@ -1,0 +1,129 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Hof(Windows & DB connect)
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 0
+avgRunTimeDisplay: 0 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+command: null
+commandOrScript: Script
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Failure Exitcode Range
+exitCodeText: null
+exitCodes: 199-200
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_windows
+firstRun: 2023-10-05 15:47:45 +0200
+holdResources: false
+lastRun: 2024-07-19 09:00:07 +0200
+lastRunTime: 0
+lastRunTimeDisplay: 0 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:30
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 1
+maxRunTimeDisplay: 1 Seconds
+minRunTime: 0
+minRunTimeDisplay: 0 Seconds
+name: TEST-WINDOWS-JOB-SNAPPI
+notes: []
+opswiseGroups:
+- App3
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+parameters: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: 199-200
+retryIndefinitely: false
+retryInterval: 600
+retryMaximum: 4
+retrySuppressFailure: false
+runCount: 327
+runTime: 1
+runtimeDir: null
+script: scr_demo_win_script.bat
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Demo Job
+sysId: c56320c986ab4b9384607062246aedad
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskWindows
+userEstimatedDuration: null
+variables: []
+version: 5
+virtualResources: []
+waitForOutput: false

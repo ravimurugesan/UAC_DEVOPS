@@ -1,0 +1,49 @@
+bundleAgentClusters: []
+bundleApplications: []
+bundleBusinessServices: []
+bundleCalendars: []
+bundleCredentials: []
+bundleCustomDays: []
+bundleDatabaseConnections: []
+bundleEmailConnections: []
+bundleEmailTemplates: []
+bundleOAuthClients: []
+bundlePeoplesoftConnections: []
+bundleReports: []
+bundleSapConnections: []
+bundleScripts: []
+bundleSnmpManagers: []
+bundleTasks:
+- addedBy: ravi
+  description: MSSQL Trigger DB
+  name: APP3-${ENV}-MSSQL-SSIS-1
+  sysId: 8909a081838d4a2e9c608ae0fcc83de9
+  type: Universal
+- addedBy: ravi
+  name: APP3-${ENV}-MSSQL-SEL_QUERY-2
+  sysId: c8d30dddc5f144fcbfae4dfbec1326f2
+  type: SQL
+- addedBy: ravi
+  description: MSSSQL Select Query
+  name: APP3-${ENV}-MSSQL-SEL-QUERY
+  sysId: 7508419f95014bfabd51a27c44f2f66c
+  type: Universal
+bundleTriggers: []
+bundleUniversalEventTemplates: []
+bundleUniversalTemplates: []
+bundleVariables: []
+bundleVirtualResources: []
+defaultPromotionTarget: null
+description: test
+excludeOnExistence: null
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_bundle
+followReferences: false
+name: R701
+opswiseGroups: []
+promoteBundleDefinition: false
+promoteByBusinessServices:
+- App1
+retainSysIds: true
+sysId: 034903c1c54f4c26824a179fc6f89046
+visibleTo: ravi

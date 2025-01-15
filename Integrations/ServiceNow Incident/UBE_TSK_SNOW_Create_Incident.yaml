@@ -1,0 +1,258 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions:
+  - description: test
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Success
+    sysId: 04d8edebb8d4445c98c4541db0f6c6bb
+    variableDescription: test
+    variableName: incident_number
+    variableScope: Top Level Parent
+    variableValue: ${_outputJsonPath('EXTENSION', '$.result.ticket_number')}
+  snmpNotifications: []
+  systemOperations:
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: null
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Success
+    sysId: 5916c2abd9c942d8a25fe6333040d2e0
+    task: UBE_TSK_SNOW_Update_Incident_Number_${id}
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: incident_number
+      value: ${_outputJsonPath('EXTENSION', '$.result.ticket_number')}
+    - name: id
+      value: ${sib_failed_task_id}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+agent: Ansible
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 9
+avgRunTimeDisplay: 9 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Action
+  name: action
+  value: Create Incident
+choiceField10:
+  label: Output Type
+  name: output_type
+  value: All
+choiceField2:
+  label: Caller
+  name: caller
+  value: null
+choiceField3:
+  label: Category
+  name: category
+  value: Software
+choiceField4:
+  label: Subcategory
+  name: subcategory
+  value: Operating System
+choiceField5:
+  label: Impact
+  name: impact
+  value: 2 - Medium
+choiceField6:
+  label: Urgency
+  name: urgency
+  value: 1 - High
+choiceField7:
+  label: Assigned To
+  name: assigned_to
+  value: Adela Cervantsz
+choiceField8:
+  label: Assignment Group
+  name: assignment_group
+  value: ADIA_APP1_Support_team
+choiceField9:
+  label: Attach Output Source
+  name: attach_output_source
+  value: -- None --
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: ServiceNow Credentials
+  name: servicenow_credentials
+  value: ServiceNow-dev227936
+credentialField2:
+  label: UC Credentials
+  name: uc_credentials
+  value: null
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-07-05 14:50:53 +0200
+holdResources: false
+intField1:
+  label: Number of lines
+  name: number_of_lines
+  value: 100
+largeTextField1:
+  label: Description
+  name: description
+  value: Demo Incident
+lastRun: 2023-07-11 12:42:51 +0200
+lastRunTime: 16
+lastRunTimeDisplay: 16 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Info
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 16
+maxRunTimeDisplay: 16 Seconds
+minRunTime: 2
+minRunTimeDisplay: 2 Seconds
+name: UBE_TSK_SNOW_Create_Incident
+notes: []
+opswiseGroups:
+- App1
+- App2
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: true
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 18
+runTime: 164
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Create a new SNOW Incident
+sysId: a33b0a651a7149a9b43ce56a30d25716
+template: ServiceNow Incident
+textField1:
+  label: ServiceNow Instance URL
+  name: servicenow_instance_url
+  value: https://dev227936.service-now.com/
+textField2:
+  label: Short Description
+  name: short_description
+  value: 'Stonebranch Job Failed : ${sib_failed_task_name}'
+textField4:
+  label: Task Instance ID
+  name: task_instance_id
+  value: null
+textField5:
+  label: UC URL
+  name: uc_url
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 23
+virtualResources: []
+waitForOutput: true

@@ -1,0 +1,10 @@
+description: SAP FICO User
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_variable
+name: SAP_FICO_USER_2
+opswiseGroups:
+- App1
+retainSysIds: true
+sysId: 8ae31761882e4c1ea64c1089b683dd7e
+value: RAVI
+version: 1

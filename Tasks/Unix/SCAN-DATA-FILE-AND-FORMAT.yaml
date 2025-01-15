@@ -1,0 +1,481 @@
+actions:
+  abortActions: []
+  emailNotifications:
+  - attachFile: false
+    attachStdError: true
+    attachStdOut: true
+    bcc: null
+    body: null
+    cc: null
+    description: null
+    emailConnection: email
+    emailTemplate: UAC - Alert Template for Task Actions
+    emailTemplateVar: null
+    exitCodes: null
+    fileName: ''
+    fileNumLines: 100
+    fileScanText: ''
+    fileStartLine: 1
+    listReportFormat: PDF
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    replyTo: null
+    report: null
+    reportVar: null
+    status: Failed
+    stderrNumLines: 100
+    stderrScanText: ''
+    stderrStartLine: 1
+    stdoutNumLines: 100
+    stdoutScanText: ''
+    stdoutStartLine: 1
+    subject: null
+    sysId: d67df16fc55a415590b567dffc4e71a3
+    to: ${email}
+  setVariableActions:
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Failed
+    sysId: 1e90807e23b24193af47d15134c32b3e
+    variableName: jsd_parent_task_status
+    variableScope: Global
+    variableValue: ${ops_status}
+  - description: store output of the job
+    exitCodes: null
+    notificationOption: Operation Success/Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Failed
+    sysId: 22b5628880834353ba5dff21ea6775e1
+    variableDescription: store output of the job
+    variableName: failed_task_output
+    variableScope: Top Level Parent
+    variableValue: ${_outputLines('STDOUT', 1, 100, '',' ')}
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Failed
+    sysId: a411e7d458c54917b501562a5ddf562a
+    variableName: workflow_name_wisag
+    variableScope: Global
+    variableValue: ${ops_workflow_name}
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Failed
+    sysId: a93d768ad03a4227a7e4ceb77700541b
+    variableName: failed_task_name
+    variableScope: Global
+    variableValue: ${ops_task_name}
+  snmpNotifications: []
+  systemOperations:
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: pagerduty
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: 020e32b7c8714b66bf20758ef17bb9ff
+    task: PD-Create-INC-Dataops
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: task_name
+      value: ${ops_task_name}
+    - name: task_id
+      value: ${ops_task_id}
+    - name: job_logs
+      value: ${_outputLines('STDOUT',-1,10,'',' ')}
+    - name: task_instance_url
+      value: 'Please use the following link to view the task (requires login):
+
+        ${UAC_Controller_URL}?action=open&type=exec&id=${ops_task_id}'
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: Create Ticket in SNOW
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: 0fa1894e55264fc79a372ac2ac22581a
+    task: Create SNOW Incident DEMO-dev227936 with Attachement
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: sib_failed_task_name
+      value: ${ops_task_name}
+    - name: sib_task_output
+      value: ${failed_task_output}
+    - name: task_id
+      value: ${ops_task_id}
+    - name: workflow_name
+      value: ${ops_workflow_name}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: Slack Failure Notification
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: 2478256c09ab429b95d421cdce377522
+    task: FAIL-NOTIF-SLACK
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: task_name
+      value: ${ops_task_name}
+    - name: task_status
+      value: ${ops_status}
+    - name: exec_user
+      value: ${ops_execution_user}
+    - name: job_type
+      value: ${ops_task_type}
+    - name: invoked_by
+      value: ${ops_workflow_name}
+    - name: desc
+      value: ${ops_description}
+    - name: msg
+      value: ${_outputLines('STDOUT', 1, 100, '',' ')}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: Telegram Notification
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: 2830667365a64676b2711d6bee609471
+    task: Telegram.Notification_${ops_workflow_name}
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: task_name
+      value: ${ops_task_name}
+    - name: task_type
+      value: ${ops_task_type}
+    - name: task_status
+      value: ${ops_status}
+    - name: invoked_by
+      value: ${ops_workflow_name}
+    - name: execution_user
+      value: ${ops_execution_user}
+    - name: output_text
+      value: ${_outputLines('STDOUT', -1, 2)}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: telegram
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: 8b14bc1894b64854b105dd92200a2a9c
+    task: Telegram_Check - WLA DAY
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables: []
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: Teams Failure Notification
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: 94a9bee93b274e77ba7b707f887dd674
+    task: Fail-Notif-Teams
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: task_name
+      value: ${ops_task_name}
+    - name: task_status
+      value: ${ops_status}
+    - name: exec_user
+      value: ${ops_execution_user}
+    - name: job_type
+      value: ${ops_task_type}
+    - name: failed_task_output
+      value: ${_outputLines('STDOUT', -1, 10, '',' ')}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+agent: Kubernetes
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 0
+avgRunTimeDisplay: 0 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+command: null
+commandOrScript: Script
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_unix
+firstRun: 2023-05-30 17:07:57 +0200
+holdResources: false
+lastRun: 2024-03-22 12:06:49 +0100
+lastRunTime: 0
+lastRunTimeDisplay: 0 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 0
+maxRunTimeDisplay: 0 Seconds
+minRunTime: 0
+minRunTimeDisplay: 0 Seconds
+name: SCAN-DATA-FILE-AND-FORMAT
+notes: []
+opswiseGroups:
+- DEMO-SAP-WORKFLOW
+- DUC
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+parameters: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runAsSudo: false
+runCount: 56
+runTime: 0
+runtimeDir: null
+script: scr_Scan-Data-File
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: setup to fail - showcase  the service now ticket creation on failure -- Also
+  Slack Notification https://app.slack.com/client/TPHH570SV/CPS6TUZGE
+sysId: 64ac783ccebe4b259b8555f657ca2ed3
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUnix
+userEstimatedDuration: null
+variables: []
+version: 36
+virtualResources: []
+waitForOutput: true

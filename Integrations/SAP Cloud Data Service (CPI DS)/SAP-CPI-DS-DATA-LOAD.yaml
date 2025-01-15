@@ -1,0 +1,225 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Kubernetes
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 37
+avgRunTimeDisplay: 37 Seconds
+booleanField1:
+  label: Global Variables
+  name: global_variables
+  value: false
+booleanField2:
+  label: Base64 Encode
+  name: base64_encode
+  value: false
+booleanField3:
+  label: Trace Log
+  name: trace_log
+  value: true
+booleanField4:
+  label: Monitor Log
+  name: monitor_log
+  value: true
+booleanField5:
+  label: Error log
+  name: error_log
+  value: true
+booleanField6:
+  label: isProduction
+  name: is_production
+  value: false
+booleanField7:
+  label: Active Only Agent
+  name: active_only_agent
+  value: true
+booleanField8:
+  label: Fetch Task Log
+  name: fetch_log
+  value: true
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Select SAP CPI DS Functionality
+  name: sap_cpi_ds_function
+  value: run_task
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: SAP CPI DS Credentials
+  name: cpi_ds_credentials
+  value: SAP_CPI_DS
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-05-23 23:32:09 +0200
+holdResources: false
+intField2:
+  label: Trace Page Number
+  name: trace_log_page_number
+  value: 1
+intField3:
+  label: Monitor Log Page Numvber
+  name: monitor_log_page_number
+  value: 1
+intField4:
+  label: Error Log Page Num
+  name: error_log_page_number
+  value: 1
+largeTextField1:
+  label: Provide Global Variables
+  name: global_variables_value
+  value: null
+lastRun: 2025-01-15 17:02:56 +0100
+lastRunTime: 38
+lastRunTimeDisplay: 38 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 67
+maxRunTimeDisplay: 1 Minute 7 Seconds
+minRunTime: 34
+minRunTimeDisplay: 34 Seconds
+name: SAP-CPI-DS-DATA-LOAD
+notes: []
+opswiseGroups:
+- Dataops-Demo Tasks
+- DUC
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 363
+runTime: 13341
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Run CPI DS Job-1
+sysId: 77059662559c4213808818fdf5e67aee
+template: SAP Cloud Data Service (CPI DS)
+textField1:
+  label: SAP Cloud Data Services URL
+  name: ds_url
+  value: https://hcids2.us4.hana.ondemand.com/DSoD/webservices
+textField2:
+  label: Task Name
+  name: task_name
+  value: DEMO_SB_JOB_1
+textField3:
+  label: Description of the task
+  name: description
+  value: DEMO_SB_JOB_1
+textField4:
+  label: Agent Name
+  name: agent_name
+  value: sbhoffenheim
+textField5:
+  label: Agent Group
+  name: agent_group_name
+  value: null
+textField6:
+  label: Profile Name
+  name: profile_name
+  value: null
+textField7:
+  label: SAP Cloud Integration for data services org
+  name: org_name
+  value: DSUS4458
+textField8:
+  label: Start from date & Time
+  name: start_date
+  value: null
+textField9:
+  label: Task Run ID
+  name: task_runid
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 4
+virtualResources: []
+waitForOutput: false

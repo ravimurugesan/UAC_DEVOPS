@@ -1,0 +1,87 @@
+bcc: null
+body: 'The purpose of this message is to inform you that a task instance has a status
+  which may indicate that it requires attention.
+
+
+  =============================================================================================================================
+
+
+  Current Server Time  : ${_date(''yyyy-MM-dd HH:mm:ss'')} Time-Zone: ${_date(''z'')}
+
+
+  Task Instance Name   : ${ops_task_name}
+
+  Task Type            : ${ops_task_type}
+
+  Task Instance Status : ${ops_status}${_ifEqual(''${ops_status_description}'', '''',
+  '''', ''\nStatus Description   : ${ops_status_description}'')}${_ifEqual(''${ops_status}'',
+  ''SUCCESS'', ''\nExit Code            : ${ops_exit_code}'', '''')}${_ifEqual(''${ops_status}'',
+  ''FAILED'', ''\nExit Code            : ${ops_exit_code}'','''')}
+
+
+  Use the following link to view the task instance:
+
+  ${uac_url}?action=open&type=exec&id=${ops_task_id}
+
+
+  =============================================================================================================================
+
+
+  Additional Information :
+
+
+  Task Launched at                    : ${ops_launch_time}
+
+  Task Started at                     : ${_ifEqual(''${__resolve(''ops_start_time'',
+  '''')}'', '''', ''Task has not Started'', ''${ops_start_time}\nTask Ended at                       :
+  ${__ifEqual(''${___resolve(''ops_end_time'', '''')}'', '''', ''Task has not ended'',
+  ''${ops_end_time}'')}'')}
+
+
+  Parent Workflow Instance            : ${_ifEqual(''${ops_workflow_name}'','''',''This
+  Task Instance is not in a Workflow'',''${ops_workflow_name}\nLink to Parent Workflow
+  Instance    : ${uac_url}?action=open&type=exec&id=${ops_workflow_id}'')}${_ifEqual(''${ops_top_level_workflow_name}'',''${ops_workflow_name}'','''',''\nTop-level
+  parent Workflow           : ${ops_top_level_workflow_name}\nLink to Top level Workflow
+  Instance : ${uac_url}?action=open&type=exec&id=${ops_top_level_workflow_id}'')}
+
+
+  Controller URL                      : ${uac_url}
+
+
+  =============================================================================================================================
+
+
+  Here is the Standard Output (if available):
+
+  ${_output(''STDOUT'')}
+
+
+  =============================================================================================================================
+
+
+  Here is the Standard Error (if available):
+
+  ${_output(''STDERR'')}
+
+
+  =============================================================================================================================
+
+
+  All of the known variables=values available for this Task Instance:
+
+  ${_scope}'
+cc: null
+connection: UAC - Outgoing Email *WORKING*
+description: Template to send alerts from an Action of a Task
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_email_template
+opswiseGroups:
+- App1
+replyTo: null
+retainSysIds: true
+subject: 'UAC ALERT: Environment: "${ops_system_identifier}" Task Instance: "${ops_task_name}"
+  Status: ${ops_status} Time : ${_date(''yyyy-MM-dd HH:mm:ss'')}'
+sysId: dc9c726d6f784aea922944aef18afd70
+templateName: UAC - Alert Template for Task Actions
+to: ${_executionUserEmail()}
+version: 20

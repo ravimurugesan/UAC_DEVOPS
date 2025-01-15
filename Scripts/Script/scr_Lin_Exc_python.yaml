@@ -1,0 +1,16 @@
+content: "#!/opt/universal/python/bin/python\nimport time\nimport sys\n\nprint(\"\
+  Started\")\nprocess_percentage=0\nfor i in range(20):\n    print(\"Process percentage\
+  \ ==>\",str(process_percentage))\n    process_percentage=process_percentage+5\n\
+  \    sys.stdout.flush()\n    time.sleep(1)\nprint(\"completed Processing\")"
+description: Python Linux script
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups:
+- App1
+resolveVariables: true
+retainSysIds: true
+scriptName: scr_Lin_Exc_python
+scriptType: Script
+sysId: e1b3643cfc854f628cbd76fc5b571f26
+version: 3

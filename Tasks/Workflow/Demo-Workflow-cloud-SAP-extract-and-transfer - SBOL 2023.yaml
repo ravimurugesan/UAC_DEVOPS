@@ -1,0 +1,240 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 139
+avgRunTimeDisplay: 2 Minutes 19 Seconds
+calculateCp: false
+calendar: null
+cpDuration: null
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_workflow
+firstRun: 2023-11-02 10:52:45 +0100
+holdResources: false
+instanceWait: -- None --
+lastRun: 2023-11-02 15:42:53 +0100
+lastRunTime: 247
+lastRunTimeDisplay: 4 Minutes 7 Seconds
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 247
+maxRunTimeDisplay: 4 Minutes 7 Seconds
+minRunTime: 54
+minRunTimeDisplay: 54 Seconds
+name: Demo-Workflow-cloud-SAP-extract-and-transfer - SBOL 2023
+notes:
+- sysId: 4103510031da4c4d95587c8cf2d601a0
+  text: Workflow incorporated to Upload SAP data extracts to cloud
+  title: Version 22
+- sysId: 5ceae21dc6684e098ae49cb033d6c64c
+  text: Initial Version
+  title: 'version 1 '
+numberOfTasks: 7
+opswiseGroups:
+- App1
+- SBOL 2023
+overrideCalendar: false
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 4
+runCriteria: []
+runTime: 557
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason: null
+stepActions: []
+stepConditions: []
+summary: Demo Workflow for SAP involving sharepoint and FileTransfers and approvals
+sysId: 77d4b1e542b148dbb729b16d7c2236bd
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskWorkflow
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: email
+  options: []
+  sysId: 4be19f7a68254c66842d383e51082a45
+  value: ravi.murugesan@stonebranch.com
+version: 11
+virtualResources: []
+workflowEdges:
+- condition:
+    value: Success
+  sourceId:
+    taskName: SAP-FICO-T001-EXTRACT
+    value: '2'
+  straightEdge: false
+  targetId:
+    taskAlias: TRANSFER-SAP-EXTRACTS-TO-REPO-WITH-UDM
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+- condition:
+    value: Success
+  sourceId:
+    taskName: SAP-FICO-T003-EXTRACT
+    value: '3'
+  straightEdge: false
+  targetId:
+    taskAlias: TRANSFER-SAP-EXTRACTS-TO-REPO-WITH-UDM
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+- condition:
+    value: Success
+  points:
+  - x: '320'
+    y: '-120'
+  sourceId:
+    taskAlias: TRANSFER-SAP-EXTRACTS-TO-REPO-WITH-UDM
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: SFTP-FILE-DOWNLOAD-TO-WIN
+    value: '46'
+- condition:
+    value: Success
+  sourceId:
+    taskAlias: TRANSFER-SAP-EXTRACTS-TO-REPO-WITH-UDM
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: Upload-data-to-AWS-S3
+    value: '48'
+- condition:
+    value: Success
+  points:
+  - x: '510'
+    y: ''
+  sourceId:
+    taskAlias: TRANSFER-SAP-EXTRACTS-TO-REPO-WITH-UDM
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: Upload-data-to-Azure-Storage
+    value: '49'
+- condition:
+    value: Success
+  points:
+  - x: '320'
+    y: '190'
+  sourceId:
+    taskAlias: TRANSFER-SAP-EXTRACTS-TO-REPO-WITH-UDM
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: Upload-data-to-sharepoint
+    value: '50'
+workflowVertices:
+- alias: null
+  conditionExpression: null
+  task:
+    value: SAP-FICO-T001-EXTRACT
+  vertexId: '2'
+  vertexX: '-34.5'
+  vertexY: '-120'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SAP-FICO-T003-EXTRACT
+  vertexId: '3'
+  vertexX: '-39.5'
+  vertexY: '32'
+- alias: TRANSFER-SAP-EXTRACTS-TO-REPO-WITH-UDM
+  conditionExpression: null
+  task:
+    value: TRANSFER-SAP-EXTRACTS-TO-REPO
+  vertexId: '4'
+  vertexX: '280.5'
+  vertexY: '-50'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SFTP-FILE-DOWNLOAD-TO-WIN
+  vertexId: '46'
+  vertexX: '680'
+  vertexY: '-260'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Upload-data-to-AWS-S3
+  vertexId: '48'
+  vertexX: '680'
+  vertexY: '-130'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Upload-data-to-Azure-Storage
+  vertexId: '49'
+  vertexX: '680'
+  vertexY: '70'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Upload-data-to-sharepoint
+  vertexId: '50'
+  vertexX: '690'
+  vertexY: '250'

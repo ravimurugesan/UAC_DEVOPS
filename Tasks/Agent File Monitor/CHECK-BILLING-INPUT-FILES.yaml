@@ -1,0 +1,123 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Hoffenheim
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 10285
+avgRunTimeDisplay: 2 Hours 51 Minutes 25 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+byPercentage: null
+byScale: 1024
+bySize: null
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: Hoffenheim RKM
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_file_monitor
+fileGroup: null
+fileName: C:\Users\ravi\Desktop\demo_bill_data\INP_Bill_Data3.dat
+fileOwner: null
+firstRun: 2023-05-24 00:00:15 +0200
+fmtype: Changed
+holdResources: false
+lastRun: 2025-01-07 10:27:19 +0100
+lastRunTime: 109
+lastRunTimeDisplay: 1 Minute 49 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 08:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: true
+lsNthAmount: 5
+lsTime: 07:00
+lsType: Time
+maxFiles: null
+maxRunTime: 966931
+maxRunTimeDisplay: 11 Days 4 Hours 35 Minutes 31 Seconds
+minFileScale: KB
+minFileSize: null
+minRunTime: 10
+minRunTimeDisplay: 10 Seconds
+name: CHECK-BILLING-INPUT-FILES
+notes: []
+opswiseGroups:
+- App1
+- DUC
+overrideInstanceWait: 'No'
+recursive: false
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 197
+runTime: 2026217
+scanForward: false
+scanText: null
+simulation: false
+stableSeconds: null
+startHeld: false
+startHeldReason: null
+summary: Check for billing input files in the Amsterdam Machine
+sysId: 67dd901c0e364874909c014a76b99895
+timeZonePref: -- System Default --
+toScale: 1024
+toSize: null
+triggerOnCreate: false
+triggerOnExist: false
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskFileMonitor
+useRegex: false
+userEstimatedDuration: null
+variables: []
+version: 8
+virtualResources: []

@@ -1,0 +1,402 @@
+actions:
+  abortActions: []
+  emailNotifications:
+  - bcc: null
+    body: null
+    cc: null
+    description: null
+    emailConnection: null
+    emailTemplate: UAC - Alert Template for Task Actions
+    emailTemplateVar: null
+    exitCodes: null
+    inheritance: Children
+    listReportFormat: PDF
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    replyTo: null
+    report: null
+    reportVar: null
+    status: Failed
+    subject: null
+    sysId: 2d451ba6439048aea0accc01755a197f
+    to: null
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 1683586
+avgRunTimeDisplay: 19 Days 11 Hours 39 Minutes 46 Seconds
+calculateCp: false
+calendar: null
+cpDuration: null
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:05:00
+efEnabled: true
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Duration
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_workflow
+firstRun: 2024-07-03 23:12:16 +0200
+holdResources: false
+instanceWait: -- None --
+lastRun: 2024-09-25 16:43:55 +0200
+lastRunTime: 5006223
+lastRunTimeDisplay: 57 Days 22 Hours 37 Minutes 3 Seconds
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: '14:00'
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: true
+lsNthAmount: 5
+lsTime: '12:00'
+lsType: Time
+maxRunTime: 5006223
+maxRunTimeDisplay: 57 Days 22 Hours 37 Minutes 3 Seconds
+minRunTime: 573
+minRunTimeDisplay: 9 Minutes 33 Seconds
+name: APP1-WORKFLOW-FLOW-PROCESS-2
+notes: []
+numberOfTasks: 6
+opswiseGroups:
+- App1
+overrideCalendar: false
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 4
+runCriteria:
+- businessDay: false
+  complex: true
+  complexAdjective: Last
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Business Day
+  complexNouns:
+  - value: Business Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Month
+  complexQualifiers:
+  - value: Month
+  customDay: false
+  customDayChoice: null
+  description: null
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: false
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: false
+  specificDayWed: false
+  sysId: 0a181a3e3b5d4bacaeb3941dd8be1962
+  task: AAAA01 ${ops_agent_name}
+  type: Run Criteria
+  variable: false
+  variableName: null
+  variableOp: '='
+  variableValue: null
+  vertexId: '2'
+- businessDay: false
+  complex: true
+  complexAdjective: 1st
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Business Day
+  complexNouns:
+  - value: Business Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Year
+  complexQualifiers:
+  - value: Year
+  customDay: false
+  customDayChoice: null
+  description: null
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: false
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: false
+  specificDayWed: false
+  sysId: 1b0eec58b2704aabbbe1579cf294fe2e
+  task: PARSE-CSV-VARIABLES-FROMSNOW
+  type: Run Criteria
+  variable: false
+  variableName: null
+  variableOp: '='
+  variableValue: null
+  vertexId: '3'
+- businessDay: false
+  complex: true
+  complexAdjective: Nth
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Day
+  complexNouns:
+  - value: Day
+  complexNthAmount: 4
+  complexQualifier:
+    value: Month
+  complexQualifiers:
+  - value: Month
+  customDay: false
+  customDayChoice: null
+  description: null
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: false
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: false
+  specificDayWed: false
+  sysId: 54289dcd804045e2831d56643abc45a7
+  task: AAAA04
+  type: Run Criteria
+  variable: false
+  variableName: null
+  variableOp: '='
+  variableValue: null
+  vertexId: '5'
+- businessDay: false
+  complex: false
+  complexAdjective: Every
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Day
+  complexNouns:
+  - value: Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Year
+  complexQualifiers:
+  - value: Year
+  customDay: false
+  customDayChoice: null
+  description: null
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: true
+  specificDayFri: true
+  specificDayMon: true
+  specificDaySat: true
+  specificDaySun: true
+  specificDayThu: true
+  specificDayTue: true
+  specificDayWed: true
+  sysId: 9e5cfbb23a0949b786000409d503f176
+  task: AAAA03
+  type: Skip Criteria
+  variable: false
+  variableName: null
+  variableOp: '='
+  variableValue: null
+  vertexId: '4'
+runTime: 6734345
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason: null
+stepActions: []
+stepConditions: []
+summary: Self-Service-Workflow - Process to Put files to Target
+sysId: c4afd0fdf0d94d479f065b6269e0d30a
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskWorkflow
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: true
+  allowUnlistedOption: false
+  description: null
+  name: Email
+  options:
+  - service_account@dl.com
+  sysId: b77eec2a82b44ea79822d7b11a267a0b
+  value: ''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: RESTART_FLAG
+  options:
+  - 'yes'
+  - 'no'
+  sysId: 731ee5a4aa464c8196752b48d7fb1b6c
+  value: ''
+version: 5
+virtualResources:
+- amount: 1
+  resource: ALL_JOBS
+  resourceVar: null
+  sysId: 74bdbd310ae74e3b83183c29acb334bc
+workflowEdges:
+- condition:
+    value: Success
+  sourceId:
+    taskName: AAAA01 ${ops_agent_name}
+    value: '2'
+  straightEdge: true
+  targetId:
+    taskName: PARSE-CSV-VARIABLES-FROMSNOW
+    value: '3'
+- condition:
+    value: Success
+  sourceId:
+    taskName: PARSE-CSV-VARIABLES-FROMSNOW
+    value: '3'
+  straightEdge: true
+  targetId:
+    taskName: AAAA03
+    value: '4'
+- condition:
+    value: Success
+  sourceId:
+    taskName: PARSE-CSV-VARIABLES-FROMSNOW
+    value: '3'
+  straightEdge: true
+  targetId:
+    taskName: AAAA04
+    value: '5'
+- condition:
+    value: Success
+  sourceId:
+    taskName: PARSE-CSV-VARIABLES-FROMSNOW
+    value: '3'
+  straightEdge: true
+  targetId:
+    taskName: SO-MERGE-DATA-FILES
+    value: '45'
+- condition:
+    value: Success
+  sourceId:
+    taskName: SO-MERGE-DATA-FILES
+    value: '45'
+  straightEdge: true
+  targetId:
+    taskName: Windows-demo-task1
+    value: '46'
+- condition:
+    value: Success
+  sourceId:
+    taskName: AAAA03
+    value: '4'
+  straightEdge: true
+  targetId:
+    taskName: Windows-demo-task1
+    value: '46'
+workflowVertices:
+- alias: null
+  conditionExpression: null
+  task:
+    value: AAAA01 ${ops_agent_name}
+  vertexId: '2'
+  vertexX: '83.5'
+  vertexY: '182'
+- alias: null
+  conditionExpression: null
+  task:
+    value: PARSE-CSV-VARIABLES-FROMSNOW
+  vertexId: '3'
+  vertexX: '330'
+  vertexY: '182'
+- alias: null
+  conditionExpression: null
+  task:
+    value: AAAA03
+  vertexId: '4'
+  vertexX: '523'
+  vertexY: '25'
+- alias: null
+  conditionExpression: null
+  task:
+    value: AAAA04
+  vertexId: '5'
+  vertexX: '523'
+  vertexY: '182'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SO-MERGE-DATA-FILES
+  vertexId: '45'
+  vertexX: '530'
+  vertexY: '340'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Windows-demo-task1
+  vertexId: '46'
+  vertexX: '780'
+  vertexY: '180'

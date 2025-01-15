@@ -1,0 +1,228 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Ansible
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+arrayField1:
+  fields:
+  - name: '"one_drive_target"."token"'
+    value: '"sharepoint_Ravi"."Token"'
+  label: Refresh Storage Credentials
+  name: refresh_storage_credentials
+  nameTitle: Configuration File Field
+  valueTitle: Storage Credential Field
+autoCleanup: false
+avgRunTime: 9
+avgRunTimeDisplay: 9 Seconds
+booleanField1:
+  label: Dry-Run
+  name: dry_run
+  value: false
+booleanField2:
+  label: Update Credentials
+  name: update_credentials
+  value: true
+booleanField3:
+  label: Error On No File Transfer
+  name: error_on_no_file_transfer
+  value: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Action
+  name: action
+  value: Copy Objects
+choiceField2:
+  label: Log Format
+  name: log_format
+  value: Text
+choiceField3:
+  label: Storage System
+  name: storage_system
+  value: null
+choiceField4:
+  label: Use Filter
+  name: use_filter
+  value: Include
+choiceField5:
+  label: Overwrite Options
+  name: overwrite_options
+  value: Overwrite
+choiceField6:
+  label: Source Storage
+  name: source_storage
+  value: linux_source
+choiceField7:
+  label: Target Storage
+  name: target_storage
+  value: one_drive_target
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Source Credentials
+  name: source_credentials
+  value: Ansible-ravi
+credentialField2:
+  label: Target Credentials
+  name: target_credentials
+  value: sharepoint_Ravi
+credentialField3:
+  label: Storage Credentials
+  name: storage_credentials
+  value: null
+credentialField4:
+  label: Controller Credentials
+  name: controller_credentials
+  value: UC-Frankfurt-CRED-RKM
+credentials: Ansible-root
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-11-02 11:22:28 +0100
+holdResources: false
+intField1:
+  label: Recursion Depth
+  name: recursion_depth
+  value: 1
+lastRun: 2023-11-02 15:42:53 +0100
+lastRunTime: 10
+lastRunTimeDisplay: 10 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 19
+maxRunTimeDisplay: 19 Seconds
+minRunTime: 4
+minRunTimeDisplay: 4 Seconds
+name: Upload-data-to-sharepoint
+notes: []
+opswiseGroups:
+- SBOL 2023
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 5
+runTime: 43
+runtimeDir: null
+scriptField1:
+  label: Configuration File
+  name: configuration_file
+  value: 'Cloud_Data_transferv1.conf '
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Sharepoint files upload
+sysId: 8acfb244dd2347ce92c5459723fb5464
+template: Cloud Data Transfer
+textField1:
+  label: Filepath
+  name: filepath
+  value: null
+textField2:
+  label: Source Filepath
+  name: source_filepath
+  value: /home/ravi/sap_extracts
+textField3:
+  label: Target Filepath
+  name: target_filepath
+  value: SAP_Files
+textField4:
+  label: Filter
+  name: filter
+  value: T00[1-3]_file.txt
+textField5:
+  label: Additional Options
+  name: additional_options
+  value: null
+textField6:
+  label: Controller URL
+  name: controller_url
+  value: https://eufrankfurt.stonebranchdev.cloud/
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 9
+virtualResources: []
+waitForOutput: false

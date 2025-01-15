@@ -1,0 +1,233 @@
+actions:
+  abortActions: []
+  emailNotifications:
+  - attachFile: false
+    attachStdError: true
+    attachStdOut: true
+    bcc: null
+    body: 'Hi ,
+
+
+      ${ops_task_type} Job : ${ops_task_name} finished late , Please check the logs
+      for more details
+
+
+      Regards,
+
+      Batch operation Team'
+    cc: null
+    description: null
+    emailConnection: email
+    emailTemplate: null
+    emailTemplateVar: null
+    exitCodes: null
+    fileName: ''
+    fileNumLines: 100
+    fileScanText: ''
+    fileStartLine: 1
+    listReportFormat: PDF
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: true
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    replyTo: null
+    report: null
+    reportVar: null
+    status: null
+    stderrNumLines: 100
+    stderrScanText: ''
+    stderrStartLine: 1
+    stdoutNumLines: 100
+    stdoutScanText: ''
+    stdoutStartLine: 1
+    subject: 'Stonebranch Notification : ${ops_task_name} Job running late'
+    sysId: eea262be37984ef2a53c8fe786584592
+    to: ravi.murugesan@stonebranch.com
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: ULM - SAP
+agentCluster: SAP-Linux-agent
+agentClusterVar: null
+agentVar: null
+broadcastCluster: null
+broadcastClusterVar: null
+chainDesc: null
+chainId: null
+commandGroup: Submit
+commandOptions: null
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: LINUX_USER_CRED_ULM
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+dataSource: null
+defFile: null
+definitionOrModel: USAP Definition File
+definitionOrModelJobVar: USAP Definition File
+dispAbapName: null
+dispSapEventId: null
+dispSapEventParm: null
+dispVariant: null
+efDayConstraint: None
+efDuration: 00:00:02:00
+efEnabled: true
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Duration
+emailNotification: null
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_sap
+firstRun: ''
+holdResources: false
+immediate: true
+infoPackage: null
+infoPackageJobName: null
+infoSource: null
+jobClass: null
+jobId: null
+jobLog: true
+jobLogChild: null
+jobName: null
+jobStatus: null
+jobSteps: []
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:05
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+lockVariables: false
+logId: null
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:10
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Duration
+maxChildDepth: null
+name: SAP-Demo-Task
+notes: []
+opswiseGroups:
+- App1
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '1000'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+pcRestart: false
+printAppLog: true
+printAppRc: true
+purge: false
+purgeChild: null
+repositoryOrFilesys: Script
+requestId: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 0
+runTime: 0
+runtimeDir: null
+sapCmProfileId: null
+sapCmProfileType: null
+sapCmXmlFile: null
+sapCommandMask: null
+sapConnection: SAP-D44-CLIENT-001
+sapConnectionVar: null
+sapCred: SAP Demo user
+sapCredVar: null
+sapDispConfirmEvents: false
+sapDispEventSelectState: New
+sapDisplayCommand: Output Devices
+sapEventId: null
+sapEventParm: null
+sapFromDate: null
+sapLang: null
+sapPrinterName: null
+sapToDate: null
+sapView: Legacy View
+script: scr_sap_script_Demo_simple
+simulation: false
+sourceSystem: null
+spoolListRecipient: null
+spoollist: true
+spoollistChild: null
+start: true
+startHeld: false
+startHeldReason: null
+stepNum: null
+summary: '# Demo Job'
+sysId: c30c1fee902948efb9f28c11d04741a8
+targetJobName: null
+targetServer: null
+targetVariantName: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskSap
+useAppRc: false
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: ABAP_NAME
+  options: []
+  sysId: f31fb91ee4e14ebea7047e5342e3885a
+  value: ABAP_DOCU_LIST
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: ABAP_VARIANT
+  options: []
+  sysId: ca7cd1fa4f5a4fd1bdde4e8ac1619e9d
+  value: LIST_FEW
+version: 4
+virtualResources: []
+wait: true
+waitChild: null
+waitForOutput: true

@@ -1,0 +1,33 @@
+calendar: System Default
+customField1:
+  label: null
+  value: null
+customField2:
+  label: null
+  value: null
+description: start workflow
+disabledTime: ''
+enabled: false
+enabledTime: ''
+enforceVariables: false
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_trigger_manual
+lockVariables: false
+name: WMROTT-Manual-Trigger
+nextScheduledTime: ''
+notes: []
+opswiseGroups:
+- App1
+rdExcludeBackup: false
+retainSysIds: true
+retentionDuration: 1
+retentionDurationPurge: false
+retentionDurationUnit: Days
+simulateTasks: false
+sysId: 26569712f2834594af06ddb04ba5e80f
+tasks:
+- WMROTT-TEST-WORKFLOW
+timeZone: null
+type: triggerManual
+variables: []
+version: 2

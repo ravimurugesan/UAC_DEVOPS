@@ -1,0 +1,164 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: EC2AMAZ-L71D4UL - AGNT0003
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+booleanField1:
+  label: Monitor Successful Delivery
+  name: monitoring
+  value: false
+booleanField2:
+  label: Multiple To Numbers
+  name: multiple_to
+  value: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Function
+  name: function
+  value: WhatsApp
+choiceField2:
+  label: Log level
+  name: log_level
+  value: INFO
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Twilio Account
+  name: account
+  value: twillio-RKM
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: ''
+holdResources: false
+largeTextField1:
+  label: Message
+  name: body
+  value: ${fail_msg}
+largeTextField2:
+  label: Specify 'To' Numbers separate by comma
+  name: multiple_to_numbers
+  value: null
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: Twillio - Whatsapp Failure Notification - EriC SDM
+notes: []
+opswiseGroups:
+- App1
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 0
+runTime: 0
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Test message to send Twillio Whatsapp message
+sysId: fde418b7abbf46159ee682ca62d2c945
+template: CS Twilio
+textField1:
+  label: From
+  name: from
+  value: '+14155238886'
+textField2:
+  label: To
+  name: to
+  value: '+919986055584'
+textField3:
+  label: To
+  name: voice_to
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 6
+virtualResources: []
+waitForOutput: false

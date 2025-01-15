@@ -1,0 +1,241 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Airflow
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 2
+avgRunTimeDisplay: 2 Seconds
+booleanField2:
+  label: Show Details
+  name: show_details
+  value: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Useproxy
+  name: useproxy
+  value: '0'
+choiceField10:
+  label: interval
+  name: interval
+  value: '10'
+choiceField11:
+  label: ACL
+  name: acl
+  value: bucket-owner-full-control
+choiceField2:
+  label: Proxy Type
+  name: proxy_type
+  value: http
+choiceField3:
+  label: Action
+  name: action
+  value: upload-file
+choiceField4:
+  label: Operation
+  name: operation
+  value: copy
+choiceField5:
+  label: Download Write Options
+  name: writeoptions_download
+  value: 'False'
+choiceField6:
+  label: Upload Write Options
+  name: writeoptions_upload
+  value: 'True'
+choiceField7:
+  label: Loglevel
+  name: loglevel
+  value: INFO
+choiceField8:
+  label: Service Name
+  name: service_name
+  value: sts
+choiceField9:
+  label: Role Based Access
+  name: rbca
+  value: 'no'
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Proxycred
+  name: proxycred
+  value: null
+credentialField3:
+  label: AWS_ACCESS_KEY_ID
+  name: aws_access_key_id
+  value: AWS_KEY_ID_D050320
+credentialField4:
+  label: AWS_SECRET_ACCESS_KEY
+  name: aws_secret_access_key
+  value: AWS_SECRET_ACCESS_KEY_D050320
+credentials: airflow-root
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-05-31 10:59:11 +0200
+holdResources: false
+lastRun: 2025-01-07 10:26:01 +0100
+lastRunTime: 1
+lastRunTimeDisplay: 1 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 11
+maxRunTimeDisplay: 11 Seconds
+minRunTime: 0
+minRunTimeDisplay: 0 Seconds
+name: Upload-SAP-FICO-EXTRACTS-TO-S3
+notes: []
+opswiseGroups:
+- DUC
+- SBOL 2023
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 177
+runTime: 328
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Upload extracts to S3 Storage
+sysId: 679f7b643aa3425d96d3d1152a5989c4
+template: AWS-S3
+textField1:
+  label: Proxy
+  name: proxy
+  value: null
+textField10:
+  label: Role ARN
+  name: rolearn
+  value: null
+textField11:
+  label: Endpoint URL
+  name: endpoint_url
+  value: null
+textField12:
+  label: Target S3Key
+  name: target_object
+  value: null
+textField2:
+  label: Port
+  name: port
+  value: null
+textField3:
+  label: Bucket
+  name: object_store
+  value: app-so-extracts
+textField4:
+  label: S3Key
+  name: object
+  value: null
+textField5:
+  label: AWS_DEFAULT_REGION
+  name: aws_default_region
+  value: us-east-2
+textField6:
+  label: Sourcefile
+  name: sourcefile
+  value: /home/ravi/sap_extracts/T*
+textField7:
+  label: Prefix
+  name: prefix
+  value: null
+textField8:
+  label: Target Bucket
+  name: target_object_store
+  value: null
+textField9:
+  label: Target Directory
+  name: targetdir
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 5
+virtualResources: []
+waitForOutput: false

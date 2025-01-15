@@ -1,0 +1,196 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: 2f0c2fb9f2544f6896d34e1a432daf32
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Action
+  name: action
+  value: Create Incident
+choiceField10:
+  label: Output Type
+  name: output_type
+  value: All
+choiceField2:
+  label: Caller
+  name: caller
+  value: null
+choiceField3:
+  label: Category
+  name: category
+  value: Software
+choiceField4:
+  label: Subcategory
+  name: subcategory
+  value: Operating System
+choiceField5:
+  label: Impact
+  name: impact
+  value: 1 - High
+choiceField6:
+  label: Urgency
+  name: urgency
+  value: 1 - High
+choiceField7:
+  label: Assigned To
+  name: assigned_to
+  value: Adela Cervantsz
+choiceField8:
+  label: Assignment Group
+  name: assignment_group
+  value: ADIA_APP1_Support_team
+choiceField9:
+  label: Attach Output Source
+  name: attach_output_source
+  value: Any Task Instance
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: ServiceNow Credentials
+  name: servicenow_credentials
+  value: ServiceNow_dev_credential
+credentialField2:
+  label: UC Credentials
+  name: uc_credentials
+  value: UC_ADIA_POC_CRED_OMAR
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: ''
+holdResources: false
+intField1:
+  label: Number of lines
+  name: number_of_lines
+  value: 100
+largeTextField1:
+  label: Description
+  name: description
+  value: null
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Info
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: APP1-${ENV}-create-Snow-incident "${ops_trigger_task_name}" - Failed
+notes: []
+opswiseGroups:
+- App1
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: null
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 0
+runTime: 0
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: af933d4a5da54454b9f57eebb2647105
+template: ServiceNow Incident
+textField1:
+  label: ServiceNow Instance URL
+  name: servicenow_instance_url
+  value: https://dev92216.service-now.com
+textField2:
+  label: Short Description
+  name: short_description
+  value: 'Stonebranch Job Failed : ${ops_trigger_task_name}'
+textField4:
+  label: Task Instance ID
+  name: task_instance_id
+  value: ${ops_trigger_task_id}
+textField5:
+  label: UC URL
+  name: uc_url
+  value: http://adia.stonebranchdev.cloud
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 1
+virtualResources: []
+waitForOutput: false

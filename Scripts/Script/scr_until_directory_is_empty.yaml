@@ -1,0 +1,15 @@
+content: "#!/bin/bash\nwhile true\ndo\npath=$(ls -A '/home/ravi/software_repo/UA70')\n\
+  if [[ ! -z \"$path\" ]]; then\n    echo \"Directory is NOT empty!\"\n    sleep 10\n\
+  else\n    echo \"Directory is empty!\"\n    exit 0\nfi\ndone"
+description: Check if the directory is empty
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups:
+- App1
+resolveVariables: true
+retainSysIds: true
+scriptName: scr_until_directory_is_empty
+scriptType: Script
+sysId: a4fc69d47677465eb9385803dcce15a4
+version: 3

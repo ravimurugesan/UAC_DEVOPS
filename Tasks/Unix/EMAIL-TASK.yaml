@@ -1,0 +1,161 @@
+actions:
+  abortActions: []
+  emailNotifications:
+  - attachFile: true
+    attachStdError: false
+    attachStdOut: false
+    bcc: null
+    body: "Hi \n\nPlease find attached the Workflow output files and Job execution\
+      \ Report\n\nRegards,\nStonebranch"
+    cc: null
+    description: null
+    emailConnection: email
+    emailTemplate: null
+    emailTemplateVar: null
+    exitCodes: null
+    fileName: /home/ravi/incoming_files/Company_file_${date_parm}.zip
+    fileNumLines: 100
+    fileScanText: ''
+    fileStartLine: 1
+    listReportFormat: PDF
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    replyTo: null
+    report: null
+    reportVar: ${ops_workflow_name}
+    status: Success
+    stderrNumLines: 100
+    stderrScanText: ''
+    stderrStartLine: 1
+    stdoutNumLines: 100
+    stdoutScanText: ''
+    stdoutStartLine: 1
+    subject: '${ops_workflow_name} : Output Files and job execution report'
+    sysId: 8d45523c240143368338b25d66ac502a
+    to: ravi.murugesan@stonebranch.com
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Airflow
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 0
+avgRunTimeDisplay: 0 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+command: mkdir "/home/ravi/incoming_files/archive/SBC_${date_parm}";mv /home/ravi/incoming_files/incoming/*  /home/ravi/incoming_files/archive/SBC_${date_parm}/
+commandOrScript: Command
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: airflow-root
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_unix
+firstRun: 2023-09-18 17:48:25 +0200
+holdResources: false
+lastRun: 2024-05-07 13:56:45 +0200
+lastRunTime: 0
+lastRunTimeDisplay: 0 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:10
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 5
+maxRunTimeDisplay: 5 Seconds
+minRunTime: 0
+minRunTimeDisplay: 0 Seconds
+name: EMAIL-TASK
+notes: []
+opswiseGroups:
+- App1
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+parameters: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runAsSudo: false
+runCount: 17
+runTime: 5
+runtimeDir: null
+script: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Demo Job for Workflow use case -Script in UAC
+sysId: da89902fbf054e068729ccf6c19e6036
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUnix
+userEstimatedDuration: null
+variables: []
+version: 10
+virtualResources: []
+waitForOutput: false

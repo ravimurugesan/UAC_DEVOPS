@@ -1,0 +1,217 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations:
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: null
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Success
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Success
+    sysId: 9f3a091fbd7b4d02bb7825fc3e02d585
+    task: FAIL-NOTIF-SLACK
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: task_name
+      value: ${ops_task_name}
+    - name: task_status
+      value: ${ops_status}
+    - name: exec_user
+      value: ${ops_execution_user}
+    - name: job_type
+      value: ${ops_task_type}
+    - name: invoked_by
+      value: ${ops_workflow_name}
+    - name: desc
+      value: ${ops_description}
+    - name: msg
+      value: ${_outputLines('STDOUT', -1, 20, '',' ')}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+agent: Kubernetes
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+authenticatePeer: false
+avgRunTime: 2
+avgRunTimeDisplay: 2 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+codepage: -- None --
+command: GET
+compress: 'NO'
+cpDuration: null
+cpDurationUnit: Minutes
+createop: REPLACE
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+encrypt: 'NO'
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_ftp
+firstRun: 2023-05-23 23:11:52 +0200
+formOrScript: Form
+format: Binary
+ftpSubcommands: null
+holdResources: false
+jobcard: null
+lastRun: 2025-01-07 10:25:59 +0100
+lastRunTime: 2
+lastRunTimeDisplay: 2 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:02
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+localFilename: C:\Users\ravi\sap_fico\T00*_file.txt
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 13
+maxRunTimeDisplay: 13 Seconds
+minRunTime: 1
+minRunTimeDisplay: 1 Seconds
+move: false
+name: TRANSFER-SAP-EXTRACTS-TO-REPO
+nft: true
+notes: []
+opswiseGroups:
+- DUC
+- SBOL 2023
+outputType: STDOUT
+overrideInstanceWait: 'No'
+primaryBroker: null
+primaryBrokerChoice: Agent
+primaryBrokerRef: Hoffenheim
+primaryCluster: null
+primaryClusterRef: null
+primaryCredVar: null
+primaryCredentials: Hoffenheim RKM
+primaryFilesys: -- None --
+primaryOpenOptions: null
+remoteCredVar: null
+remoteCredentials: null
+remoteFilename: /home/ravi/sap_extracts
+remoteServer: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 178
+runTime: 279
+runtimeDir: null
+script: null
+secondaryBroker: null
+secondaryBrokerChoice: Agent
+secondaryBrokerRef: Ansible
+secondaryCluster: null
+secondaryClusterRef: null
+secondaryCredVar: null
+secondaryCredentials: Ansible-ravi
+secondaryFilesys: -- None --
+secondaryOpenOptions: null
+serverType: UDM
+showProgress: true
+simulation: false
+startHeld: true
+startHeldReason: demo
+summary: Transfer Billing data
+sysId: 67310e30563a44e8aef7c6426893c593
+timeZonePref: -- System Default --
+transferDirection: PUT
+transferMode: Passive
+trimSpace: false
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskFtp
+udmOperation: Copy
+udmOptions: null
+useRegex: false
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: aaa
+  options: []
+  sysId: b396470c603844a5b927f7151c6cb1c0
+  value: xx
+verifyHostName: false
+version: 7
+virtualResources: []

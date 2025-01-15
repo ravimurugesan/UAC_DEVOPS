@@ -1,0 +1,94 @@
+content: "#!/bin/bash\n#\necho \"${_date}\"\n##-----NOTE: This script requires root\
+  \ privileges, otherwise one could run the script -------##\n##---- as a sudo user\
+  \ who got root privileges. ----------------------------------------------##\n##-----------\
+  \ \"sudo /bin/bash <ScriptName>\" -------------------------------------------------##\n\
+  \n#------variables used------#\nS=\"************************************\"\nD=\"\
+  -------------------------------------\"\nCOLOR=\"y\"\n\nMOUNT=$(mount|egrep -iw\
+  \ \"ext4|ext3|xfs|gfs|gfs2|btrfs\"|grep -v \"loop\"|sort -u -t' ' -k1,2)\nFS_USAGE=$(df\
+  \ -PThl -x tmpfs -x iso9660 -x devtmpfs -x squashfs|awk '!seen[$1]++'|sort -k6n|tail\
+  \ -n +2)\nIUSAGE=$(df -iPThl -x tmpfs -x iso9660 -x devtmpfs -x squashfs|awk '!seen[$1]++'|sort\
+  \ -k6n|tail -n +2)\n\nif [ $COLOR == y ]; then\n{\n GCOLOR=\"\\e[47;32m ------ OK/HEALTHY\
+  \ \\e[0m\"\n WCOLOR=\"\\e[43;31m ------ WARNING \\e[0m\"\n CCOLOR=\"\\e[47;31m ------\
+  \ CRITICAL \\e[0m\"\n}\nelse\n{\n GCOLOR=\" ------ OK/HEALTHY \"\n WCOLOR=\" ------\
+  \ WARNING \"\n CCOLOR=\" ------ CRITICAL \"\n}\nfi\n\necho -e \"$S\"\necho -e \"\
+  \\tSystem Health Status\"\necho -e \"$S\"\n\n#--------Print Operating System Details--------#\n\
+  hostname -f &> /dev/null && printf \"Hostname : $(hostname -f)\" || printf \"Hostname\
+  \ : $(hostname -s)\"\n\necho -en \"\\nOperating System : \"\n[ -f /etc/os-release\
+  \ ] && echo $(egrep -w \"NAME|VERSION\" /etc/os-release|awk -F= '{ print $2 }'|sed\
+  \ 's/\"//g') || cat /etc/system-release\n\necho -e \"Kernel Version :\" $(uname\
+  \ -r)\nprintf \"OS Architecture :\"$(arch | grep x86_64 &> /dev/null) && printf\
+  \ \" 64 Bit OS\\n\"  || printf \" 32 Bit OS\\n\"\n\n#--------Print system uptime-------#\n\
+  UPTIME=$(uptime)\necho -en \"System Uptime : \"\necho $UPTIME|grep day &> /dev/null\n\
+  if [ $? != 0 ]; then\n  echo $UPTIME|grep -w min &> /dev/null && echo -en \"$(echo\
+  \ $UPTIME|awk '{print $2\" by \"$3}'|sed -e 's/,.*//g') minutes\" \\\n || echo -en\
+  \ \"$(echo $UPTIME|awk '{print $2\" by \"$3\" \"$4}'|sed -e 's/,.*//g') hours\"\n\
+  else\n  echo -en $(echo $UPTIME|awk '{print $2\" by \"$3\" \"$4\" \"$5\" hours\"\
+  }'|sed -e 's/,//g')\nfi\necho -e \"\\nCurrent System Date & Time : \"$(date +%c)\n\
+  \n#--------Check for any read-only file systems--------#\necho -e \"\\nChecking\
+  \ For Read-only File System[s]\"\necho -e \"$D\"\necho \"$MOUNT\"|grep -w \\(ro\\\
+  ) && echo -e \"\\n.....Read Only file system[s] found\"|| echo -e \".....No read-only\
+  \ file system[s] found. \"\n\n#--------Check for currently mounted file systems--------#\n\
+  echo -e \"\\n\\nChecking For Currently Mounted File System[s]\"\necho -e \"$D$D\"\
+  \necho \"$MOUNT\"|column -t\n\n#--------Check disk usage on all mounted file systems--------#\n\
+  echo -e \"\\n\\nChecking For Disk Usage On Mounted File System[s]\"\necho -e \"\
+  $D$D\"\necho -e \"( 0-85% = OK/HEALTHY,  85-95% = WARNING,  95-100% = CRITICAL )\"\
+  \necho -e \"$D$D\"\necho -e \"Mounted File System[s] Utilization (Percentage Used):\\\
+  n\"\n\nCOL1=$(echo \"$FS_USAGE\"|awk '{print $1 \" \"$7}')\nCOL2=$(echo \"$FS_USAGE\"\
+  |awk '{print $6}'|sed -e 's/%//g')\n\nfor i in $(echo \"$COL2\"); do\n{\n  if [\
+  \ $i -ge 95 ]; then\n    COL3=\"$(echo -e $i\"% $CCOLOR\\n$COL3\")\"\n  elif [[\
+  \ $i -ge 85 && $i -lt 95 ]]; then\n    COL3=\"$(echo -e $i\"% $WCOLOR\\n$COL3\"\
+  )\"\n  else\n    COL3=\"$(echo -e $i\"% $GCOLOR\\n$COL3\")\"\n  fi\n}\ndone\nCOL3=$(echo\
+  \ \"$COL3\"|sort -k1n)\npaste  <echo \"$COL1\" <echo \"$COL3\" -d' '|column -t\n\
+  \n#--------Check for any zombie processes--------#\necho -e \"\\n\\nChecking For\
+  \ Zombie Processes\"\necho -e \"$D\"\nps -eo stat|grep -w Z 1>&2 > /dev/null\nif\
+  \ [ $? == 0 ]; then\n  echo -e \"Number of zombie process on the system are :\"\
+  \ $(ps -eo stat|grep -w Z|wc -l)\n  echo -e \"\\n  Details of each zombie processes\
+  \ found   \"\n  echo -e \"  $D\"\n  ZPROC=$(ps -eo stat,pid|grep -w Z|awk '{print\
+  \ $2}')\n  for i in $(echo \"$ZPROC\"); do\n      ps -o pid,ppid,user,stat,args\
+  \ -p $i\n  done\nelse\n echo -e \"No zombie processes found on the system.\"\nfi\n\
+  \n#--------Check Inode usage--------#\necho -e \"\\n\\nChecking For INode Usage\"\
+  \necho -e \"$D$D\"\necho -e \"( 0-85% = OK/HEALTHY,  85-95% = WARNING,  95-100%\
+  \ = CRITICAL )\"\necho -e \"$D$D\"\necho -e \"INode Utilization (Percentage Used):\\\
+  n\"\n\nCOL11=$(echo \"$IUSAGE\"|awk '{print $1\" \"$7}')\nCOL22=$(echo \"$IUSAGE\"\
+  |awk '{print $6}'|sed -e 's/%//g')\n\nfor i in $(echo \"$COL22\"); do\n{\n  if [[\
+  \ $i = *[[:digit:]]* ]]; then\n  {\n  if [ $i -ge 95 ]; then\n    COL33=\"$(echo\
+  \ -e $i\"% $CCOLOR\\n$COL33\")\"\n  elif [[ $i -ge 85 && $i -lt 95 ]]; then\n  \
+  \  COL33=\"$(echo -e $i\"% $WCOLOR\\n$COL33\")\"\n  else\n    COL33=\"$(echo -e\
+  \ $i\"% $GCOLOR\\n$COL33\")\"\n  fi\n  }\n  else\n    COL33=\"$(echo -e $i\"% (Inode\
+  \ Percentage details not available)\\n$COL33\")\"\n  fi\n}\ndone\n\nCOL33=$(echo\
+  \ \"$COL33\"|sort -k1n)\npaste  <echo \"$COL11\" <echo \"$COL33\" -d' '|column -t\n\
+  \n#--------Check for SWAP Utilization--------#\necho -e \"\\n\\nChecking SWAP Details\"\
+  \necho -e \"$D\"\necho -e \"Total Swap Memory in MiB : \"$(grep -w SwapTotal /proc/meminfo|awk\
+  \ '{print $2/1024}')\", in GiB : \"\\\n$(grep -w SwapTotal /proc/meminfo|awk '{print\
+  \ $2/1024/1024}')\necho -e \"Swap Free Memory in MiB : \"$(grep -w SwapFree /proc/meminfo|awk\
+  \ '{print $2/1024}')\", in GiB : \"\\\n$(grep -w SwapFree /proc/meminfo|awk '{print\
+  \ $2/1024/1024}')\n\n#--------Check for Processor Utilization (current data)--------#\n\
+  echo -e \"\\n\\nChecking For Processor Utilization\"\necho -e \"$D\"\necho -e \"\
+  \\nCurrent Processor Utilization Summary :\\n\"\nmpstat|tail -2\n\n#--------Check\
+  \ for load average (current data)--------#\necho -e \"\\n\\nChecking For Load Average\"\
+  \necho -e \"$D\"\necho -e \"Current Load Average : $(uptime|grep -o \"load average.*\"\
+  |awk '{print $3\" \" $4\" \" $5}')\"\n\n#------Print most recent 3 reboot events\
+  \ if available----#\necho -e \"\\n\\nMost Recent 3 Reboot Events\"\necho -e \"$D$D\"\
+  \nlast -x 2> /dev/null|grep reboot 1> /dev/null && /usr/bin/last -x 2> /dev/null|grep\
+  \ reboot|head -3 || \\\necho -e \"No reboot events are recorded.\"\n\n#------Print\
+  \ most recent 3 shutdown events if available-----#\necho -e \"\\n\\nMost Recent\
+  \ 3 Shutdown Events\"\necho -e \"$D$D\"\nlast -x 2> /dev/null|grep shutdown 1> /dev/null\
+  \ && /usr/bin/last -x 2> /dev/null|grep shutdown|head -3 || \\\necho -e \"No shutdown\
+  \ events are recorded.\"\n\n#--------Print top 5 Memory & CPU consumed process threads---------#\n\
+  #--------excludes current running program which is hwlist----------#\necho -e \"\
+  \\n\\nTop 5 Memory Resource Hog Processes\"\necho -e \"$D$D\"\nps -eo pmem,pid,ppid,user,stat,args\
+  \ --sort=-pmem|grep -v $$|head -6|sed 's/$/\\n/'\n\necho -e \"\\nTop 5 CPU Resource\
+  \ Hog Processes\"\necho -e \"$D$D\"\nps -eo pcpu,pid,ppid,user,stat,args --sort=-pcpu|grep\
+  \ -v $$|head -6|sed 's/$/\\n/'\n\n"
+description: Linux check script - Modified - 30.03.2023
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups:
+- App1
+resolveVariables: true
+retainSysIds: true
+scriptName: scr_check_for_Lin_Health_Check
+scriptType: Script
+sysId: 7b907d506c534a548177eb2628dc2d0f
+version: 3

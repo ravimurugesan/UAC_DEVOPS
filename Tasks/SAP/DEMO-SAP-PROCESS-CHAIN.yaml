@@ -1,0 +1,185 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: ULM - SAP
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 22
+avgRunTimeDisplay: 22 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+chainDesc: null
+chainId: DEMO_PROCESS_CHAIN
+commandGroup: Start Process Chain
+commandOptions: null
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: LINUX_USER_CRED_ULM
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+dataSource: null
+defFile: null
+definitionOrModel: USAP Definition File
+definitionOrModelJobVar: USAP Definition File
+dispAbapName: RBDAPP01
+dispSapEventId: null
+dispSapEventParm: null
+dispVariant: STATUS
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+emailNotification: null
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_sap
+firstRun: 2023-05-23 23:54:03 +0200
+holdResources: false
+immediate: false
+infoPackage: null
+infoPackageJobName: null
+infoSource: null
+jobClass: null
+jobId: null
+jobLog: true
+jobLogChild: null
+jobName: null
+jobStatus: null
+jobSteps: []
+lastRun: 2025-01-15 17:02:16 +0100
+lastRunTime: 21
+lastRunTimeDisplay: 21 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logId: null
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxChildDepth: null
+maxRunTime: 131
+maxRunTimeDisplay: 2 Minutes 11 Seconds
+minRunTime: 11
+minRunTimeDisplay: 11 Seconds
+name: DEMO-SAP-PROCESS-CHAIN
+notes: []
+opswiseGroups:
+- DUC
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+pcRestart: false
+printAppLog: true
+printAppRc: true
+purge: false
+purgeChild: null
+repositoryOrFilesys: Script
+requestId: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 224
+runTime: 4968
+runtimeDir: null
+sapCmProfileId: null
+sapCmProfileType: null
+sapCmXmlFile: null
+sapCommandMask: null
+sapConnection: SAP-D44-CLIENT-800
+sapConnectionVar: null
+sapCred: Sap-BWUser
+sapCredVar: null
+sapDispConfirmEvents: false
+sapDispEventSelectState: New
+sapDisplayCommand: Job Log
+sapEventId: null
+sapEventParm: null
+sapFromDate: null
+sapLang: null
+sapPrinterName: null
+sapToDate: null
+sapView: Legacy View
+script: null
+simulation: false
+sourceSystem: null
+spoolListRecipient: null
+spoollist: true
+spoollistChild: null
+start: false
+startHeld: false
+startHeldReason: null
+stepNum: null
+summary: DEMO JOB
+sysId: aedd5ed3df7f4b598145442e64f0724c
+targetJobName: null
+targetServer: null
+targetVariantName: STATUS
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskSap
+useAppRc: false
+userEstimatedDuration: null
+variables: []
+version: 10
+virtualResources: []
+wait: true
+waitChild: null
+waitForOutput: false

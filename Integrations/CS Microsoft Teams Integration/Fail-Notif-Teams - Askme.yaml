@@ -1,0 +1,168 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Ansible
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 6
+avgRunTimeDisplay: 6 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Teams Function
+  name: teams_function
+  value: Send Message
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-05-23 23:37:49 +0200
+holdResources: false
+largeTextField1:
+  label: Message Text
+  name: text
+  value: ${failed_task_output}
+lastRun: 2023-05-23 23:37:49 +0200
+lastRunTime: 6
+lastRunTimeDisplay: 6 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 6
+maxRunTimeDisplay: 6 Seconds
+minRunTime: 6
+minRunTimeDisplay: 6 Seconds
+name: Fail-Notif-Teams - Askme
+notes: []
+opswiseGroups:
+- App1
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 1
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 1
+runTime: 6
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: send failure notification to teams
+sysId: c94f91a4717d4f3ea3d0321a13a3107f
+template: CS Microsoft Teams Integration
+textField1:
+  label: Job Name
+  name: jobname
+  value: ${task_name}
+textField2:
+  label: Job Status
+  name: jobstatus
+  value: ${task_status}
+textField3:
+  label: MS Teams Webhook
+  name: teams_webhook
+  value: https://askmecoth.webhook.office.com/webhookb2/d947f321-4694-4dea-9f0b-906c6b76199e@e1c0d622-71bd-42f6-ba07-ab2b2645df6c/IncomingWebhook/a33c57acae734113b812ed373ed925a5/f7525f11-efef-4bd3-9acf-9fc9d430427e
+textField4:
+  label: API Endpoint
+  name: api_endpoint
+  value: null
+textField5:
+  label: Execution User
+  name: exec_user
+  value: ${exec_user}
+textField6:
+  label: Job Type
+  name: job_type
+  value: ${job_type}
+textField7:
+  label: Message Title
+  name: title
+  value: 'Failure Notification : ${task_name}'
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 8
+virtualResources: []
+waitForOutput: false

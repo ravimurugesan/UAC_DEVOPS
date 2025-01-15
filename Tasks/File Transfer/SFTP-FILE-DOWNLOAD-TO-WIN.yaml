@@ -1,0 +1,160 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Hof(Windows & DB connect)
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+authenticatePeer: false
+avgRunTime: 5
+avgRunTimeDisplay: 5 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+codepage: -- None --
+command: GET
+compress: 'NO'
+cpDuration: null
+cpDurationUnit: Minutes
+createop: -- None --
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+encrypt: 'NO'
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_ftp
+firstRun: 2023-06-02 17:06:21 +0200
+formOrScript: Form
+format: Binary
+ftpSubcommands: null
+holdResources: false
+jobcard: null
+lastRun: 2025-01-07 10:26:06 +0100
+lastRunTime: 6
+lastRunTimeDisplay: 6 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+localFilename: C:\File_Copy_Lin
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 7
+maxRunTimeDisplay: 7 Seconds
+minRunTime: 3
+minRunTimeDisplay: 3 Seconds
+move: false
+name: SFTP-FILE-DOWNLOAD-TO-WIN
+nft: false
+notes: []
+opswiseGroups:
+- DUC
+- SBOL 2023
+outputType: STDOUT
+overrideInstanceWait: 'No'
+primaryBroker: null
+primaryBrokerChoice: Agent
+primaryBrokerRef: null
+primaryCluster: null
+primaryClusterRef: null
+primaryCredVar: null
+primaryCredentials: null
+primaryFilesys: -- None --
+primaryOpenOptions: null
+remoteCredVar: null
+remoteCredentials: Ansible-root
+remoteFilename: /home/ravi/sap_extracts/T*.txt
+remoteServer: 172.31.13.232
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 171
+runTime: 824
+runtimeDir: null
+script: null
+secondaryBroker: null
+secondaryBrokerChoice: Agent
+secondaryBrokerRef: null
+secondaryCluster: null
+secondaryClusterRef: null
+secondaryCredVar: null
+secondaryCredentials: null
+secondaryFilesys: -- None --
+secondaryOpenOptions: null
+serverType: SFTP
+showProgress: false
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: FILE DOWNLOAD to Windows
+sysId: 75fd51da8a18409e8630f7d90a948741
+timeZonePref: -- System Default --
+transferDirection: PUT
+transferMode: Passive
+trimSpace: false
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskFtp
+udmOperation: Copy
+udmOptions: null
+useRegex: false
+userEstimatedDuration: null
+variables: []
+verifyHostName: false
+version: 5
+virtualResources: []

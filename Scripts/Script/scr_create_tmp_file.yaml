@@ -1,0 +1,14 @@
+content: "cd /tmp\necho hello > /tmp/testdata.txt \nchmod 777 /tmp/testdata.txt\n\
+  chmod 777 -R /tmp\nls -la /tmp"
+description: Check for directory
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_script
+notes: []
+opswiseGroups:
+- App1
+resolveVariables: true
+retainSysIds: true
+scriptName: scr_create_tmp_file
+scriptType: Script
+sysId: 75f0e993847e4d0f8835f5ab00202bb4
+version: 3

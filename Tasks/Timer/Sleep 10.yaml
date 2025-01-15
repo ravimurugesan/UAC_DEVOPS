@@ -1,0 +1,103 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions:
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Success
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Success
+    sysId: 2f2b51b4e6dd47bfa8927e24fe1f1d03
+    variableName: ${var_or_condition}
+    variableScope: Parent
+    variableValue: '1'
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 13
+avgRunTimeDisplay: 13 Seconds
+cpDuration: null
+cpDurationUnit: Minutes
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_sleep
+firstRun: 2023-06-05 11:43:49 +0200
+holdResources: false
+lastRun: 2025-01-14 09:52:11 +0100
+lastRunTime: 30
+lastRunTimeDisplay: 30 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 30
+maxRunTimeDisplay: 30 Seconds
+minRunTime: 5
+minRunTimeDisplay: 5 Seconds
+name: Sleep 10
+notes: []
+opswiseGroups: []
+overrideInstanceWait: 'No'
+resPriority: 4
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 218
+runTime: 2795
+simulation: false
+sleepAmount: '30'
+sleepDayConstraint: None
+sleepDuration: 00:00:00:00
+sleepTime: 00:00
+sleepType: Seconds
+startHeld: false
+startHeldReason: null
+summary: Set the time to sleep for 10 seconds  - ${_substring('${ops_task_name}',
+  4, -1)}
+sysId: c11536931feb4fd7a0a25ee092558750
+timeZonePref: -- System Default --
+type: taskSleep
+userEstimatedDuration: null
+variables: []
+version: 9
+virtualResources: []

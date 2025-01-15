@@ -1,0 +1,190 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions:
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Defined
+    sysId: ba77c75277104687b9d2e4502de25b19
+    variableName: runtime
+    variableScope: Global
+    variableValue: ${ops_duration}
+  snmpNotifications: []
+  systemOperations:
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: null
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: '0'
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Set Virtual Resource Limit
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Defined
+    sysId: 04226e48687542389c610db7aa630fae
+    task: null
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables: []
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: ${runtime}
+agent: Ansible
+agentCluster: Opswise - Default Linux/Unix Cluster
+agentClusterVar: null
+agentVar: null
+broadcastCluster: null
+broadcastClusterVar: null
+command: env
+commandOrScript: Command
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: www.stonebranch.com
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:05:00
+efEnabled: true
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Duration
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_unix
+firstRun: ''
+holdResources: false
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: '13:00'
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: true
+lsNthAmount: 5
+lsTime: '12:00'
+lsType: Time
+name: AAAA01 ${ops_agent_name}
+notes:
+- sysId: fac9e4ff23e049998d42df24f711e721
+  text: 'www.stonebranch.com
+
+    '
+  title: Notes
+opswiseGroups:
+- App1
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+parameters: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runAsSudo: false
+runCount: 0
+runTime: 0
+runtimeDir: null
+script: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: I changed something
+sysId: 8cebe7cf07ab4cb9b4f4989af2d00ecd
+timeZonePref: Inherited
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: Same Day
+twWaitDuration: 00:00:00:00
+twWaitTime: '17:00'
+twWaitType: Time
+twWorkflowOnly: 'No'
+type: taskUnix
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: from_date
+  options: []
+  sysId: 428694a1ec6e42728860904d6e502378
+  value: '2022-03-02'
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: interval_days
+  options: []
+  sysId: 2fbf27ac8c424884a51aaa9696c81062
+  value: '14'
+version: 2
+virtualResources:
+- amount: 1
+  resource: ALL_JOBS
+  resourceVar: null
+  sysId: 99ebdd57842d4398b30620ac97479378
+waitForOutput: false

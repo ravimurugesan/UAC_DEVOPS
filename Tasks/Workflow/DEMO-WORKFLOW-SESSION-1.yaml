@@ -1,0 +1,218 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 87167
+avgRunTimeDisplay: 1 Day 0 Hour 12 Minutes 47 Seconds
+calculateCp: false
+calendar: null
+cpDuration: null
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_workflow
+firstRun: 2024-01-17 12:46:56 +0100
+holdResources: false
+instanceWait: -- None --
+lastRun: 2024-07-19 13:58:47 +0200
+lastRunTime: 190723
+lastRunTimeDisplay: 2 Days 4 Hours 58 Minutes 43 Seconds
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 1573112
+maxRunTimeDisplay: 18 Days 4 Hours 58 Minutes 32 Seconds
+minRunTime: 8
+minRunTimeDisplay: 8 Seconds
+name: DEMO-WORKFLOW-SESSION-1
+notes: []
+numberOfTasks: 4
+opswiseGroups:
+- App1
+overrideCalendar: false
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 376
+runCriteria:
+- businessDay: false
+  complex: false
+  complexAdjective: Every
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Day
+  complexNouns:
+  - value: Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Year
+  complexQualifiers:
+  - value: Year
+  customDay: false
+  customDayChoice: null
+  description: null
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: true
+  specificDayFri: false
+  specificDayMon: false
+  specificDaySat: false
+  specificDaySun: false
+  specificDayThu: false
+  specificDayTue: true
+  specificDayWed: false
+  sysId: ab1de38dc27a458a8eadf5a73594b207
+  task: TEST-WINDOWS-JOB-SNAPPI
+  type: Skip Criteria
+  variable: false
+  variableName: null
+  variableOp: '='
+  variableValue: null
+  vertexId: '3'
+runTime: 32774819
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason: null
+stepActions: []
+stepConditions: []
+summary: null
+sysId: 213ff82f19d24a2b9a5da99db2d64c69
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskWorkflow
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: date
+  options: []
+  sysId: 86bdb87357b04d56aa3d4aa23dd292de
+  value: ${date_first_business_day_next_month}
+version: 9
+virtualResources: []
+workflowEdges:
+- condition:
+    value: Success
+  sourceId:
+    taskName: TEST-WINDOWS-JOB-1
+    value: '2'
+  straightEdge: false
+  targetId:
+    taskName: TEST-WINDOWS-JOB-SNAPPI
+    value: '3'
+- condition:
+    value: Success
+  sourceId:
+    taskName: TEST-WINDOWS-JOB-SNAPPI
+    value: '3'
+  straightEdge: false
+  targetId:
+    taskName: TEST-LINUX-01
+    value: '4'
+- condition:
+    value: Success
+  sourceId:
+    taskName: TEST-WINDOWS-JOB-1
+    value: '2'
+  straightEdge: false
+  targetId:
+    taskName: EXTRACT-CLAIM-REQUEST-1
+    value: '11'
+- condition:
+    value: Success
+  sourceId:
+    taskName: EXTRACT-CLAIM-REQUEST-1
+    value: '11'
+  straightEdge: false
+  targetId:
+    taskName: TEST-LINUX-01
+    value: '4'
+workflowVertices:
+- alias: null
+  conditionExpression: null
+  task:
+    value: TEST-WINDOWS-JOB-1
+  vertexId: '2'
+  vertexX: '68'
+  vertexY: '103.5'
+- alias: null
+  conditionExpression: null
+  task:
+    value: TEST-WINDOWS-JOB-SNAPPI
+  vertexId: '3'
+  vertexX: '276'
+  vertexY: '25'
+- alias: null
+  conditionExpression: null
+  task:
+    value: TEST-LINUX-01
+  vertexId: '4'
+  vertexX: '490.5'
+  vertexY: '90'
+- alias: null
+  conditionExpression: null
+  task:
+    value: EXTRACT-CLAIM-REQUEST-1
+  vertexId: '11'
+  vertexX: '275'
+  vertexY: '182'

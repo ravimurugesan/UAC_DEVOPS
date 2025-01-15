@@ -1,0 +1,279 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Ansible
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 7
+avgRunTimeDisplay: 7 Seconds
+booleanField1:
+  label: Dry-run
+  name: dry_run
+  value: false
+booleanField10:
+  label: Use Write Options Variable
+  name: use_write_options_variable
+  value: false
+booleanField2:
+  label: Error On No Transfer
+  name: error_on_no_transfer
+  value: true
+booleanField3:
+  label: Trigger on Existence
+  name: trigger_on_existence
+  value: false
+booleanField4:
+  label: Use Server Modtime
+  name: use_server_modtime
+  value: false
+booleanField5:
+  label: Skip_if_active
+  name: skip_if_active
+  value: false
+booleanField6:
+  label: Continuous_monitoring
+  name: continuous_monitoring
+  value: false
+booleanField7:
+  label: Use Source Credential Variable
+  name: use_source_cred_variable
+  value: false
+booleanField8:
+  label: Use Target Credential Variable
+  name: use_target_cred_variable
+  value: false
+booleanField9:
+  label: Use UAC Rest Credential Variable
+  name: use_rest_cred_uac_variable
+  value: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Action
+  name: action
+  value: remove-object
+choiceField10:
+  label: Output Format
+  name: outputformat
+  value: Text
+choiceField2:
+  label: Loglevel
+  name: loglevel
+  value: INFO
+choiceField3:
+  label: Storage Type
+  name: storage_type
+  value: onedrive_source
+choiceField4:
+  label: Source Storage Type
+  name: source_storage_type
+  value: linux_source
+choiceField5:
+  label: Target Storage Type
+  name: target_storage_type
+  value: linux_target
+choiceField6:
+  label: Filter Type
+  name: filter_type
+  value: none
+choiceField7:
+  label: List Format
+  name: listformat
+  value: ls
+choiceField8:
+  label: Interval
+  name: interval
+  value: '10'
+choiceField9:
+  label: Write Options
+  name: write_options
+  value: no_overwrite
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: UAC Rest Credentials
+  name: rest_credentials_uac
+  value: Universal_Controller_REST-API-RKM
+credentialField2:
+  label: Target Credential
+  name: target_credential
+  value: null
+credentialField3:
+  label: Source Credential
+  name: source_credential
+  value: sharepoint_Ravi
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: https://stonebranch365-my.sharepoint.com/personal/ravi_murugesan_stonebranch_com/_layouts/15/onedrive.aspx?FolderCTID=0x0120004B9339FC1D175149BC524D51C3EF26CF
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-05-23 23:50:33 +0200
+holdResources: false
+intField2:
+  label: Max-depth (Recursion Depth)
+  name: max_depth
+  value: 1
+largeTextField1:
+  label: Task(s)
+  name: taskname
+  value: null
+lastRun: 2025-01-15 14:31:30 +0100
+lastRunTime: 9
+lastRunTimeDisplay: 9 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 12
+maxRunTimeDisplay: 12 Seconds
+minRunTime: 2
+minRunTimeDisplay: 2 Seconds
+name: Remove -FIles-Sharepoint
+notes: []
+opswiseGroups: []
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 92
+runTime: 653
+runtimeDir: null
+scriptField1:
+  label: Connection File
+  name: rclone_conf
+  value: connectionv8_new.conf
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: 2471b2ffedbf45789cac58cd2f404eb4
+template: CS Inter Cloud Data Transfer
+textField1:
+  label: Source
+  name: source
+  value: null
+textField10:
+  label: UAC Rest Credential Variable
+  name: rest_credential_uac_variable
+  value: null
+textField11:
+  label: Write Options Variable
+  name: write_options_variable
+  value: null
+textField2:
+  label: Target
+  name: target
+  value: null
+textField3:
+  label: Directory
+  name: directory
+  value: null
+textField4:
+  label: UAC Base URL
+  name: base_url_uac
+  value: http://frankfurt.stonebranchdev.cloud:8080/uc/
+textField5:
+  label: Filter
+  name: filter
+  value: '*'
+textField6:
+  label: File Path
+  name: file_path
+  value: SAP_Files/
+textField7:
+  label: Custom Parameters
+  name: other_parameters
+  value: null
+textField8:
+  label: Source Credential Variable
+  name: source_credential_variable
+  value: null
+textField9:
+  label: Target Credential Variable
+  name: target_credential_variable
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 6
+virtualResources: []
+waitForOutput: false

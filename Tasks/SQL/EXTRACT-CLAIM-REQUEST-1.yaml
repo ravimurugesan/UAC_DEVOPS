@@ -1,0 +1,124 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions:
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Success
+    sysId: 9f180486a32d4ce291c5bddb95eae389
+    variableName: Monitor_all_agent_liste
+    variableScope: Top Level Parent
+    variableValue: ${_resultsAll}
+  snmpNotifications: []
+  systemOperations: []
+autoCleanup: false
+avgRunTime: 8
+avgRunTimeDisplay: 8 Seconds
+columnName: null
+columnOp: '='
+columnValue: null
+connection: MSSQL-SQL-WINDOWS-AUTH
+connectionVar: null
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_sql
+firstRun: 2023-10-20 09:49:00 +0200
+holdResources: false
+lastRun: 2024-06-23 09:00:10 +0200
+lastRunTime: 6
+lastRunTimeDisplay: 6 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRows: null
+maxRunTime: 12
+maxRunTimeDisplay: 12 Seconds
+minRunTime: 6
+minRunTimeDisplay: 6 Seconds
+name: EXTRACT-CLAIM-REQUEST-1
+notes: []
+opswiseGroups:
+- end_user_self_service
+- Mediametrie
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: true
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+resultProcessing: Skip Result Processing
+retainSysIds: true
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 336
+runTime: 2756
+simulation: false
+sqlCommand: select * from sys.tables
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: 01a661d3bbf346628633fefa54a41f23
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskSql
+userEstimatedDuration: null
+variables: []
+version: 5
+virtualResources: []

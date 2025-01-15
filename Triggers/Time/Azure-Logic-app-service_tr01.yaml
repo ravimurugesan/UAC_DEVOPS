@@ -1,0 +1,96 @@
+action: Do Not Trigger
+adjustInterval: false
+adjustmentAmount: 1
+adjustmentType: Day
+calendar: Deutschland
+customField1:
+  label: null
+  value: null
+customField2:
+  label: null
+  value: null
+dateAdjective: Every
+dateAdjustment: None
+dateNoun:
+  value: Day
+dateNouns:
+- value: Day
+dateQualifier:
+  value: Year
+dateQualifiers:
+- value: Year
+dayInterval: 2
+dayStyle: Simple
+description: null
+disabledBy: ''
+disabledTime: ''
+enabled: true
+enabledBy: ravi
+enabledEnd: 00:00
+enabledStart: 00:00
+enabledTime: 2024-06-28 13:27:29 +0200
+enforceVariables: false
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_trigger_time
+forecast: true
+fri: false
+intervalStartingDate: '2023-05-23'
+lockVariables: false
+mon: false
+name: Azure-Logic-app-service_tr01
+nextScheduledTime: 2025-01-15 18:27:29 +0100
+notes: []
+nthAmount: 5
+opswiseGroups:
+- App1
+rdExcludeBackup: false
+restrictedTimes: false
+restriction: false
+restrictionAdjective: Every
+restrictionComplex: false
+restrictionMode: Or
+restrictionNoun:
+  value: Day
+restrictionNouns:
+- value: Day
+restrictionNthAmount: 5
+restrictionQualifier:
+  value: Year
+restrictionQualifiers:
+- value: Year
+restrictionSimple: false
+retainSysIds: true
+retentionDuration: 1
+retentionDurationPurge: false
+retentionDurationUnit: Days
+sat: false
+simpleDateType: Daily
+simulateTasks: false
+simulationOption: -- System Default --
+situation: Holiday
+skipActive: false
+skipAfterDate: null
+skipAfterTime: null
+skipBeforeDate: null
+skipBeforeTime: null
+skipCondition: None
+skipCount: 0
+skipDateList: []
+skipRestriction: None
+startTimeEnable: false
+startingAt: '*:00'
+sun: false
+sysId: ee97b2b2964842bc94d77233b6d346ce
+tasks:
+- Azure-Logic-app-service
+thu: false
+time: 00:00
+timeInterval: 1
+timeIntervalUnits: Hours
+timeStyle: Interval
+timeZone: null
+tue: false
+type: triggerTime
+variables: []
+version: 4
+wed: false

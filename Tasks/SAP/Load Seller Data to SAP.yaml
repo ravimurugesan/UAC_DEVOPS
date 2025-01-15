@@ -1,0 +1,488 @@
+actions:
+  abortActions: []
+  emailNotifications:
+  - attachFile: false
+    attachStdError: false
+    attachStdOut: false
+    bcc: null
+    body: null
+    cc: null
+    description: null
+    emailConnection: email
+    emailTemplate: UAC - Alert Template for Task Actions
+    emailTemplateVar: null
+    exitCodes: null
+    fileName: ''
+    fileNumLines: 100
+    fileScanText: ''
+    fileStartLine: 1
+    listReportFormat: PDF
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: true
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    replyTo: null
+    report: null
+    reportVar: null
+    status: ''
+    stderrNumLines: 100
+    stderrScanText: ''
+    stderrStartLine: 1
+    stdoutNumLines: 100
+    stdoutScanText: ''
+    stdoutStartLine: 1
+    subject: ${ops_task_name} Running Late!
+    sysId: 347bb72bf8e6424bad1768ecbd758e19
+    to: holger.justkowiak@stonebranch.com
+  - attachFile: false
+    attachStdError: true
+    attachStdOut: true
+    bcc: null
+    body: null
+    cc: null
+    description: null
+    emailConnection: email
+    emailTemplate: UAC - Alert Template for Task Actions
+    emailTemplateVar: null
+    exitCodes: null
+    fileName: ''
+    fileNumLines: 100
+    fileScanText: ''
+    fileStartLine: 1
+    listReportFormat: PDF
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    replyTo: null
+    report: null
+    reportVar: null
+    status: Failed
+    stderrNumLines: 100
+    stderrScanText: ''
+    stderrStartLine: 1
+    stdoutNumLines: 100
+    stdoutScanText: ''
+    stdoutStartLine: 1
+    subject: null
+    sysId: d597c965dcb1499fa4059c7703441476
+    to: holger.justkowiak@stonebranch.com
+  - attachFile: false
+    attachStdError: false
+    attachStdOut: false
+    bcc: null
+    body: null
+    cc: null
+    description: null
+    emailConnection: email
+    emailTemplate: UAC - Alert Template for Task Actions
+    emailTemplateVar: null
+    exitCodes: null
+    fileName: ''
+    fileNumLines: 100
+    fileScanText: ''
+    fileStartLine: 1
+    listReportFormat: PDF
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: true
+    notifyOnProjectedLate: false
+    replyTo: null
+    report: null
+    reportVar: null
+    status: ''
+    stderrNumLines: 100
+    stderrScanText: ''
+    stderrStartLine: 1
+    stdoutNumLines: 100
+    stdoutScanText: ''
+    stdoutStartLine: 1
+    subject: UAC . ${ops_task_name} starting late
+    sysId: d5b0e6f03c514e3cab14eb05b3c5824d
+    to: holger.justkowiak@stonebranch.com
+  setVariableActions:
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: Failed
+    sysId: 74510dbeacc6455ea9d66325e9abd6bc
+    variableName: failed_output
+    variableScope: Parent
+    variableValue: ${_outputLines('STDERR',-1,15,'',' ')}
+  snmpNotifications: []
+  systemOperations:
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: pagerduty
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: 2029a4fc43104e6da5e1ebb8c49a9a3a
+    task: PD-Create-INC-Dataops
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: task_name
+      value: ${ops_task_name}
+    - name: task_id
+      value: ${ops_task_id}
+    - name: job_logs
+      value: ${_outputLines('STDERR',-1,15,'',' ')}
+    - name: task_instance_url
+      value: 'Please use the following link to view the task (requires login):
+
+        ${UAC_Controller_URL}?action=open&type=exec&id=${ops_task_id}'
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: Servicenow Alerts
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: 3569ecb97191478b85e296c3561aa2c4
+    task: Create SNOW Incident DEMO-dev92611 with Attachement
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: sib_failed_task_name
+      value: ${ops_task_name}
+    - name: sib_task_output
+      value: ${_outputLines('STDERR', -1, 1, '',' ')}
+    - name: task_id
+      value: ${ops_task_id}
+    - name: workflow_name
+      value: ${ops_workflow_name}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: Slack Notification
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: a64bab84de554c2384ec5abf0379742e
+    task: FAIL-NOTIF-SLACK
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: task_name
+      value: ${ops_task_name}
+    - name: job_type
+      value: ${ops_task_type}
+    - name: task_status
+      value: ${ops_status}
+    - name: invoked_by
+      value: ${ops_workflow_name}
+    - name: desc
+      value: ${ops_description}
+    - name: msg
+      value: ${_outputLines('STDERR', -1, 10, '',' ')}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: Team Notification
+    execCommand: Cancel
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: null
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Launch Task
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Failed
+    sysId: fae11a77512a45a9b25081c81f114398
+    task: Fail-Notif-Teams
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables:
+    - name: task_name
+      value: ${ops_task_name}
+    - name: task_status
+      value: ${ops_status}
+    - name: exec_user
+      value: ${ops_execution_user}
+    - name: job_type
+      value: ${ops_task_type}
+    - name: failed_task_output
+      value: ${_outputLines('STDERR', -1, 2, '',' ')}
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+agent: ULM - SAP
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 63
+avgRunTimeDisplay: 1 Minute 3 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+chainDesc: null
+chainId: null
+commandGroup: Run
+commandOptions: null
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: LINUX_USER_CRED_ULM
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+dataSource: null
+defFile: null
+definitionOrModel: USAP Definition File
+definitionOrModelJobVar: USAP Definition File
+dispAbapName: null
+dispSapEventId: null
+dispSapEventParm: null
+dispVariant: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+emailNotification: null
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_sap
+firstRun: 2023-05-23 23:31:29 +0200
+holdResources: false
+immediate: false
+infoPackage: null
+infoPackageJobName: null
+infoSource: null
+jobClass: null
+jobId: null
+jobLog: false
+jobLogChild: null
+jobName: null
+jobStatus: null
+jobSteps: []
+lastRun: 2025-01-15 17:01:55 +0100
+lastRunTime: 61
+lastRunTimeDisplay: 1 Minute 1 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:05
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+lockVariables: false
+logId: null
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:20:00
+lsEnabled: true
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Duration
+maxChildDepth: null
+maxRunTime: 77
+maxRunTimeDisplay: 1 Minute 17 Seconds
+minRunTime: 61
+minRunTimeDisplay: 1 Minute 1 Seconds
+name: Load Seller Data to SAP
+notes: []
+opswiseGroups:
+- DEMO-SAP-WORKFLOW
+- DUC
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '40'
+outputReturnSline: '-1'
+outputReturnText: null
+outputReturnType: STDERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+pcRestart: false
+printAppLog: true
+printAppRc: true
+purge: false
+purgeChild: null
+repositoryOrFilesys: Script
+requestId: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 167
+runTime: 10535
+runtimeDir: null
+sapCmProfileId: null
+sapCmProfileType: null
+sapCmXmlFile: null
+sapCommandMask: null
+sapConnection: SAP-D44-CLIENT-001
+sapConnectionVar: null
+sapCred: SAP Demo user
+sapCredVar: null
+sapDispConfirmEvents: false
+sapDispEventSelectState: New
+sapDisplayCommand: Job Log
+sapEventId: null
+sapEventParm: null
+sapFromDate: null
+sapLang: DE
+sapPrinterName: null
+sapToDate: null
+sapView: Legacy View
+script: Call_ABAP
+simulation: false
+sourceSystem: null
+spoolListRecipient: null
+spoollist: false
+spoollistChild: null
+start: false
+startHeld: true
+startHeldReason: null
+stepNum: null
+summary: Call the ABAP program defined as Variable e.g. RSPARAM , ABAP_DOCU_LIST
+sysId: 90fa6b6daa7f45fd8327ca1f1a21a5e0
+targetJobName: null
+targetServer: null
+targetVariantName: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskSap
+useAppRc: false
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: ABAP_NAME
+  options: []
+  sysId: 3c49fe4925b54c7fa94820efe010ab30
+  value: Z_LOAD_COMMISSIONS
+version: 38
+virtualResources: []
+wait: false
+waitChild: null
+waitForOutput: true

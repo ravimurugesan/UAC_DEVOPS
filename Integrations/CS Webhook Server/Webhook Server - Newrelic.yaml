@@ -1,0 +1,152 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Hof(Windows & DB connect)
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Loglevel
+  name: loglevel
+  value: DEBUG
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField2:
+  label: UAC REST Credentials
+  name: rest_credentials_uac
+  value: UC-Frankfurt-CRED-RKM
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: ''
+holdResources: false
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+name: Webhook Server - Newrelic
+notes: []
+opswiseGroups:
+- App1
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '200'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 0
+runTime: 0
+runtimeDir: null
+scriptField1:
+  label: Configuration
+  name: config_script_name
+  value: webhook_config-Newrelic
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: 542c136618f0443d80f043c53be878f6
+template: CS Webhook Server
+textField1:
+  label: Webhook Host
+  name: webhook_host
+  value: 0.0.0.0
+textField2:
+  label: Webhook Port
+  name: webhook_port
+  value: '3129'
+textField3:
+  label: Background Check Period
+  name: background_sleep_sec
+  value: '0'
+textField5:
+  label: UAC Base URL
+  name: base_url_uac
+  value: https://eufrankfurt.stonebranchdev.cloud/
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 2
+virtualResources: []
+waitForOutput: false

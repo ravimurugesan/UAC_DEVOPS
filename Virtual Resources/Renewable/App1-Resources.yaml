@@ -1,0 +1,11 @@
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_virtual_resource
+limit: 10
+name: App1-Resources
+opswiseGroups:
+- App1
+retainSysIds: true
+summary: null
+sysId: b833154ab13e47a88b5a9c09b56909c7
+type: Renewable
+version: 1

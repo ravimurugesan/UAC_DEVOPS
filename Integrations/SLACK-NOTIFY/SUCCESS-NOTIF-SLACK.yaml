@@ -1,0 +1,210 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: EC2AMAZ-L71D4UL - AGNT0003
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 2
+avgRunTimeDisplay: 2 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Slack Function
+  name: slack_function
+  value: Job Notification
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2024-12-16 15:19:55 +0100
+holdResources: false
+largeTextField1:
+  label: Message
+  name: message
+  value: ${msg}
+lastRun: 2024-12-16 15:19:55 +0100
+lastRunTime: 2
+lastRunTimeDisplay: 2 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 2
+maxRunTimeDisplay: 2 Seconds
+minRunTime: 2
+minRunTimeDisplay: 2 Seconds
+name: SUCCESS-NOTIF-SLACK
+notes: []
+opswiseGroups:
+- App1
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 1
+runTime: 2
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: notify slack channel on job failure
+sysId: 27ac042f2575416aab2a375d94925130
+template: SLACK-NOTIFY
+textField1:
+  label: Jobname
+  name: jobname
+  value: ${task_name}
+textField2:
+  label: Job Status
+  name: jobstatus
+  value: ${task_status}
+textField3:
+  label: Slack Webhook URL
+  name: slack_webhook
+  value: https://hooks.slack.com/services/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
+textField4:
+  label: Invoked by
+  name: invoked_by
+  value: ${invoked_by}
+textField5:
+  label: Execution User
+  name: exec_user
+  value: ${exec_user}
+textField6:
+  label: Job Type
+  name: jobtype
+  value: ${job_type}
+textField7:
+  label: Job Approval Description
+  name: description
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: desc
+  options: []
+  sysId: 39994176d89a49bc9e6ade34b2b549f6
+  value: ''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: exec_user
+  options: []
+  sysId: 1497737ed99d4c0c93060852e8513ae1
+  value: ''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: invoked_by
+  options: []
+  sysId: 84077f7afa534087acf44bbd0dcfbff8
+  value: ''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: job_type
+  options: []
+  sysId: d6b4e557edd44f6da7ed7e62684dbf59
+  value: ''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: task_name
+  options: []
+  sysId: c375cc0b56144b059c054dfba4ba050e
+  value: ''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: task_status
+  options: []
+  sysId: 8439dc3128f247f481ca397523fdb5b7
+  value: ''
+version: 1
+virtualResources: []
+waitForOutput: false

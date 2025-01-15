@@ -1,0 +1,192 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Hof(Windows & DB connect)
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 31
+avgRunTimeDisplay: 31 Seconds
+booleanField1:
+  label: Get Output
+  name: getoutput
+  value: true
+booleanField2:
+  label: Print Column Names
+  name: print_column_names
+  value: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Loglevel
+  name: loglevel
+  value: DEBUG
+choiceField2:
+  label: ODBC Drivername
+  name: odbc_drivername
+  value: ODBC Driver 17 for SQL Server
+choiceField3:
+  label: Database Type
+  name: database_type
+  value: sqlserver
+choiceField4:
+  label: Script Type
+  name: scripttype
+  value: sqlscript
+choiceField5:
+  label: Authentication
+  name: authentication
+  value: sqlserver
+choiceField6:
+  label: Column Separator
+  name: colsep
+  value: '";"'
+choiceField7:
+  label: Mode
+  name: connection_mode
+  value: cx_Oracle.SYSDBA
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: Database Credentials
+  name: credentials
+  value: MSSQL Hoffenheim
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-10-13 17:27:31 +0200
+holdResources: false
+lastRun: 2023-12-13 16:35:27 +0100
+lastRunTime: 30
+lastRunTimeDisplay: 30 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 31
+maxRunTimeDisplay: 31 Seconds
+minRunTime: 30
+minRunTimeDisplay: 30 Seconds
+name: APP3-${ENV}-MSSQL-SSIS-1
+notes: []
+opswiseGroups:
+- App3
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 4
+runTime: 123
+runtimeDir: null
+scriptField1:
+  label: Script
+  name: script
+  value: exec_SSIS_Pack-1
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: MSSQL Trigger DB
+sysId: e306e99b74f84804be9898bd5214231d
+template: SQL
+textField1:
+  label: Database Name
+  name: database
+  value: msdb
+textField2:
+  label: Server
+  name: server
+  value: ip-172-31-9-188.us-east-2.compute.internal
+textField3:
+  label: Database Port
+  name: database_port
+  value: '1433'
+textField4:
+  label: Output File Path
+  name: output_file
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 4
+virtualResources: []
+waitForOutput: false

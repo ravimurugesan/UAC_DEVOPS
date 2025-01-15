@@ -1,0 +1,131 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: null
+agentCluster: null
+agentClusterVar: null
+agentVar: ${APP1_AGENT}
+avgRunTime: 6
+avgRunTimeDisplay: 6 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+command: sh script1.sh;sleep 20
+commandOrScript: Command
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: null
+credentialsVar: ${APP1_GEN_CRED}
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_unix
+firstRun: 2023-05-24 11:29:27 +0200
+holdResources: false
+lastRun: 2024-09-04 09:45:00 +0200
+lastRunTime: 20
+lastRunTimeDisplay: 20 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:10
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 20
+maxRunTimeDisplay: 20 Seconds
+minRunTime: 0
+minRunTimeDisplay: 0 Seconds
+name: APP1-${ENV}-LIN-REM_SCRIPT-1
+notes: []
+opswiseGroups:
+- App1
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+parameters: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runAsSudo: false
+runCount: 31
+runTime: 184
+runtimeDir: /home/ulm_linux_user/scripts/
+script: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: Demo Job for Workflow use case - Script residing in Agent
+sysId: ac87757d8ddb4be18ebd91ffd62f7d02
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUnix
+userEstimatedDuration: null
+variables: []
+version: 5
+virtualResources:
+- amount: 1
+  resource: APP1- RESOURCE-QUEUE
+  resourceVar: null
+  sysId: 3156ec899b894775bfd6286068894920
+waitForOutput: false

@@ -1,0 +1,101 @@
+action: Do Not Trigger
+adjustInterval: false
+adjustmentAmount: 1
+adjustmentType: Day
+calendar: System Default
+customField1:
+  label: null
+  value: null
+customField2:
+  label: null
+  value: null
+dateAdjective: Every
+dateAdjustment: None
+dateNoun:
+  value: Day
+dateNouns:
+- value: Day
+dateQualifier:
+  value: Year
+dateQualifiers:
+- value: Year
+dayInterval: 2
+dayStyle: Simple
+description: null
+disabledTime: ''
+enabled: false
+enabledEnd: 00:00
+enabledStart: 00:00
+enabledTime: ''
+enforceVariables: false
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_trigger_time
+forecast: true
+fri: false
+intervalStartingDate: '2024-01-17'
+lockVariables: false
+mon: false
+name: DEMO-WORKFLOW-SESSION-1_tr01
+nextScheduledTime: ''
+notes: []
+nthAmount: 5
+opswiseGroups:
+- App1
+rdExcludeBackup: false
+restrictedTimes: false
+restriction: false
+restrictionAdjective: Every
+restrictionComplex: false
+restrictionMode: Or
+restrictionNoun:
+  value: Day
+restrictionNouns:
+- value: Day
+restrictionNthAmount: 5
+restrictionQualifier:
+  value: Year
+restrictionQualifiers:
+- value: Year
+restrictionSimple: false
+retainSysIds: true
+retentionDuration: 1
+retentionDurationPurge: false
+retentionDurationUnit: Days
+sat: false
+simpleDateType: Daily
+simulateTasks: false
+simulationOption: -- System Default --
+situation: Holiday
+skipActive: false
+skipAfterDate: null
+skipAfterTime: null
+skipBeforeDate: null
+skipBeforeTime: null
+skipCondition: None
+skipCount: 0
+skipDateList: []
+skipRestriction: None
+startTimeEnable: false
+startingAt: '*:00'
+sun: false
+sysId: 3d30b780dc2b4eea80916c36b5524560
+tasks:
+- DEMO-WORKFLOW-SESSION-1
+thu: false
+time: 05:00
+timeInterval: null
+timeIntervalUnits: Hours
+timeStyle: Absolute
+timeZone: null
+tue: false
+type: triggerTime
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: TEST1
+  options: []
+  sysId: be8419a3abda4d5792971a8d0af599fd
+  value: DEMO-Value-1
+version: 2
+wed: false

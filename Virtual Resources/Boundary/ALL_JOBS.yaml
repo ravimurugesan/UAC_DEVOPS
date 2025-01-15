@@ -1,0 +1,11 @@
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_virtual_resource
+limit: 1
+name: ALL_JOBS
+opswiseGroups:
+- App1
+retainSysIds: true
+summary: This resource can be used to turn off all jobs for maintenance window
+sysId: 9dbc99f713a34354850bf6c24054879f
+type: Boundary
+version: 5

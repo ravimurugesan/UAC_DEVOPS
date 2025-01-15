@@ -1,0 +1,248 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions:
+  - description: null
+    exitCodes: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    status: 'Failed,
+
+      Success'
+    sysId: 547263bfc332438d9f43152df7215fc4
+    variableName: output_sap
+    variableScope: Top Level Parent
+    variableValue: ${_output('STDOUT'')}
+  snmpNotifications: []
+  systemOperations:
+  - agent: null
+    agentCluster: null
+    agentClusterVar: null
+    agentVar: null
+    description: null
+    execCommand: Force Finish
+    execCriteria: Oldest Active Instance
+    execId: null
+    execLookupOption: Instance Name
+    execName: Create SNOW Incident DEMO-dev69413
+    execWorkflowName: null
+    execWorkflowNameCond: Equals
+    exitCodes: null
+    limit: null
+    notificationOption: Operation Failure
+    notifyOnEarlyFinish: false
+    notifyOnLateFinish: false
+    notifyOnLateStart: false
+    notifyOnProjectedLate: false
+    operation: Run Task Instance Command
+    overrideTriggerDateOffset: null
+    overrideTriggerDateTime: false
+    overrideTriggerTime: 00:00
+    status: Success
+    sysId: 18f28d05ff374610bba2dad122b11153
+    task: null
+    taskLimitType: Unlimited
+    taskVar: null
+    trigger: null
+    triggerVar: null
+    variables: []
+    variablesUnresolved: false
+    vertexSelection: false
+    vertices: []
+    virtualResource: null
+    virtualResourceVar: null
+agent: ULM - SAP
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 6
+avgRunTimeDisplay: 6 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+chainDesc: null
+chainId: null
+commandGroup: Submit
+commandOptions: -rawspool no
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: LINUX_USER_CRED_ULM
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+dataSource: null
+defFile: null
+definitionOrModel: USAP Definition File
+definitionOrModelJobVar: USAP Definition File
+dispAbapName: null
+dispSapEventId: null
+dispSapEventParm: null
+dispVariant: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+emailNotification: null
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_sap
+firstRun: 2024-02-22 23:45:25 +0100
+holdResources: false
+immediate: true
+infoPackage: null
+infoPackageJobName: null
+infoSource: null
+jobClass: null
+jobId: null
+jobLog: true
+jobLogChild: null
+jobName: null
+jobStatus: null
+jobSteps: []
+lastRun: 2024-09-13 13:06:50 +0200
+lastRunTime: 4
+lastRunTimeDisplay: 4 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logId: null
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxChildDepth: null
+maxRunTime: 15
+maxRunTimeDisplay: 15 Seconds
+minRunTime: 3
+minRunTimeDisplay: 3 Seconds
+name: SAP-RISE-PLATFORM-JOB - 2
+notes: []
+opswiseGroups: []
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '2'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: STDOUT
+outputType: STDOUT
+overrideInstanceWait: 'No'
+pcRestart: false
+printAppLog: true
+printAppRc: true
+purge: false
+purgeChild: null
+repositoryOrFilesys: Script
+requestId: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 5
+runTime: 28
+runtimeDir: null
+sapCmProfileId: null
+sapCmProfileType: null
+sapCmXmlFile: null
+sapCommandMask: null
+sapConnection: SAP-RISE-LOAD-BALANCER
+sapConnectionVar: null
+sapCred: SAP-RISE-RAVI
+sapCredVar: null
+sapDispConfirmEvents: false
+sapDispEventSelectState: New
+sapDisplayCommand: Output Devices
+sapEventId: null
+sapEventParm: null
+sapFromDate: null
+sapLang: null
+sapPrinterName: null
+sapToDate: null
+sapView: Legacy View
+script: scr_sap_script_Demo_simple
+simulation: false
+sourceSystem: null
+spoolListRecipient: null
+spoollist: true
+spoollistChild: null
+start: true
+startHeld: false
+startHeldReason: null
+stepNum: null
+summary: '#1_SAP_DEMO'
+sysId: be553146a5344f42a4a1104a864deb27
+targetJobName: null
+targetServer: null
+targetVariantName: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskSap
+useAppRc: false
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: ABAP_NAME
+  options: []
+  sysId: b134b15406a6416f8f33ab5f50d4712b
+  value: /SDF/SM51
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: ABAP_VARIANT
+  options: []
+  sysId: 62e872b1ec1344fe885e47a66840c732
+  value: ''
+version: 2
+virtualResources: []
+wait: true
+waitChild: null
+waitForOutput: true

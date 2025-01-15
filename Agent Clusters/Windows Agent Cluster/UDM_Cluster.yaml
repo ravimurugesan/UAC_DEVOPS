@@ -1,0 +1,39 @@
+agentLimitAmount: 10
+agentLimitType: Unlimited
+agents:
+- agentName: EC2AMAZ-L71D4UL - AGNT0003
+  membershipDecommissioned: false
+  membershipResumedOn: null
+  membershipSuspended: false
+  membershipSuspendedOn: null
+  sysId: aefd204610504d87b284c7eda5225702
+  type: Windows
+currentCount: 0
+description: null
+distribution: Any
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_windows_agent_cluster
+ignoreInactiveAgents: false
+ignoreSuspendedAgents: false
+lastAgentUsed: null
+lastResolution: null
+limitAmount: 5
+limitType: Unlimited
+name: UDM_Cluster
+networkAlias: null
+networkAliasPort: null
+notifications:
+  emailNotifications: []
+  snmpNotifications: []
+opswiseGroups:
+- App1
+resolutionDescription: null
+resolutionStatus: UNKNOWN
+resumedOn: null
+retainSysIds: true
+strictBsrvcMembership: false
+suspended: false
+suspendedOn: null
+sysId: 0e06eb2363664f8da7396ca76a11d57c
+type: windowsAgentCluster
+version: 1

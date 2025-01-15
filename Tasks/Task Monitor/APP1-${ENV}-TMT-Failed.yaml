@@ -1,0 +1,145 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+expirationAction: Failed
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_monitor
+firstRun: ''
+holdResources: false
+lastRun: ''
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+monType: General
+monitorEarlyFinish: false
+monitorLateFinish: false
+monitorLateStart: false
+name: APP1-${ENV}-TMT-Failed
+notes: []
+opswiseGroups:
+- App1
+overrideInstanceWait: 'No'
+relativeTimeFrom: 00:00
+relativeTimeTo: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 0
+runTime: 0
+simulation: false
+startHeld: false
+startHeldReason: null
+statusText: Failed
+summary: null
+sysId: 26b6d62ab0694ca38c99525903513c80
+taskMonName: null
+taskNameLookup: Starts With
+taskNameValue: APP1
+taskNameValueResolve: false
+timeScope: -- None --
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskMonitor
+typeText: 'Workflow,
+
+  Linux/Unix,
+
+  Windows,
+
+  Universal Command,
+
+  File Transfer,
+
+  Manual,
+
+  Timer,
+
+  SQL,
+
+  Stored Procedure,
+
+  Email,
+
+  Web Service,
+
+  Recurring,
+
+  Task Monitor,
+
+  Agent File Monitor,
+
+  Remote File Monitor,
+
+  System Monitor,
+
+  Variable Monitor,
+
+  Email Monitor,
+
+  Universal Monitor,
+
+  Application Control,
+
+  Universal'
+userEstimatedDuration: null
+variables: []
+version: 1
+virtualResources: []
+wfConditionType: -- None --
+wfConditionValue: '*'

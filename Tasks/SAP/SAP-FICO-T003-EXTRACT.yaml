@@ -1,0 +1,218 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: ULM - SAP
+agentCluster: SAP-Linux-agent
+agentClusterVar: null
+agentVar: null
+avgRunTime: 8
+avgRunTimeDisplay: 8 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+chainDesc: null
+chainId: null
+commandGroup: Submit
+commandOptions: null
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: LINUX_USER_CRED_ULM
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+dataSource: null
+defFile: null
+definitionOrModel: USAP Definition File
+definitionOrModelJobVar: USAP Definition File
+dispAbapName: RBDAPP01
+dispSapEventId: null
+dispSapEventParm: null
+dispVariant: STATUS
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+emailNotification: null
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_sap
+firstRun: 2023-05-23 17:45:31 +0200
+holdResources: false
+immediate: true
+infoPackage: null
+infoPackageJobName: null
+infoSource: null
+jobClass: null
+jobId: null
+jobLog: true
+jobLogChild: null
+jobName: null
+jobStatus: null
+jobSteps: []
+lastRun: 2025-01-07 10:25:41 +0100
+lastRunTime: 11
+lastRunTimeDisplay: 11 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logId: null
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxChildDepth: null
+maxRunTime: 27
+maxRunTimeDisplay: 27 Seconds
+minRunTime: 1
+minRunTimeDisplay: 1 Seconds
+name: SAP-FICO-T003-EXTRACT
+notes: []
+opswiseGroups:
+- DUC
+- end_user_self_service
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: NONE
+outputType: STDOUT
+overrideInstanceWait: 'No'
+pcRestart: false
+printAppLog: true
+printAppRc: true
+purge: false
+purgeChild: null
+repositoryOrFilesys: Script
+requestId: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 215
+runTime: 1823
+runtimeDir: null
+sapCmProfileId: null
+sapCmProfileType: null
+sapCmXmlFile: null
+sapCommandMask: null
+sapConnection: SAP-D44-CLIENT-001
+sapConnectionVar: null
+sapCred: SAP Demo user
+sapCredVar: null
+sapDispConfirmEvents: false
+sapDispEventSelectState: New
+sapDisplayCommand: Job Log
+sapEventId: null
+sapEventParm: null
+sapFromDate: null
+sapLang: null
+sapPrinterName: null
+sapToDate: null
+sapView: Legacy View
+script: scr_sap_script_Demo_simple
+simulation: false
+sourceSystem: null
+spoolListRecipient: null
+spoollist: true
+spoollistChild: null
+start: true
+startHeld: false
+startHeldReason: null
+stepNum: null
+summary: DEMO JOB
+sysId: 1a555161fc604f56801a21f8300b4456
+targetJobName: null
+targetServer: null
+targetVariantName: STATUS
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskSap
+useAppRc: false
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: ABAP_NAME
+  options: []
+  sysId: d2a4a142440645eb90cc1e1ebdcb9f14
+  value: ZT003_EXT
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: ABAP_VARIANT
+  options: []
+  sysId: 5873682e27c9400f8e5d28bf51a97d7c
+  value: ''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: PRINTER
+  options: []
+  sysId: a4b186fe31384c8b9bbdfa11a72e62b7
+  value: ''
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: SAP_BATCH_USER
+  options: []
+  sysId: 7f41a0bf8e7944b2a374774a9b628ffd
+  value: HOLGER
+version: 11
+virtualResources:
+- amount: 2
+  resource: SAP-BACKGROUND-PROCESS-AVAILABILITY
+  resourceVar: null
+  sysId: 5d6305158ebe4daf85af8c597f61deb7
+wait: true
+waitChild: null
+waitForOutput: false

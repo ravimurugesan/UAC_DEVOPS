@@ -1,0 +1,124 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 5
+avgRunTimeDisplay: 5 Seconds
+bccRecipients: null
+body: 'Hello ,
+
+
+  Please find attached report from workflow : ${ops_workflow_name}
+
+
+
+  Regards,
+
+  Stonebranch Ops Team'
+ccRecipients: null
+connection: email
+cpDuration: null
+cpDurationUnit: Minutes
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_email
+firstRun: 2023-05-24 13:28:40 +0200
+holdResources: false
+lastRun: 2024-12-17 08:05:08 +0100
+lastRunTime: 4
+lastRunTimeDisplay: 4 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+listReportFormat: PDF
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 30
+maxRunTimeDisplay: 30 Seconds
+minRunTime: 3
+minRunTimeDisplay: 3 Seconds
+name: Email-Report-Completion
+notes: []
+opswiseGroups:
+- DUC
+- RKM
+overrideInstanceWait: 'No'
+replyTo: null
+report: null
+reportVar: ${ops_workflow_name}
+resPriority: 10
+resolveNameImmediately: true
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 246
+runTime: 1155
+simulation: false
+startHeld: false
+startHeldReason: null
+subject: 'Workflow: ${ops_workflow_name} Completed'
+summary: '!! Donot Change the Job !!!'
+sysId: 26a12c2067a043bd9532ee90a08097fc
+template: null
+templateVar: null
+timeZonePref: -- System Default --
+toRecipients: ${email}
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskEmail
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: workflow_activity
+  options: []
+  sysId: a2d8e3ea5e6a4a1c8412ec0a460e4129
+  value: Workflow-Activity
+version: 17
+virtualResources: []

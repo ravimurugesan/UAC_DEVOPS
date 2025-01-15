@@ -1,0 +1,217 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: Ansible
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+autoCleanup: false
+avgRunTime: 8367
+avgRunTimeDisplay: 2 Hours 19 Minutes 27 Seconds
+booleanField1:
+  label: Multilaunch
+  name: multilaunch
+  value: false
+broadcastCluster: null
+broadcastClusterVar: null
+choiceField1:
+  label: Event Status to Select
+  name: select_state
+  value: N
+choiceField2:
+  label: Confirm Events
+  name: creation_action
+  value: C
+choiceField3:
+  label: USAP Loglevel
+  name: level
+  value: info
+choiceField4:
+  label: SAP Connection Type
+  name: connection_type
+  value: ashost
+choiceField5:
+  label: Loglevel
+  name: loglevel
+  value: INFO
+cpDuration: null
+cpDurationUnit: Minutes
+createConsole: false
+credentialField1:
+  label: SAP Credentials
+  name: sapcred
+  value: SAP-HOFF-RAVi
+credentialField3:
+  label: UAC Credentials
+  name: rest_credentials_uac
+  value: UC-Frankfurt-CRED-RKM
+credentials: null
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+desktopInteract: false
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+elevateUser: false
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_universal
+firstRun: 2023-05-24 12:21:26 +0200
+holdResources: false
+largeTextField1:
+  label: Task(s)
+  name: taskname
+  value: Sleep 10
+lastRun: 2024-12-12 12:53:01 +0100
+lastRunTime: 9
+lastRunTimeDisplay: 9 Seconds
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 680889
+maxRunTimeDisplay: 7 Days 21 Hours 8 Minutes 9 Seconds
+minRunTime: 9
+minRunTimeDisplay: 9 Seconds
+name: SAP Event History Monitor
+notes: []
+opswiseGroups:
+- DEMO-SAP-WORKFLOW
+- DUC
+outputConditionOperator: '='
+outputConditionStrategy: Match Any
+outputConditionValue: null
+outputContentType: null
+outputFailureOnly: false
+outputPathExpression: null
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryExitCodes: null
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 121
+runTime: 1012415
+runtimeDir: null
+simulation: false
+startHeld: false
+startHeldReason: null
+summary: null
+sysId: 7f1754c1c68a41cab51741e69d05103a
+template: CS SAP Event History Monitor
+textField1:
+  label: Client
+  name: client
+  value: '001'
+textField10:
+  label: Client Certificate Key
+  name: client_cert_key
+  value: null
+textField11:
+  label: rfc_logon_retry_interval in s
+  name: rfc_logon_retry_interval
+  value: '120'
+textField12:
+  label: Universal Controller URL
+  name: base_url_uac
+  value: https://eufrankfurt.stonebranchdev.cloud/
+textField2:
+  label: Poll Interval (in seconds)
+  name: poll
+  value: '5'
+textField3:
+  label: SAP ASHOST
+  name: ashost
+  value: 172.31.9.188
+textField4:
+  label: Client Certificate
+  name: client_cert
+  value: null
+textField5:
+  label: USAP Dir
+  name: usapdir
+  value: /opt/universal/usap/bin
+textField6:
+  label: Event Parameter
+  name: event_para
+  value: UAC
+textField7:
+  label: Event ID
+  name: event_id
+  value: UAC_TEST
+textField8:
+  label: SAP SysNr
+  name: sysnr
+  value: '00'
+textField9:
+  label: Destination
+  name: destination
+  value: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskUniversal
+userEstimatedDuration: null
+variables: []
+version: 11
+virtualResources: []
+waitForOutput: true

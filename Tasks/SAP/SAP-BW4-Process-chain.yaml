@@ -1,0 +1,184 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+agent: ULM - SAP
+agentCluster: null
+agentClusterVar: null
+agentVar: null
+avgRunTime: 23
+avgRunTimeDisplay: 23 Seconds
+broadcastCluster: null
+broadcastClusterVar: null
+chainDesc: null
+chainId: UACCHAIN
+commandGroup: Start Process Chain
+commandOptions: null
+cpDuration: null
+cpDurationUnit: Minutes
+credentials: LINUX_USER_CRED_ULM
+credentialsVar: null
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+dataSource: null
+defFile: null
+definitionOrModel: USAP Definition File
+definitionOrModelJobVar: USAP Definition File
+dispAbapName: null
+dispSapEventId: null
+dispSapEventParm: null
+dispVariant: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+emailNotification: null
+enforceVariables: false
+environment: []
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exitCodeOutput: null
+exitCodeProcessing: Success Exitcode Range
+exitCodeText: null
+exitCodes: '0'
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_sap
+firstRun: 2024-01-17 18:15:07 +0100
+holdResources: false
+immediate: false
+infoPackage: null
+infoPackageJobName: null
+infoSource: null
+jobClass: null
+jobId: null
+jobLog: true
+jobLogChild: null
+jobName: null
+jobStatus: null
+jobSteps: []
+lastRun: 2024-10-15 13:36:46 +0200
+lastRunTime: 13
+lastRunTimeDisplay: 13 Seconds
+lfDayConstraint: None
+lfDuration: 00:01:00:00
+lfEnabled: true
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Duration
+lockVariables: false
+logId: null
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxChildDepth: null
+maxRunTime: 43
+maxRunTimeDisplay: 43 Seconds
+minRunTime: 2
+minRunTimeDisplay: 2 Seconds
+name: SAP-BW4-Process-chain
+notes: []
+opswiseGroups: []
+outputFailureOnly: false
+outputReturnFile: null
+outputReturnNline: '100'
+outputReturnSline: '1'
+outputReturnText: null
+outputReturnType: OUTERR
+outputType: STDOUT
+overrideInstanceWait: 'No'
+pcRestart: false
+printAppLog: true
+printAppRc: true
+purge: false
+purgeChild: null
+repositoryOrFilesys: Script
+requestId: null
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+retryIndefinitely: false
+retryInterval: 60
+retryMaximum: 0
+retrySuppressFailure: false
+runCount: 23
+runTime: 540
+runtimeDir: null
+sapCmProfileId: null
+sapCmProfileType: null
+sapCmXmlFile: null
+sapCommandMask: null
+sapConnection: SAP BW4
+sapConnectionVar: null
+sapCred: SAP BW4
+sapCredVar: null
+sapDispConfirmEvents: false
+sapDispEventSelectState: New
+sapDisplayCommand: Job Log
+sapEventId: null
+sapEventParm: null
+sapFromDate: null
+sapLang: null
+sapPrinterName: null
+sapToDate: null
+sapView: Legacy View
+script: null
+simulation: false
+sourceSystem: null
+spoolListRecipient: null
+spoollist: true
+spoollistChild: null
+start: false
+startHeld: false
+startHeldReason: null
+stepNum: null
+summary: null
+sysId: 4d025d252fce42a58a9c94c0acfde835
+targetJobName: null
+targetServer: null
+targetVariantName: null
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskSap
+useAppRc: false
+userEstimatedDuration: null
+variables: []
+version: 8
+virtualResources: []
+wait: true
+waitChild: null
+waitForOutput: false

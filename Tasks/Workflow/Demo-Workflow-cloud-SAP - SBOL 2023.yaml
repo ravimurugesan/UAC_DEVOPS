@@ -1,0 +1,600 @@
+actions:
+  abortActions: []
+  emailNotifications: []
+  setVariableActions: []
+  snmpNotifications: []
+  systemOperations: []
+avgRunTime: 326646
+avgRunTimeDisplay: 3 Days 18 Hours 44 Minutes 6 Seconds
+calculateCp: false
+calendar: null
+cpDuration: null
+cpDurationUnit: Minutes
+criticalEndpoints: []
+customField1:
+  label: Custom Field 1
+  value: null
+customField2:
+  label: Output Link
+  value: null
+efDayConstraint: None
+efDuration: 00:00:00:00
+efEnabled: false
+efNthAmount: 5
+efOffsetDuration: null
+efOffsetDurationUnit: Minutes
+efOffsetPercentage: 0
+efOffsetType: Percentage
+efTime: 00:00
+efType: Time
+enforceVariables: false
+exclusiveTasks: []
+exclusiveWithSelf: false
+executionRestriction: None
+exportReleaseLevel: 7.7.1.0
+exportTable: ops_task_workflow
+firstRun: 2023-12-18 11:13:38 +0100
+holdResources: false
+instanceWait: -- None --
+lastRun: 2023-12-18 11:13:38 +0100
+lastRunTime: 326646
+lastRunTimeDisplay: 3 Days 18 Hours 44 Minutes 6 Seconds
+layoutOption: -- None --
+lfDayConstraint: None
+lfDuration: 00:00:00:00
+lfEnabled: false
+lfNthAmount: 5
+lfOffsetDuration: null
+lfOffsetDurationUnit: Minutes
+lfOffsetPercentage: 0
+lfOffsetType: Percentage
+lfTime: 00:00
+lfType: Time
+lockVariables: false
+logLevel: Inherited
+lsDayConstraint: None
+lsDuration: 00:00:00:00
+lsEnabled: false
+lsNthAmount: 5
+lsTime: 00:00
+lsType: Time
+maxRunTime: 326646
+maxRunTimeDisplay: 3 Days 18 Hours 44 Minutes 6 Seconds
+minRunTime: 326646
+minRunTimeDisplay: 3 Days 18 Hours 44 Minutes 6 Seconds
+name: Demo-Workflow-cloud-SAP - SBOL 2023
+notes:
+- sysId: 9fdebef087aa40dba7a7bad9eaebd34b
+  text: Workflow incorporated to Upload SAP data extracts to cloud
+  title: Version 22
+- sysId: a932addbd2014488b109e2d6321d0270
+  text: Initial Version
+  title: 'version 1 '
+numberOfTasks: 23
+opswiseGroups:
+- App1
+- SBOL 2023
+overrideCalendar: false
+overrideInstanceWait: 'No'
+resPriority: 10
+resolveNameImmediately: false
+restrictionPeriod: None
+restrictionPeriodAfterDate: null
+restrictionPeriodAfterTime: null
+restrictionPeriodBeforeDate: null
+restrictionPeriodBeforeTime: null
+restrictionPeriodDateList: []
+retainSysIds: true
+runCount: 1
+runCriteria:
+- businessDay: false
+  complex: false
+  complexAdjective: Every
+  complexAdjustment: None
+  complexAdjustmentAmount: 1
+  complexAdjustmentType: Day
+  complexNoun:
+    value: Day
+  complexNouns:
+  - value: Day
+  complexNthAmount: 5
+  complexQualifier:
+    value: Year
+  complexQualifiers:
+  - value: Year
+  customDay: false
+  customDayChoice: null
+  description: null
+  evaluateAt: Trigger Time
+  holiday: false
+  holidayAdjustment: None
+  holidayAdjustmentAmount: 1
+  holidayAdjustmentType: Day
+  specificDay: true
+  specificDayFri: true
+  specificDayMon: true
+  specificDaySat: true
+  specificDaySun: true
+  specificDayThu: true
+  specificDayTue: true
+  specificDayWed: true
+  sysId: 3e0ab9fd9af74cd6bb64425d02a3ae1f
+  task: DEMO-SAP-PROCESS-CHAIN - Display
+  type: Skip Criteria
+  variable: false
+  variableName: null
+  variableOp: '='
+  variableValue: null
+  vertexId: '32'
+runTime: 326646
+simulation: false
+skippedOption: Show Skipped
+startHeld: false
+startHeldReason: null
+stepActions: []
+stepConditions: []
+summary: Demo Workflow for SAP involving sharepoint and FileTransfers and approvals
+sysId: 8d632f5b580541ca9d76c1aef6afff0f
+timeZonePref: -- System Default --
+twDelayAmount: null
+twDelayDuration: 00:00:00:00
+twDelayType: None
+twWaitAmount: null
+twWaitDayConstraint: None
+twWaitDuration: 00:00:00:00
+twWaitTime: 00:00
+twWaitType: None
+twWorkflowOnly: -- System Default --
+type: taskWorkflow
+userEstimatedDuration: null
+variables:
+- allowEmptyOption: false
+  allowUnlistedOption: false
+  description: null
+  name: email
+  options: []
+  sysId: 546c0dba326448d3aba0273cb2bc2f3b
+  value: ravi.murugesan@stonebranch.com
+version: 3
+virtualResources: []
+workflowEdges:
+- condition:
+    value: Success
+  sourceId:
+    taskName: SAP-FICO-T001-EXTRACT
+    value: '2'
+  straightEdge: false
+  targetId:
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+- condition:
+    value: Success
+  sourceId:
+    taskName: SAP-FICO-T003-EXTRACT
+    value: '3'
+  straightEdge: false
+  targetId:
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+- condition:
+    value: Success
+  points:
+  - x: '310'
+    y: '90'
+  sourceId:
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: Upload-to-Sharepoint -APP Server-to-Sharepoint
+    value: '5'
+- condition:
+    value: Success
+  points:
+  - x: '201'
+    y: '712'
+  sourceId:
+    taskAlias: Monitor-New-Incoming-UNIX-Files
+    taskName: CHECK-BILLING-INPUT-FILES
+    value: '11'
+  straightEdge: false
+  targetId:
+    taskAlias: LOAD-DATA-SAP-2
+    taskName: Load Seller Data to SAP
+    value: '12'
+- condition:
+    value: Success
+  sourceId:
+    taskName: Check-SAP-CPI DS -Agents
+    value: '15'
+  straightEdge: false
+  targetId:
+    taskName: SAP-CPI-DS-DATA-LOAD
+    value: '14'
+- condition:
+    value: Success
+  sourceId:
+    taskName: SAP-CPI-DS-DATA-LOAD
+    value: '14'
+  straightEdge: false
+  targetId:
+    taskName: SAP-IBP-JOB-RUN
+    value: '13'
+- condition:
+    value: Success
+  points:
+  - x: '493'
+    y: '540'
+  sourceId:
+    taskAlias: LOAD-DATA-SAP-1
+    taskName: SAP-DEMO-JOB-1
+    value: '9'
+  straightEdge: false
+  targetId:
+    taskName: Check-SAP-CPI DS -Agents
+    value: '15'
+- condition:
+    value: Success
+  points:
+  - x: '490'
+    y: '660'
+  sourceId:
+    taskAlias: LOAD-DATA-SAP-2
+    taskName: Load Seller Data to SAP
+    value: '12'
+  straightEdge: false
+  targetId:
+    taskName: Check-SAP-CPI DS -Agents
+    value: '15'
+- condition:
+    value: Success
+  points:
+  - x: '191'
+    y: '482'
+  sourceId:
+    taskName: Monitor-Sharepoint-SAP-FILES
+    value: '16'
+  straightEdge: false
+  targetId:
+    taskAlias: LOAD-DATA-SAP-1
+    taskName: SAP-DEMO-JOB-1
+    value: '9'
+- condition:
+    value: Success
+  points:
+  - x: '1413'
+    y: '590'
+  sourceId:
+    taskName: SCAN-DATA-FILE-AND-FORMAT
+    value: '29'
+  straightEdge: false
+  targetId:
+    taskAlias: Sync-Files-to-Sharepoint
+    taskName: Sharepoint Sync Task
+    value: '23'
+- condition:
+    value: Success
+  points:
+  - x: '1033'
+    y: '590'
+  sourceId:
+    taskName: SAP-IBP-JOB-RUN
+    value: '13'
+  straightEdge: false
+  targetId:
+    taskAlias: Approval-To-Sync-Data
+    taskName: Approval-To-Publish-Analytics
+    value: '25'
+- condition:
+    value: Success
+  sourceId:
+    taskAlias: Sync-Files-to-Sharepoint
+    taskName: Sharepoint Sync Task
+    value: '23'
+  straightEdge: false
+  targetId:
+    taskName: Remove -FIles-Sharepoint
+    value: '27'
+- condition:
+    value: Success
+  points:
+  - x: '1213'
+    y: '590'
+  sourceId:
+    taskAlias: Approval-To-Sync-Data
+    taskName: Approval-To-Publish-Analytics
+    value: '25'
+  straightEdge: false
+  targetId:
+    taskName: SCAN-DATA-FILE-AND-FORMAT
+    value: '29'
+- condition:
+    value: Success
+  points:
+  - x: '1123'
+    y: '490'
+  sourceId:
+    taskAlias: Approval-To-Sync-Data
+    taskName: Approval-To-Publish-Analytics
+    value: '25'
+  straightEdge: false
+  targetId:
+    taskAlias: SAP-PROCESS-Monthly
+    taskName: DEMO-SAP-PROCESS-CHAIN - Display
+    value: '32'
+- condition:
+    value: Success
+  points:
+  - x: '1493'
+    y: '500'
+  sourceId:
+    taskAlias: SAP-PROCESS-Monthly
+    taskName: DEMO-SAP-PROCESS-CHAIN - Display
+    value: '32'
+  straightEdge: false
+  targetId:
+    taskAlias: Sync-Files-to-Sharepoint
+    taskName: Sharepoint Sync Task
+    value: '23'
+- condition:
+    value: Success
+  points:
+  - x: '593'
+    y: '510'
+  sourceId:
+    taskName: Check-SAP-CPI DS -Agents
+    value: '15'
+  straightEdge: false
+  targetId:
+    taskName: DEMO-SAP-PROCESS-CHAIN
+    value: '31'
+- condition:
+    value: Success
+  points:
+  - x: '1113'
+    y: '510'
+  sourceId:
+    taskName: DEMO-SAP-PROCESS-CHAIN
+    value: '31'
+  straightEdge: false
+  targetId:
+    taskAlias: Approval-To-Sync-Data
+    taskName: Approval-To-Publish-Analytics
+    value: '25'
+- condition:
+    value: Success
+  points:
+  - x: '1130'
+    y: '690'
+  sourceId:
+    taskAlias: Approval-To-Sync-Data
+    taskName: Approval-To-Publish-Analytics
+    value: '25'
+  straightEdge: false
+  targetId:
+    taskName: SAP Event History Monitor
+    value: '37'
+- condition:
+    value: Success
+  points:
+  - x: '1510'
+    y: '670'
+  sourceId:
+    taskName: SAP Event History Monitor
+    value: '37'
+  straightEdge: false
+  targetId:
+    taskAlias: Sync-Files-to-Sharepoint
+    taskName: Sharepoint Sync Task
+    value: '23'
+- condition:
+    value: Success
+  points:
+  - x: '1640'
+    y: '590'
+  sourceId:
+    taskAlias: Sync-Files-to-Sharepoint
+    taskName: Sharepoint Sync Task
+    value: '23'
+  straightEdge: false
+  targetId:
+    taskName: Email-Report-Completion
+    value: '40'
+- condition:
+    value: Success
+  points:
+  - x: '330'
+    y: '-120'
+  sourceId:
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: Upload-SAP-FICO-EXTRACTS-TO-S3
+    value: '42'
+- condition:
+    value: Success
+  points:
+  - x: '450'
+    y: '-20'
+  sourceId:
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: Upload-SAP-FICO-AZ-Container
+    value: '43'
+- condition:
+    value: Success
+  points:
+  - x: '320'
+    y: '-120'
+  sourceId:
+    taskName: TRANSFER-SAP-EXTRACTS-TO-REPO
+    value: '4'
+  straightEdge: false
+  targetId:
+    taskName: SFTP-FILE-DOWNLOAD-TO-WIN
+    value: '46'
+workflowVertices:
+- alias: null
+  conditionExpression: null
+  task:
+    value: SAP-FICO-T001-EXTRACT
+  vertexId: '2'
+  vertexX: '-34.5'
+  vertexY: '-120'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SAP-FICO-T003-EXTRACT
+  vertexId: '3'
+  vertexX: '-39.5'
+  vertexY: '32'
+- alias: null
+  conditionExpression: null
+  task:
+    value: TRANSFER-SAP-EXTRACTS-TO-REPO
+  vertexId: '4'
+  vertexX: '280.5'
+  vertexY: '-50'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Upload-to-Sharepoint -APP Server-to-Sharepoint
+  vertexId: '5'
+  vertexX: '590'
+  vertexY: '60'
+- alias: LOAD-DATA-SAP-1
+  conditionExpression: null
+  task:
+    value: SAP-DEMO-JOB-1
+  vertexId: '9'
+  vertexX: '341'
+  vertexY: '452'
+- alias: TRANSFER-INPUT-SO-Linux-To-Windows
+  conditionExpression: null
+  task:
+    value: TRANSFER-INPUT-DATA-BILLING
+  vertexId: '10'
+  vertexX: '10'
+  vertexY: '888'
+- alias: Monitor-New-Incoming-UNIX-Files
+  conditionExpression: null
+  task:
+    value: CHECK-BILLING-INPUT-FILES
+  vertexId: '11'
+  vertexX: '33'
+  vertexY: '690.5'
+- alias: LOAD-DATA-SAP-2
+  conditionExpression: null
+  task:
+    value: Load Seller Data to SAP
+  vertexId: '12'
+  vertexX: '351'
+  vertexY: '682'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SAP-IBP-JOB-RUN
+  vertexId: '13'
+  vertexX: '946.5'
+  vertexY: '562'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SAP-CPI-DS-DATA-LOAD
+  vertexId: '14'
+  vertexX: '766.5'
+  vertexY: '562'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Check-SAP-CPI DS -Agents
+  vertexId: '15'
+  vertexX: '561.5'
+  vertexY: '562'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Monitor-Sharepoint-SAP-FILES
+  vertexId: '16'
+  vertexX: '33'
+  vertexY: '450'
+- alias: Sync-Files-to-Sharepoint
+  conditionExpression: null
+  task:
+    value: Sharepoint Sync Task
+  vertexId: '23'
+  vertexX: '1483'
+  vertexY: '560'
+- alias: Approval-To-Sync-Data
+  conditionExpression: null
+  task:
+    value: Approval-To-Publish-Analytics
+  vertexId: '25'
+  vertexX: '1103'
+  vertexY: '560'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Remove -FIles-Sharepoint
+  vertexId: '27'
+  vertexX: '1483'
+  vertexY: '290'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SCAN-DATA-FILE-AND-FORMAT
+  vertexId: '29'
+  vertexX: '1293'
+  vertexY: '560'
+- alias: null
+  conditionExpression: null
+  task:
+    value: DEMO-SAP-PROCESS-CHAIN
+  vertexId: '31'
+  vertexX: '763'
+  vertexY: '400'
+- alias: SAP-PROCESS-Monthly
+  conditionExpression: null
+  task:
+    value: DEMO-SAP-PROCESS-CHAIN - Display
+  vertexId: '32'
+  vertexX: '1293'
+  vertexY: '400'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SAP Event History Monitor
+  vertexId: '37'
+  vertexX: '1293'
+  vertexY: '722'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Email-Report-Completion
+  vertexId: '40'
+  vertexX: '1750'
+  vertexY: '558'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Upload-SAP-FICO-EXTRACTS-TO-S3
+  vertexId: '42'
+  vertexX: '590'
+  vertexY: '-150'
+- alias: null
+  conditionExpression: null
+  task:
+    value: Upload-SAP-FICO-AZ-Container
+  vertexId: '43'
+  vertexX: '590'
+  vertexY: '-50'
+- alias: null
+  conditionExpression: null
+  task:
+    value: SFTP-FILE-DOWNLOAD-TO-WIN
+  vertexId: '46'
+  vertexX: '590'
+  vertexY: '-250'
