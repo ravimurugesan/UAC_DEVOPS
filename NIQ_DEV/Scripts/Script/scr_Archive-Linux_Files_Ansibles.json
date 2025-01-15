@@ -1,6 +1,6 @@
 {
     "content": "#!/bin/sh\nmv input_file/${processed_file} input_file/archive/",
-    "description": "From Input_file to archive folder",
+    "description": "From Input_file to archive folder TEST",
     "exportReleaseLevel": "7.7.1.0",
     "exportTable": "ops_script",
     "notes": [],
