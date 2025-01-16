@@ -27,7 +27,7 @@
     },
     "customField2": {
         "label": "Output Link",
-        "value": null
+        "value": "from gitlab"
     },
     "efDayConstraint": "None",
     "efDuration": "00:00:00:00",
