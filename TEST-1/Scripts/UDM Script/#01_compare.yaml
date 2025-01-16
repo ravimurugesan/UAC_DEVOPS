@@ -8,7 +8,7 @@ content: "#\necho\t\"### compare a string with a variable and print the results\
   \                        \necho\t\"message of compare $(var2) in length 7: $(_lastrc.message)\
   \ with result $(_lastrc.result)\"  \n#                                         \
   \                        \necho ###"
-description: null
+description: 'modify'
 exportReleaseLevel: 7.7.1.0
 exportTable: ops_script
 notes: []
