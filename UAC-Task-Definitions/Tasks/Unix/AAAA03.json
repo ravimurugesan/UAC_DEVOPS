@@ -15,7 +15,7 @@
     "avgRunTimeDisplay": "0 Seconds",
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": "echo ${var3}",
+    "command": "echo ${var4}",
     "commandOrScript": "Command",
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
