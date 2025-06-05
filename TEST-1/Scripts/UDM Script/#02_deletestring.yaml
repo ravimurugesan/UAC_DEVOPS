@@ -1,12 +1,12 @@
 content: "set echo=no\n#\necho\t\"### delete a string at offset 6 in length 9 and\
-  \ print the results\" \necho \t###\n##                                          \
+  \ print the results\" \necho \t###\n#                                          \
   \       \nset mydate=\"todaydaydayday is the $(_date)\"       \n#              \
   \                                   \necho \t\"$(mydate)\"  \necho \t###       \
   \                         \ndeletestring mydate pos=6 length=9                \n\
   echo \t\"$(mydate)\"                                  \n#                      \
   \                           \necho ###"
 description: null
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_script
 notes: []
 opswiseGroups: []

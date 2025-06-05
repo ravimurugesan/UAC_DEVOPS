@@ -19,7 +19,7 @@ cpDurationUnit: Minutes
 credentials: Ansible-ravi
 credentialsVar: null
 customField1:
-  label: Custom Field 1
+  label: Agency code
   value: null
 customField2:
   label: Output Link
@@ -43,7 +43,7 @@ exitCodeOutput: null
 exitCodeProcessing: Success Exitcode Range
 exitCodeText: null
 exitCodes: '0'
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_task_unix
 firstRun: 2023-09-26 16:18:45 +0200
 holdResources: false
@@ -85,6 +85,7 @@ outputType: STDOUT
 overrideInstanceWait: 'No'
 parameters: null
 resPriority: 10
+resPriorityVar: null
 resolveNameImmediately: false
 restrictionPeriod: None
 restrictionPeriodAfterDate: null

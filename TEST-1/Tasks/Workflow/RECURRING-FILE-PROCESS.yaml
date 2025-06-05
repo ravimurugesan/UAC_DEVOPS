@@ -10,7 +10,7 @@ cpDuration: null
 cpDurationUnit: Minutes
 criticalEndpoints: []
 customField1:
-  label: Custom Field 1
+  label: Agency code
   value: null
 customField2:
   label: Output Link
@@ -29,7 +29,7 @@ enforceVariables: false
 exclusiveTasks: []
 exclusiveWithSelf: false
 executionRestriction: None
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_task_workflow
 firstRun: ''
 holdResources: false
@@ -61,6 +61,7 @@ opswiseGroups: []
 overrideCalendar: false
 overrideInstanceWait: 'No'
 resPriority: 10
+resPriorityVar: null
 resolveNameImmediately: false
 restrictionPeriod: None
 restrictionPeriodAfterDate: null

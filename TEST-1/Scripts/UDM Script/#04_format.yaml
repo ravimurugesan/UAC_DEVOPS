@@ -4,7 +4,7 @@ content: "#\necho \t###\necho\t\"### format and create a new variable of existin
   format myvar \"$(var1)_$(var2)_$(var3)\"\necho ###                 \necho \"$(myvar)\"\
   \   \necho ###                           \n#"
 description: null
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_script
 notes: []
 opswiseGroups: []

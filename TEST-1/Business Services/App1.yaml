@@ -1,5 +1,5 @@
 description: Elements for Application1
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_generic_group
 name: App1
 retainSysIds: true

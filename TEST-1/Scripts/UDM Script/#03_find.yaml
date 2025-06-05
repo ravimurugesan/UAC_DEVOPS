@@ -6,7 +6,7 @@ content: "#\necho \t###\necho\t\"### find a string in a given string or variable
   \              \necho \"result of find datx was: $(_lastrc.message)\"   \nfind \"\
   $(var1)\" seq=datx                            \necho \"position of datx is $(_lastrc.result)\""
 description: null
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_script
 notes: []
 opswiseGroups: []

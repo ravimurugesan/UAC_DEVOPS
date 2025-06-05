@@ -5,7 +5,7 @@ content: "#\necho \t###\necho\t\"### change the content of a variable to upper o
   \   \nupper    var1                                   \necho  \"$(var1)\"   \necho\
   \ \t###"
 description: null
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_script
 notes: []
 opswiseGroups: []

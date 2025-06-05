@@ -11,7 +11,7 @@ cpDurationUnit: Minutes
 credentials: null
 credentialsVar: null
 customField1:
-  label: Custom Field 1
+  label: Agency code
   value: null
 customField2:
   label: Output Link
@@ -30,7 +30,7 @@ enforceVariables: false
 exclusiveTasks: []
 exclusiveWithSelf: false
 executionRestriction: None
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_task_recurring
 firstRun: 2023-09-26 16:18:54 +0200
 holdResources: false
@@ -83,6 +83,7 @@ recurrenceIntervalUnit: Seconds
 recurrenceTimeList: []
 recurrenceType: Interval
 resPriority: 10
+resPriorityVar: null
 resolveNameImmediately: false
 restrictionPeriod: None
 restrictionPeriodAfterDate: null

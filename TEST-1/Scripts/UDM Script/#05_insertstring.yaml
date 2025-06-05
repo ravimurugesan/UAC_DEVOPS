@@ -4,7 +4,7 @@ content: "#\necho \t###\necho\t\"### insert a string into a existing variable\" 
   \      \ninsertstring var1 \"_best_in_class\" pos=10             \necho \"### $(var1)\"\
   \  \necho \t###\n#"
 description: null
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_script
 notes: []
 opswiseGroups: []

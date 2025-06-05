@@ -51,7 +51,7 @@ bundleVirtualResources: []
 defaultPromotionTarget: null
 description: null
 excludeOnExistence: null
-exportReleaseLevel: 7.7.1.0
+exportReleaseLevel: 7.8.0.0
 exportTable: ops_bundle
 followReferences: true
 name: NIQ PROD
