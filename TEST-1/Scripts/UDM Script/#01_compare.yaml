@@ -1,0 +1,21 @@
+content: "#\necho\t\"### compare a string with a variable and print the results\"\
+  \ \necho \t###\n#  \nset var1=universal\nset var2=universal_data_mover\n#      \
+  \                                             \ncompare universal $(var1)      \
+  \                                   \necho \t\"message of compare $(var1): $(_lastrc.message)\
+  \ with result $(_lastrc.result)\"  \ncompare universal $(var2)                 \
+  \                        \necho\t\"message of compare $(var2): $(_lastrc.message)\
+  \ with result $(_lastrc.result)\"  \ncompare universal $(var2) length=9        \
+  \                        \necho\t\"message of compare $(var2) in length 7: $(_lastrc.message)\
+  \ with result $(_lastrc.result)\"  \n#                                         \
+  \                        \necho ###"
+description: null
+exportReleaseLevel: 7.8.0.0
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: true
+retainSysIds: true
+scriptName: '#01_compare'
+scriptType: UDM Script
+sysId: 2aa8e288d9974dbcbbc0eebf86bba005
+version: 1
