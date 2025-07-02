@@ -4,10 +4,10 @@ actions:
   setVariableActions: []
   snmpNotifications: []
   systemOperations: []
-agent: Ansible
+agent: null
 agentCluster: null
 agentClusterVar: null
-agentVar: null
+agentVar: ${ansible}
 avgRunTime: 0
 avgRunTimeDisplay: 0 Seconds
 broadcastCluster: null
@@ -122,6 +122,6 @@ twWorkflowOnly: -- System Default --
 type: taskUnix
 userEstimatedDuration: null
 variables: []
-version: 4
+version: 5
 virtualResources: []
 waitForOutput: false

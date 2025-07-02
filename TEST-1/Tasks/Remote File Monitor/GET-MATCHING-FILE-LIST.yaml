@@ -16,10 +16,10 @@ actions:
     variableValue: ${ops_trigger_files}
   snmpNotifications: []
   systemOperations: []
-agent: Kubernetes
+agent: null
 agentCluster: null
 agentClusterVar: null
-agentVar: null
+agentVar: ${kubernetes}
 authenticatePeer: false
 avgRunTime: 41
 avgRunTimeDisplay: 41 Seconds
@@ -134,7 +134,7 @@ useRegex: false
 userEstimatedDuration: null
 variables: []
 verifyHostName: false
-version: 5
+version: 6
 virtualResources: []
 wait: true
 waitForOutput: true

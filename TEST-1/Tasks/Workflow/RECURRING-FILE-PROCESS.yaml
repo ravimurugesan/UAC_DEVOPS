@@ -94,7 +94,7 @@ twWorkflowOnly: -- System Default --
 type: taskWorkflow
 userEstimatedDuration: null
 variables: []
-version: 5
+version: 6
 virtualResources: []
 workflowEdges:
 - condition:
