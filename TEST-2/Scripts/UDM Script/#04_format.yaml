@@ -1,0 +1,16 @@
+content: "#\necho \t###\necho\t\"### format and create a new variable of existing\
+  \ variables\" \necho \t###\n#  \nset var1=universal\nset var2=data\nset var3=mover\n\
+  #\necho \"### $(var1)\"\necho \"### $(var2)\"\necho \"### $(var3)\"\necho ###\n\
+  format myvar \"$(var1)_$(var2)_$(var3)\"\necho ###                 \necho \"$(myvar)\"\
+  \   \necho ###                           \n#"
+description: null
+exportReleaseLevel: 7.8.0.0
+exportTable: ops_script
+notes: []
+opswiseGroups: []
+resolveVariables: true
+retainSysIds: true
+scriptName: '#04_format'
+scriptType: UDM Script
+sysId: 7e833e4e2502484c9d9571bc33be4ce0
+version: 1

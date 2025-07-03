@@ -1,0 +1,63 @@
+bundleAgentClusters: []
+bundleApplications: []
+bundleBusinessServices: []
+bundleCalendars: []
+bundleCredentials: []
+bundleCustomDays: []
+bundleDatabaseConnections: []
+bundleEmailConnections: []
+bundleEmailTemplates: []
+bundleOAuthClients: []
+bundlePeoplesoftConnections: []
+bundleReports: []
+bundleSapConnections: []
+bundleScripts:
+- addedBy: ravi
+  name: '#01_compare'
+  sysId: 70b780f3e4374e40b3fefc153fba08e7
+  type: UDM Script
+- addedBy: ravi
+  name: '#04_format'
+  sysId: e056e5e987a644c19ad40aa3ef3dc2a5
+  type: UDM Script
+- addedBy: ravi
+  name: '#03_find'
+  sysId: d1d84b7f2c4b423bbc2a3dc754b4268b
+  type: UDM Script
+- addedBy: ravi
+  name: '#02_deletestring'
+  sysId: b6f13901a17d4f5d823d9996c0ba71a0
+  type: UDM Script
+- addedBy: ravi
+  name: '#05_insertstring'
+  sysId: 4be43ab51c8249219d2a9c5af4459e75
+  type: UDM Script
+- addedBy: ravi
+  name: '#06_uppper_lower'
+  sysId: 7ab6ec8252864bce8f76d7aeba11321a
+  type: UDM Script
+bundleSnmpManagers: []
+bundleTasks:
+- addedBy: ravi
+  description: CSV Functions Example -TEST CHANGES1
+  name: RECURRING-FILE-PROCESS
+  sysId: a94b6b4067664323ba182de98b041382
+  type: Workflow
+bundleTriggers: []
+bundleUniversalEventTemplates: []
+bundleUniversalTemplates: []
+bundleVariables: []
+bundleVirtualResources: []
+defaultPromotionTarget: null
+description: null
+excludeOnExistence: null
+exportReleaseLevel: 7.8.0.0
+exportTable: ops_bundle
+followReferences: true
+name: NIQ PROD
+opswiseGroups: []
+promoteBundleDefinition: true
+promoteByBusinessServices: []
+retainSysIds: true
+sysId: d11c87f9c88b42cf9716d5a0a7d3cf9a
+visibleTo: null
