@@ -1,0 +1,10 @@
+exportReleaseLevel: 7.8.0.0
+exportTable: ops_virtual_resource
+limit: 1
+name: APP1- RESOURCE-QUEUE
+opswiseGroups: []
+retainSysIds: true
+summary: null
+sysId: 920cba16494847a3bf3d5a08713a0808
+type: Renewable
+version: 2

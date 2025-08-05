@@ -1,0 +1,52 @@
+agentLimitAmount: 10
+agentLimitType: Unlimited
+agents:
+- agentName: Atlanta DC
+  membershipDecommissioned: false
+  membershipResumedOn: null
+  membershipSuspended: false
+  membershipSuspendedOn: null
+  sysId: 1271654a40c9445b88ad69c44685311f
+  type: Linux/Unix
+- agentName: Airflow
+  membershipDecommissioned: false
+  membershipResumedOn: null
+  membershipSuspended: false
+  membershipSuspendedOn: null
+  sysId: bed908cf552247d3af429eeade3183c3
+  type: Linux/Unix
+- agentName: Ansible
+  membershipDecommissioned: false
+  membershipResumedOn: null
+  membershipSuspended: false
+  membershipSuspendedOn: null
+  sysId: bf39e9475c974d90a45224e1f8dcd737
+  type: Linux/Unix
+currentCount: 0
+description: null
+distribution: Any
+exportReleaseLevel: 7.8.0.0
+exportTable: ops_unix_agent_cluster
+ignoreInactiveAgents: false
+ignoreSuspendedAgents: false
+lastAgentUsed: Ansible
+lastResolution: null
+limitAmount: 10
+limitType: Limited
+name: DemoCluster1
+networkAlias: null
+networkAliasPort: null
+notifications:
+  emailNotifications: []
+  snmpNotifications: []
+opswiseGroups: []
+resolutionDescription: null
+resolutionStatus: None
+resumedOn: null
+retainSysIds: true
+strictBsrvcMembership: false
+suspended: false
+suspendedOn: null
+sysId: c2f0b656692448d0b6ece399212acbaa
+type: unixAgentCluster
+version: 5

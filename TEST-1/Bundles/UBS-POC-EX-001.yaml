@@ -1,0 +1,84 @@
+bundleAgentClusters: []
+bundleApplications: []
+bundleBusinessServices: []
+bundleCalendars: []
+bundleCredentials: []
+bundleCustomDays: []
+bundleDatabaseConnections: []
+bundleEmailConnections: []
+bundleEmailTemplates: []
+bundleOAuthClients: []
+bundlePeoplesoftConnections: []
+bundleReports: []
+bundleSapConnections: []
+bundleScripts: []
+bundleSnmpManagers: []
+bundleTasks:
+- addedBy: ravi
+  description: Demo Job for Workflow use case -Script in UAC
+  name: APP1-${ENV}-LIN-UAC_SCRIPT-4
+  sysId: 272d5bc0eec34ccda73d71fe125cba76
+  type: Linux/Unix
+- addedBy: ravi
+  description: Demo Job for Workflow use case - Script residing in Agent
+  name: APP1-${ENV}-LIN-REM_SCRIPT-3
+  sysId: 2c7636333ff643c894fda1e00565969c
+  type: Linux/Unix
+- addedBy: ravi
+  description: Demo Job for Workflow use case - Script residing in Agent
+  name: APP1-${ENV}-LIN-REM_SCRIPT-2
+  sysId: 5afb943268ef4d2a8fda6cba1cbbc1d5
+  type: Linux/Unix
+- addedBy: ravi
+  description: Demo Job for Workflow use case - Script residing in Agent
+  name: APP1-${ENV}-LIN-REM_SCRIPT-1
+  sysId: 639740cc624f452db27a97295b0645b5
+  type: Linux/Unix
+- addedBy: ravi
+  description: Demo Job for Workflow use case -Script in UAC
+  name: APP1-${ENV}-LIN-UAC_SCRIPT-2
+  sysId: f55a9d831efa4ec3b51dd112ffe87879
+  type: Linux/Unix
+- addedBy: ravi
+  description: Demo Job for Workflow use case -Script in UAC
+  name: APP1-${ENV}-LIN-UAC_SCRIPT-1
+  sysId: 2a3f540896b64eb4b483ba60ab369bb9
+  type: Linux/Unix
+- addedBy: ravi
+  description: 'Demo Job for Workflow use case -Script in UAC--- change now '
+  name: APP1-${ENV}-LIN-UAC_SCRIPT-3 (Broadcast)
+  sysId: 3976f0d6c0de4461a29e848d19e6c439
+  type: Linux/Unix
+- addedBy: ravi
+  description: Demo Job for Workflow use case - perl Script residing in Agent
+  name: APP1-${ENV}-LIN-REM_SCRIPT-5
+  sysId: 494c53dd8fb84b16b79b8a0be74080cf
+  type: Linux/Unix
+- addedBy: ravi
+  description: Demo Job for Workflow use case - python Script residing in Agent
+  name: APP1-${ENV}-LIN-REM_SCRIPT-4
+  sysId: c0ffdf3ffb7e4b8e92429a0d9157c98b
+  type: Linux/Unix
+- addedBy: ravi
+  description: Adds data to UDMG /tmp/TNS_data.txt
+  name: task-via-cli-name
+  sysId: 5a3eda8ee9b046d29aaf4c8d3a489a66
+  type: Linux/Unix
+bundleTriggers: []
+bundleUniversalEventTemplates: []
+bundleUniversalTemplates: []
+bundleVariables: []
+bundleVirtualResources: []
+defaultPromotionTarget: Frankfurt Controller
+description: null
+excludeOnExistence: null
+exportReleaseLevel: 7.8.0.0
+exportTable: ops_bundle
+followReferences: true
+name: UBS-POC-EX-001
+opswiseGroups: []
+promoteBundleDefinition: false
+promoteByBusinessServices: []
+retainSysIds: true
+sysId: 7d53ca41c5944005ad3e94baa579633c
+visibleTo: null

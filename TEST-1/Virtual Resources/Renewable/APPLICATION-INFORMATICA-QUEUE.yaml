@@ -1,0 +1,10 @@
+exportReleaseLevel: 7.8.0.0
+exportTable: ops_virtual_resource
+limit: 10
+name: APPLICATION-INFORMATICA-QUEUE
+opswiseGroups: []
+retainSysIds: true
+summary: null
+sysId: adf34268d3154c1bbfeda2763310cd67
+type: Renewable
+version: 1
