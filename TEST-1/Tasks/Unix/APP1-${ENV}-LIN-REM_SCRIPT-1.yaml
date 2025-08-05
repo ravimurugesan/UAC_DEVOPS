@@ -12,7 +12,7 @@ avgRunTime: 6
 avgRunTimeDisplay: 6 Seconds
 broadcastCluster: null
 broadcastClusterVar: null
-command: sh script1.sh;sleep 20
+command: sh script1.sh;sleep 30
 commandOrScript: Command
 cpDuration: null
 cpDurationUnit: Minutes
